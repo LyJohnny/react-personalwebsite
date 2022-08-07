@@ -1,4 +1,4 @@
-# Personal Website Work in Progress (2022)
+# Personal Website redone in React - Work in Progress (2022)
 
 # Getting Started with Create React App
 
