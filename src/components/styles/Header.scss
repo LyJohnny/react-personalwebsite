@@ -4,11 +4,14 @@
     align-items: center;
     position: absolute;
     z-index: 1;
+
 }
 
 
 .header__logo {
     margin-left: 3.445rem;
+    display:none;
+
 }
 
 .navbar {
@@ -16,7 +19,7 @@
 }
 
 ul {
-    display: flex;
+    display: none;
    li {
        list-style: none;
        margin: 1rem;
@@ -27,25 +30,29 @@ ul {
            color: #000;
 
            &:hover {
-               border-bottom: 3px solid red;
+               border-bottom: 3px solid blue;
            }
        }
    }
 }
 
+// Hamburger icon
 .changer {
     display: flex;
     margin-right: 1.555rem;
     .menu {
         cursor: pointer;
         margin-right: 1rem;
-        display: none;
+        display: none; 
     }
 }
+
+// Close icon for mobile
 .closed .close{
     display: none;
 }
 
+// Media Query for responsive Design
 @media (max-width:850px) {
     .header {
         justify-content: space-between;
@@ -61,7 +68,7 @@ ul {
         align-items: center;
         position: fixed;
         inset: 0;
-        background: rgb(253, 234, 234);
+        background: #202329;
         transition: 1450ms ease;
     }
 
@@ -71,11 +78,12 @@ ul {
         align-items: center;
         flex-direction: column;
         margin-top: 1rem;
+        display:flex;
        li {
            margin-block: 2rem;
            a {
                font-size: 20px;
-               color: rgb(40, 36, 36);
+               color: rgb(255, 255, 255);
                font-weight: bolder;
            }
        }
@@ -94,6 +102,7 @@ ul {
 
     .header__logo {
         margin-left: .445rem;
+        display:none;
     }
 
 
