@@ -3,9 +3,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './styles/Header.scss'
 
+// Function to make header switch between desktop and mobile
 const Header = () => {
 
-    const [active,setActive] = useState(false);
+    const [active,setActive] = useState(false); 
 
 
     const showMenu = () => {
@@ -16,7 +17,7 @@ const Header = () => {
         <div className='header'>
 
                     <div className="header__logo">
-                        <h1>Leedd</h1>
+                        <h1>Johnny Ly</h1>
                     </div>
 
             <nav className={active ? 'navbar active' : 'navbar'}>
@@ -32,17 +33,15 @@ const Header = () => {
                         <Link to='/'>About</Link>
                     </li>
                     <li>
+                        <Link to='/'>Education</Link>
+                    </li>
+                    <li>
+                        <Link to='/'>Skills</Link>
+                    </li>
+                    <li>
                         <Link to='/'>Portfolio</Link>
                     </li>
-                    <li>
-                        <Link to='/'>Pages</Link>
-                    </li>
-                    <li>
-                        <Link to='/'>Blog</Link>
-                    </li>
-                    <li>
-                        <Link to='/contact'>Contact</Link>
-                    </li>
+                  
                 </ul>
             </nav>
 

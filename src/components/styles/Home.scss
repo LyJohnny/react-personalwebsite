@@ -1,0 +1,158 @@
+.home {
+    min-height: 100vh;
+    max-width: 100%;
+    // background-color: #f8efef;
+    position: relative;
+    z-index: -1;
+
+   
+
+
+    .home__container {
+        display:flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 9999;
+
+        
+    }
+
+    .home__content {
+        margin-left: 3.445rem;
+
+    }
+
+    .text{
+        line-height: 55px;
+
+        p{
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .icons {
+        display: flex;
+        
+        .icon{
+            margin-top: 1rem;
+            margin-right: 1.4rem;
+            font-size: 35px;
+            cursor: pointer;
+            color: rgb(157,155,155);
+
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+
+    .buttons {
+        button {
+            padding: 15px 40px;
+            margin-top: 2rem;
+            margin-right: 1rem;
+            background: linear-gradient(25deg, rgba(1,60,210,0.753),rgb(255,72,6));
+            cursor: pointer;
+            color:#fff;
+            border-radius: 50px;
+            border: 1px solid #fff;
+            text-transform: uppercase;
+            font-weight: bolder;
+
+        }
+    }
+
+.home__img {
+
+    clip-path: circle(45% at 50% 45%); // to make your portrait.png file cropped to circle
+    cursor:pointer;
+
+
+    img {
+        // background: linear-gradient(45deg, rgb(216,46,8),rgb(62,7,189))
+    }
+}
+
+// Media Query for when decreasing screen size to tablet level (wider width)
+@media (max-width1200px) {
+    .text{
+        line-height: 30px;
+        white-space: nowrap;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+}
+
+.buttons {
+    button{
+        padding: 8px 20px;
+        font-weight: normal;
+    }
+
+    .icons{
+
+        .icon{
+            font-size: 25px;
+        }
+    }
+}
+
+// Media query for when our width is about smartphone level so we have the portrait icon move to above the text
+@media (max-width: 600px) {
+
+    .home__content{
+        margin-left: 0;
+    }
+    .home__container{
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .home__img img {
+        width: 150px;
+    }
+    
+    .text{
+        h1{
+            font-size: 23px;
+        }
+
+        p{
+            font-size: 11px;
+        }
+    }
+
+    .icons{
+        margin-left: 4.5rem;
+        .icon{
+
+        }
+    }
+}
+
+.particles-canvas{
+    width: 100vh; //important, this makes it only take up the full viewport (not the entire webpage)
+    height: 100%;
+    z-index: -1;
+}
+
+}
+
+
