@@ -58,8 +58,8 @@ const Home = () => {
 
                 <div className="buttons">
 
-                    <button>My Resume</button>
-                    <button> My Portfolio</button>
+                    {/* <button>My Resume</button>
+                    <button> My Portfolio</button> */}
 
                 </div>
         </div>
