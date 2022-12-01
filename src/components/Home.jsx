@@ -3,6 +3,9 @@ import React from 'react'
 import './styles/Home.scss'
 import portrait from './assets/portrait.png'
 import ParticleBackground from './ParticleBackground'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const styles = {
     root: {
@@ -25,16 +28,24 @@ const Home = () => {
 
        
 
-        <div className="home__container">
+        <div className="home__container"
+        style={{
+            display: 'flex',
+            justifyContent: 'center',
+        }}>
 
 
         <div className="home__content"> 
+
+    <Container>
+      <Row>
+        <Col>
 
         <div className='text'>
 
             <p>Hello World</p>
             <h1>I am Johnny Ly </h1>
-            <p> Software Engineer and Learner</p>
+            <p> Software Engineer and Learner </p>
 
 
             <div className='icons'>
@@ -52,14 +63,24 @@ const Home = () => {
 
                 </div>
         </div>
+        </Col>
 
-        </div>
-
-        <div className="home__img">
+        <Col>
+        <div className="home__img"
+        style={{
+            display: 'flex',
+            justifyContent: 'center'
+        }}>
             <img src={portrait} alt="" />
         </div>
+        </Col>
+
+        </Row>
+        </Container>
 
         </div>
+</div>
+        
         <div className='particleCanvas'> 
         <ParticleBackground 
         // style = {styling}
