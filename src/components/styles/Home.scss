@@ -3,7 +3,7 @@
     max-width: 100%;
     // background-color: #f8efef;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 
    
 
@@ -155,4 +155,157 @@
 
 }
 
+$color_1: transparent;
+$color_2: #eee;
+$background-color_1: #25d8d7;
+$background-color_2: #222;
+$background-color_3: transparent;
 
+/* ============================Resume and Portfolio Buttons=====================================================*/
+.noselect {
+	user-select: none;
+	color: $color_1;
+}
+button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 50px;
+	margin: 0 3px;
+	cursor: pointer;
+	border: none;
+	border-radius: 25px;
+	background-color: $background-color_1;
+	background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+	transition: 500ms;
+	&:hover {
+		&::after {
+			font-size: 15px;
+			background-color: $background-color_3;
+		}
+		transform: scale(0.9);
+	}
+	&:focus {
+		outline: none;
+	}
+}
+#resume-button {
+	&::after {
+		width: 143px;
+		height: 43px;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		content: 'View Résumé';
+		font-size: 15px;
+		color: $color_2;
+		border-radius: 25px;
+		background-color: $background-color_2;
+		transition: 500ms;
+	}
+}
+#portfolio-button {
+	&::after {
+		width: 143px;
+		height: 43px;
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		content: 'My Portfolio';
+		font-size: 15px;
+		color: $color_2;
+		border-radius: 25px;
+		background-color: $background-color_2;
+		transition: 500ms;
+	}
+}
+
+
+
+
+
+
+/* =========================Social Media Icons================================================= */
+$color_1: #666;
+$color_2: #456cba;
+$color_3: #26a4f2;
+$color_4: #e23670;
+
+ul#social-icons {
+	display: flex;
+	padding: 0%;
+	li {
+		position: relative;
+		display: block;
+		color: $color_1;
+		font-size: 30px;
+		height: 60px;
+		width: 60px;
+		background: #171515;
+		line-height: 60px;
+		border-radius: 50%;
+		margin: 0 5px;
+		cursor: pointer;
+		transition: .5s;
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			height: inherit;
+			width: inherit;
+			border-radius: 50%;
+			transform: scale(.9);
+			z-index: -1;
+			transition: .5s;
+		}
+		&:hover {
+			&:before {
+				filter: blur(3px);
+				transform: scale(1.2);
+			}
+		}
+	}
+	li#linkedin {
+		&:before {
+			background: #4267B2;
+		}
+		&:hover {
+			&:before {
+				box-shadow: 0 0 15px #4267B2;
+			}
+			color: $color_2;
+			box-shadow: 0 0 15px #4267B2;
+			text-shadow: 0 0 15px #4267B2;
+		}
+	}
+	li#github {
+		&:before {
+			background: #1DA1F2;
+		}
+		&:hover {
+			&:before {
+				box-shadow: 0 0 15px #1DA1F2;
+			}
+			color: $color_3;
+			box-shadow: 0 0 15px #1DA1F2;
+			text-shadow: 0 0 15px #1DA1F2;
+		}
+	}
+	li#instagram {
+		&:before {
+			background: #E1306C;
+		}
+		&:hover {
+			&:before {
+				box-shadow: 0 0 15px #E1306C;
+			}
+			color: $color_4;
+			box-shadow: 0 0 15px #E1306C;
+			text-shadow: 0 0 15px #E1306C;
+		}
+	}
+}
