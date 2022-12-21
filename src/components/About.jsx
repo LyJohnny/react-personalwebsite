@@ -13,16 +13,10 @@ import research from "./assets/research.png"
 const About = () => {
   return (
     
-    <div className='about'
-    style={{
-      alignContent: 'center',
-      justifyContent: 'center',
-      height: '100%'
-    }}>
+    <div className='about'>
 
 
-    <div className="about__container"
-    >
+    <div className="about__container">
 
     <Container>
       <Row>

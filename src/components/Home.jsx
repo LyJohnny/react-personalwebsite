@@ -8,30 +8,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Typical from "react-typical";
 
-const styles = {
-  root: {
-    fontFamily: "sans-serif",
-    textAlign: "center",
-    height: "100%",
-    background: "#222",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-};
-
 const Home = () => {
   return (
+    <div className="particleCanvas">
+    <ParticleBackground />
     <div className="home">
-      <div style={styles.root}></div>
 
-      <div
-        className="home__container"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+      <div className="home__container">
         <div className="home__content">
           <Container>
             <Row>
@@ -94,11 +77,7 @@ const Home = () => {
                         </a>
                       </ul>
                     </div>
-
-            
                   </div>
-
-                  
                 </div>
               </Col>
 
@@ -117,15 +96,10 @@ const Home = () => {
           </Container>
         </div>
       </div>
-
-      <div className="particleCanvas">
-        <ParticleBackground
-          // style = {styling}
-          width="10%"
-          className="particles-wrapper"
-        />
       </div>
-    </div>
+      </div>
+
+
   );
 };
 
