@@ -192,6 +192,7 @@ button {
 }
 #resume-button {
 	&::after {
+        z-index: 1000;
 		width: 143px;
 		height: 43px;
 		position: absolute;
@@ -205,6 +206,15 @@ button {
 		background-color: $background-color_2;
 		transition: 500ms;
 	}
+}
+.modal-backdrop {
+    display: none;
+    z-index: 1040 !important;
+}
+
+.modal-content {
+    margin: 2px auto;
+    z-index: 1100 !important;
 }
 #portfolio-button {
 	&::after {
@@ -236,6 +246,8 @@ $color_4: #e23670;
 
 ul#social-icons {
 	display: flex;
+    align-items: center;
+    justify-items: center;
 	padding: 0%;
 	li {
 		position: relative;

@@ -2,6 +2,7 @@ import { GitHub, LinkedIn, Instagram } from "@material-ui/icons";
 import React from "react";
 import "./styles/Home.scss";
 import portrait from "./assets/portrait.png";
+import resume from "./assets/Johnny_Ly_Résumé_.pdf"
 import ParticleBackground from "./ParticleBackground";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -37,6 +38,50 @@ const Home = () => {
                     />
                   </p>
 
+
+                  <div className="buttons">
+                    {/* Buttons */}
+                    <div className="d-flex text-center ms-0 justify-content-center mt-4">
+                      <button
+                        type="button"
+                        className="name noselect"
+                        id="resume-button"
+                        data-bs-toggle="modal"
+                        data-bs-target=".bd-example-modal-lg"
+                      />
+                      <button
+                        type="button"
+                        className="name noselect"
+                        id="portfolio-button"
+                      />
+                      {/* Modal for Résumé */}
+                      <div
+                        className="modal fade bd-example-modal-lg"
+                        tabIndex={-1}
+                        role="dialog"
+                        aria-labelledby="myLargeModalLabel"
+                        aria-hidden="true"
+                      >
+                        <div className="modal-dialog modal-lg">
+                          <div className="modal-content">
+                            <div className="modal-header">
+                              <h2> Résumé (Updated August 2022)</h2>
+                            </div>
+                            <div className="modal-body">
+                              <div className="ratio ratio-1x1">
+                                <iframe src={resume} />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                      {/* SOCIAL MEDIA ICONS */}
                   <div className="icons">
                     <div className="d-flex text-center ms-0 justify-content-center mt-4">
                       <ul id="social-icons">
@@ -49,7 +94,7 @@ const Home = () => {
                         >
                           <li id="linkedin">
                             {" "}
-                            <LinkedIn />{" "}
+                            <LinkedIn fontSize="large"/>{" "}
                           </li>
                         </a>
                         <a
@@ -60,7 +105,7 @@ const Home = () => {
                           title="@LyJohnny"
                         >
                           <li id="github">
-                            <GitHub />
+                            <GitHub fontSize="large"/>
                           </li>
                         </a>
                         <a
@@ -72,7 +117,7 @@ const Home = () => {
                         >
                           <li id="instagram">
                             {" "}
-                            <Instagram />{" "}
+                            <Instagram fontSize="large"/>{" "}
                           </li>
                         </a>
                       </ul>
@@ -82,6 +127,8 @@ const Home = () => {
               </Col>
 
               <Col>
+
+              {/* PORTRAIT  */}
                 <div
                   className="home__img"
                   style={{
