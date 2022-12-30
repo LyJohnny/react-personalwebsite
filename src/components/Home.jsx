@@ -26,6 +26,7 @@ const Home = () => {
                   </div>
 
                   <div className= "text-center ms-0 justify-content-center"> 
+                  <p className="email-text"> johnbus.ly@gmail.com</p>
                   <p>
                     <Typical
                       loop={Infinity}
@@ -133,13 +134,7 @@ const Home = () => {
               <Col>
 
               {/* PORTRAIT  */}
-                <div
-                  className="home__img"
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                  }}
-                >
+                <div className="home__img">
                   <img src={portrait} alt="" />
                 </div>
               </Col>

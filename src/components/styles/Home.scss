@@ -19,13 +19,13 @@
     .home__container {
         display:flex;
         height: 50%;
-		width: 50%;
+		width: 45%;
         align-items: center;
         justify-content: center;
         position: relative;
 		background-color: #191B1F;
 		opacity: 0.9;
-		// border-radius: 5px;
+		border-radius: 25px;
 
         
     }
@@ -37,7 +37,7 @@
     }
 
     .text{
-        line-height: 55px;
+        line-height: 35px;
 	
 
         p{
@@ -45,11 +45,16 @@
             text-transform: uppercase;
             font-size: 22px;
         }
+		.email-text{
+			color: rgb(255, 255, 255);
+			font-size: 12px;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-weight: lighter;
+		}
 
         h1 {
 			
-            font-size: 70px;
-            text-transform: uppercase;
+            font-size: 65px;
             color: rgb(255, 255, 255);
         }
     }
@@ -58,15 +63,15 @@
 
 
 .home__img {
+	width: 350px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 
     clip-path: circle(45% at 50% 45%); // to make your portrait.png file cropped to circle
-    cursor:pointer;
-
-
-    img {
-        // background: linear-gradient(45deg, rgb(216,46,8),rgb(62,7,189))
-    }
 }
+  
 
 // Media Query for when decreasing screen size to tablet level (wider width)
 @media (max-width: 1200px) {
@@ -178,11 +183,23 @@ button {
     display: none;
     z-index: 1040 !important;
 }
+.modal-header{
+	align-items: center;
+	justify-content: center;
+	height: 5%;
+
+}
 
 .modal-content {
     margin: 2px auto;
+	height: 100vh;
     z-index: 1100 !important;
 }
+.modal-body{
+	height: 100vh;
+}
+
+
 #portfolio-button {
 	&::after {
 		width: 143px;
