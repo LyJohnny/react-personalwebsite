@@ -13,10 +13,10 @@ const particlesConfig = {
 
     particles: {
       number: {
-        value: 80,
+        value: 60,
         density: {
           enable: true,
-          value_area: 1800
+          value_area: 3000
         }
       },
       color: {
