@@ -11,14 +11,21 @@
     // background-color: #f8efef;
     position: relative;
     z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 
     .home__container {
         display:flex;
-        height: 100vh;
+        height: 50%;
+		width: 50%;
         align-items: center;
         justify-content: center;
         position: relative;
+		background-color: #191B1F;
+		opacity: 0.9;
+		// border-radius: 5px;
 
         
     }
@@ -31,6 +38,7 @@
 
     .text{
         line-height: 55px;
+	
 
         p{
             color: rgb(255, 255, 255);
@@ -39,44 +47,15 @@
         }
 
         h1 {
-            font-size: 50px;
+			
+            font-size: 70px;
             text-transform: uppercase;
             color: rgb(255, 255, 255);
         }
     }
 
-    .icons {
-        display: flex;
-        
-        .icon{
-            margin-top: 1rem;
-            margin-right: 1.4rem;
-            font-size: 35px;
-            cursor: pointer;
-            color: rgb(157,155,155);
-    
-            &:hover {
-                color: blue;
-            }
-        }
-    }
-    
+ 
 
-    .buttons {
-        button {
-            padding: 15px 40px;
-            margin-top: 2rem;
-            margin-right: 1rem;
-            background: linear-gradient(25deg, rgba(1,60,210,0.753),rgb(255,72,6));
-            cursor: pointer;
-            color:#fff;
-            border-radius: 50px;
-            border: 1px solid #fff;
-            text-transform: uppercase;
-            font-weight: bolder;
-
-        }
-    }
 
 .home__img {
 
@@ -105,19 +84,7 @@
     }
 }
 
-.buttons {
-    button{
-        padding: 8px 20px;
-        font-weight: normal;
-    }
 
-    .icons{
-
-        .icon{
-            font-size: 25px;
-        }
-    }
-}
 
 // Media query for when our width is about smartphone level so we have the portrait icon move to above the text
 @media (max-width: 600px) {
@@ -238,7 +205,11 @@ button {
 
 
 
+
 /* =========================Social Media Icons================================================= */
+
+
+
 $color_1: #666;
 $color_2: #456cba;
 $color_3: #26a4f2;
