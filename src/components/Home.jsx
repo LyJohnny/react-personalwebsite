@@ -21,12 +21,15 @@ const Home = () => {
             <Row>
               <Col>
                 <div className="text">
-                  <p>Hello World</p>
-                  <h1>I'm Johnny Ly </h1>
+                  <div className = "row d-flex text-center justify-content-center mt-5"> 
+                  <h1>Johnny Ly </h1>
+                  </div>
+
+                  <div className= "text-center ms-0 justify-content-center"> 
                   <p>
                     <Typical
                       loop={Infinity}
-                      wrapper="b"
+                      wrapper="t"
                       steps={[
                         "Developer",
                         3000,
@@ -37,9 +40,11 @@ const Home = () => {
                       ]}
                     />
                   </p>
+                  </div>
+                  </div>
 
 
-                  <div className="buttons">
+                  <div className="button">
                     {/* Buttons */}
                     <div className="d-flex text-center ms-0 justify-content-center mt-4">
                       <button
@@ -82,7 +87,7 @@ const Home = () => {
 
 
                       {/* SOCIAL MEDIA ICONS */}
-                  <div className="icons">
+                  <div className="icon-area">
                     <div className="d-flex text-center ms-0 justify-content-center mt-4">
                       <ul id="social-icons">
                         <a
@@ -123,7 +128,6 @@ const Home = () => {
                       </ul>
                     </div>
                   </div>
-                </div>
               </Col>
 
               <Col>
