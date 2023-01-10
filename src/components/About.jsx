@@ -3,8 +3,6 @@ import './styles/About.scss'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-
-
 import ucm from "./assets/ucm.png"
 import jpmc from "./assets/jpmc.jpeg"
 import flsp from "./assets/flsp.png"
