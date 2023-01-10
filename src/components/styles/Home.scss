@@ -117,12 +117,7 @@
         }
     }
 
-    .icons{
-        margin-left: 4.5rem;
-        .icon{
-
-        }
-    }
+    
 }
 
 }
@@ -179,6 +174,8 @@ button {
 		transition: 500ms;
 	}
 }
+
+
 .modal-backdrop {
     display: none;
     z-index: 1040 !important;
@@ -186,18 +183,18 @@ button {
 .modal-header{
 	align-items: center;
 	justify-content: center;
-	height: 5%;
+	height: 6%;
 
 }
 
 .modal-content {
     margin: 2px auto;
-	height: 100vh;
+	border: 5px solid rgb(0, 140, 255);
+	width: 40vw;
+	height: 95vh;
     z-index: 1100 !important;
 }
-.modal-body{
-	height: 100vh;
-}
+
 
 
 #portfolio-button {

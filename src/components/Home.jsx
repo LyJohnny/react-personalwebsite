@@ -9,6 +9,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Typical from "react-typical";
 
+
 const Home = () => {
   return (
     <div className="particleCanvas">
@@ -68,14 +69,14 @@ const Home = () => {
                         aria-labelledby="myLargeModalLabel"
                         aria-hidden="true"
                       >
-                        <div className="modal-dialog modal-lg">
+                        <div className="modal-dialog ">
                           <div className="modal-content">
                             <div className="modal-header">
                               <h2> Résumé (Updated August 2022)</h2>
                             </div>
                             <div className="modal-body">
                               <div className="ratio ratio-1x1">
-                                <iframe src={resume} />
+                                <iframe src={resume} style={{ width: '100%', height: '110%'}} />
                               </div>
                             </div>
                           </div>
