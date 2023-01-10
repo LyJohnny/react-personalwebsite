@@ -2,8 +2,8 @@ import React,{useState} from 'react';
 import './App.scss';
 import About from './components/About';
 import Header from './components/Header';
-import Home from './components/Home'
-import ParticleBackground from './components/ParticleBackground';
+import Home from './components/Home';
+
 
 
 function App() {
