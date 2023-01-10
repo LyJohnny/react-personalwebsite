@@ -3,13 +3,18 @@ const particlesConfig = {
 
    
     background: {
-        color: "#202329",      
+        color: "#202329",     
+
       },
 
-    //   fullScreen: {
-    //     enable: false,
-    //     zIndex: 0,
-    //   },
+      fullScreen: {
+        enable: true,
+        zIndex: -1,
+      },
+      // THIS RIGHT HERE was to make it so that the particles js background only fills the home div for home component and not overlap!! 1-10-23
+      style: {
+        position: "absolute" 
+      },
 
     particles: {
       number: {
