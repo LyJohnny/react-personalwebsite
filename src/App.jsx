@@ -1,18 +1,19 @@
-import React,{useState} from 'react';
+import React,{useState, useRef} from 'react';
 import './App.scss';
-import About from './components/About';
-import Header from './components/Header';
 import Home from './components/Home';
+import About from './components/About';
+// import Header from './components/Header';
 
 
 
 
 function App() {
+  const aboutRef = useRef(null);
   return (
     <div className='App'>
       {/* <Header/> */}
-      <Home/>
-      <About/>
+      <Home aboutRef={aboutRef}/>
+      <About ref={aboutRef}/>
 
     </div>
   );
