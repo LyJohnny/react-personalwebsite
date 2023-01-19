@@ -1,8 +1,7 @@
-import { GitHub, LinkedIn, Instagram,} from "@mui/icons-material";
+import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 // import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import { Route, Routes, Link, BrowserRouter } from "react-router-dom";
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import React, {useRef} from "react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import React, { useRef } from "react";
 import "./styles/Home.scss";
 import portrait from "./assets/portrait.png";
 import resume from "./assets/Johnny_Ly_Résumé_.pdf";
@@ -11,19 +10,16 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Typical from "react-typical";
-import About from "./About";
 
-
-
-
-const Home = ({aboutRef}) => {
-
- 
-  const onSubmit = (e) => {
+const Home = ({ aboutRef, portfolioRef }) => {
+  const navScroll = (e) => {
     e.preventDefault();
     aboutRef.current.scrollIntoView({ behavior: "smooth" });
   }
-
+  const portScroll = (e) => {
+    e.preventDefault();
+    portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="home">
@@ -41,20 +37,19 @@ const Home = ({aboutRef}) => {
 
                   <div className="text-center ms-0 justify-content-center">
                     <p className="email-text"> johnbus.ly@gmail.com</p>
-                    <p>
-                      <Typical
-                        loop={Infinity}
-                        wrapper="t"
-                        steps={[
-                          "Developer",
-                          3000,
-                          "Lifelong Student",
-                          3000,
-                          "Problem Solver",
-                          3000,
-                        ]}
-                      />
-                    </p>
+
+                    <Typical
+                      loop={Infinity}
+                      // wrapper="t"
+                      steps={[
+                        "Developer",
+                        3000,
+                        "Lifelong Student",
+                        3000,
+                        "Problem Solver",
+                        3000,
+                      ]}
+                    />
                   </div>
                 </div>
 
@@ -72,6 +67,7 @@ const Home = ({aboutRef}) => {
                       type="button"
                       className="name noselect"
                       id="portfolio-button"
+                      onClick={portScroll}
                     />
                     {/* Modal for Résumé */}
                     <div
@@ -90,7 +86,7 @@ const Home = ({aboutRef}) => {
                             <div className="ratio ratio-1x1">
                               <iframe
                                 src={resume}
-                                style={{ width: "100%", height: "110%"}}
+                                style={{ width: "100%", height: "110%" }}
                               />
                             </div>
                           </div>
@@ -113,7 +109,10 @@ const Home = ({aboutRef}) => {
                       >
                         <li id="linkedin">
                           {" "}
-                          <LinkedIn fontSize="large" style = {{color: 'white'}} />{" "}
+                          <LinkedIn
+                            fontSize="large"
+                            style={{ color: "white" }}
+                          />{" "}
                         </li>
                       </a>
                       <a
@@ -124,7 +123,7 @@ const Home = ({aboutRef}) => {
                         title="@LyJohnny"
                       >
                         <li id="github">
-                          <GitHub fontSize="large" style = {{color: 'white'}} />
+                          <GitHub fontSize="large" style={{ color: "white" }} />
                         </li>
                       </a>
                       <a
@@ -136,7 +135,10 @@ const Home = ({aboutRef}) => {
                       >
                         <li id="instagram">
                           {" "}
-                          <Instagram fontSize="large" style = {{color: 'white'}}  />{" "}
+                          <Instagram
+                            fontSize="large"
+                            style={{ color: "white" }}
+                          />{" "}
                         </li>
                       </a>
                     </ul>
@@ -153,18 +155,16 @@ const Home = ({aboutRef}) => {
             </Row>
           </Container>
         </div>
-        <div className="arrowDown">   
-        {/* <Link to='#about' smooth> */}
-      <KeyboardArrowDownIcon fontSize="large" style = {{color: 'white'}} onClick = {onSubmit} /> 
-      {/* </Link>  */}
+        {/* Nav Arrow  */}
+        <div className="arrowDown">
+          <KeyboardArrowDownIcon
+            fontSize="large"
+            style={{ color: "white" }}
+            onClick={navScroll}
+          />
+        </div>
       </div>
-      </div>
-
-     
-
     </div>
-
-    
   );
 };
 
