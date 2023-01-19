@@ -1,5 +1,8 @@
-import { GitHub, LinkedIn, Instagram } from "@material-ui/icons";
-import React from "react";
+import { GitHub, LinkedIn, Instagram,} from "@mui/icons-material";
+// import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import { Route, Routes, Link, BrowserRouter } from "react-router-dom";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import React, {useRef} from "react";
 import "./styles/Home.scss";
 import portrait from "./assets/portrait.png";
 import resume from "./assets/Johnny_Ly_Résumé_.pdf";
@@ -8,8 +11,20 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Typical from "react-typical";
+import About from "./About";
 
-const Home = () => {
+
+
+
+const Home = ({aboutRef}) => {
+
+ 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+
   return (
     <div className="home">
       <ParticleBackground />
@@ -75,7 +90,7 @@ const Home = () => {
                             <div className="ratio ratio-1x1">
                               <iframe
                                 src={resume}
-                                style={{ width: "100%", height: "110%" }}
+                                style={{ width: "100%", height: "110%"}}
                               />
                             </div>
                           </div>
@@ -98,7 +113,7 @@ const Home = () => {
                       >
                         <li id="linkedin">
                           {" "}
-                          <LinkedIn fontSize="large" />{" "}
+                          <LinkedIn fontSize="large" style = {{color: 'white'}} />{" "}
                         </li>
                       </a>
                       <a
@@ -109,7 +124,7 @@ const Home = () => {
                         title="@LyJohnny"
                       >
                         <li id="github">
-                          <GitHub fontSize="large" />
+                          <GitHub fontSize="large" style = {{color: 'white'}} />
                         </li>
                       </a>
                       <a
@@ -121,7 +136,7 @@ const Home = () => {
                       >
                         <li id="instagram">
                           {" "}
-                          <Instagram fontSize="large" />{" "}
+                          <Instagram fontSize="large" style = {{color: 'white'}}  />{" "}
                         </li>
                       </a>
                     </ul>
@@ -138,9 +153,19 @@ const Home = () => {
             </Row>
           </Container>
         </div>
+        <div className="arrowDown">   
+        {/* <Link to='#about' smooth> */}
+      <KeyboardArrowDownIcon fontSize="large" style = {{color: 'white'}} onClick = {onSubmit} /> 
+      {/* </Link>  */}
       </div>
+      </div>
+
+     
+
     </div>
+
+    
   );
 };
 
-export default Home;
+export default React.forwardRef(Home);

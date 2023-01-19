@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import './styles/About.scss'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -9,13 +9,15 @@ import flsp from "./assets/flsp.png"
 import research from "./assets/research.png"
 
 
-const About = () => {
+const About = forwardRef((props,ref) => {
+
+
   return (
     
     <div className='about'>
 
 
-    <div className="about__container">
+    <div className="about__container" ref = {ref}>
 
     <Container>
       <Row>
@@ -98,6 +100,6 @@ const About = () => {
     </div>
     </div>
   )
-}
+});
 
-export default About
+export default About;
