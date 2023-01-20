@@ -7,6 +7,8 @@ import ucm from "./assets/ucm.png"
 import jpmc from "./assets/jpmc.jpeg"
 import flsp from "./assets/flsp.png"
 import research from "./assets/research.png"
+import i2g from "./assets/i2g.jpg"
+import ylp from "./assets/ylp.png"
 
 
 const About = forwardRef((props,ref) => {
@@ -40,6 +42,7 @@ const About = forwardRef((props,ref) => {
             <li>Database Systems</li>
             <li>Software Engineering</li>
             <li>Computer Architecture</li>
+            <li>Human-Computer Interaction</li>
             <li>Digital Image Processing</li>
             <li>Discrete Mathematics</li>
             <li>Programming in Java</li>
@@ -88,10 +91,46 @@ const About = forwardRef((props,ref) => {
 
       </Row>
       <Row>
-        <Col lg={8}> <h1>Extracurriculars</h1></Col>
+        <Col lg={8}> <h1>Activities + Leadership Experience</h1></Col>
         <Col lg={4}> <h1>Achievements</h1></Col>
       </Row>
+
+      <Row> 
+      <Col className="logo-container" lg="auto">
+                      <img className="logo" src={i2g} alt="I2G" />
+        </Col>
+        <Col lg> 
+        <b style={{fontSize: "20px"}}> Innovate to Grow </b>
+        <p style={{fontSize: "15px"}}> Front End Developer </p>
+        <p style={{fontSize: "12px"}}> September 2022 - December 2022 </p>
+        <p>Assessed the impact of the COVID-19 pandemic on Yosemite National Park in
+           collaboration with Dr. Jeffrey Jenkins, 2 graduate students, and 4 other cohort members 
+           from the Yosemite Leadership Program.</p>
+        </Col>
+        <Col lg></Col>
+        {/* Empty column to separate two columns */}
+        <Col lg></Col>
+
+      </Row>
    
+      <Row> 
+      <Col className="logo-container" lg="auto">
+                      <img className="logo" src={ylp} alt="I2G" />
+        </Col>
+        <Col lg> 
+        <b style={{fontSize: "20px"}}> Yosemite Leadership Program </b>
+        <p style={{fontSize: "15px"}}> Cohort Member </p>
+        <p style={{fontSize: "12px"}}> September 2019 - May 2021 </p>
+        <p>The Yosemite Leadership Program is a hallmark, partnership program between UC Merced and Yosemite National Park. Core responsibilities and 
+          accomplishments: Built transformative, leadership lifestyle experiences through cohort curriculum design, coordination of team-building and 
+          wilderness experiences, and mentoring students to constantly pursue their personal and professional potential.
+          </p>
+        </Col>
+        <Col lg></Col>
+        {/* Empty column to separate two columns */}
+        <Col lg></Col>
+
+      </Row>
 
     </Container>
 

@@ -3,6 +3,7 @@ import './App.scss';
 import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Skills from './components/Skills';
 // import Header from './components/Header';
 
 
@@ -16,6 +17,7 @@ function App() {
       {/* <Header/> */}
       <Home aboutRef={aboutRef} portfolioRef={portfolioRef}/>
       <About ref={aboutRef}/>
+      <Skills />
       <Portfolio ref = {portfolioRef} />
 
     </div>
