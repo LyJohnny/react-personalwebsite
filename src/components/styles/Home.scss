@@ -1,3 +1,4 @@
+@import "~bootstrap/scss/bootstrap";
 .home {
   
     width: 100%;
@@ -24,9 +25,9 @@
         justify-content: center;
         position: relative;
 		background-color: #191B1F;
-		opacity: 0.9;
+		opacity: 0.95;
 		border-radius: 25px;
-
+		z-index: -1;
         
     }
 
@@ -158,8 +159,7 @@ $background-color_3: transparent;
 .noselect {
 	user-select: none;
 	color: $color_1;
-}
-button {
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -203,8 +203,9 @@ button {
 
 
 .modal-backdrop {
-    display: none;
+    // display: flex;
     z-index: 1040 !important;
+	
 }
 
 .modal-header{
@@ -213,12 +214,17 @@ button {
 	height: 6%;
 
 }
+.modal-title{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
 
 .modal-content {
     margin: 2px auto;
 	border: 5px solid rgb(0, 140, 255);
 	width: 40vw;
-	height: 95vh;
+	height: 110vh;
     z-index: 1100 !important;
 }
 

@@ -10,20 +10,51 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Typical from "react-typical";
+import "bootstrap/dist/js/bootstrap.min.js";
+import ResumeModal from "./modal";
 
 const Home = ({ aboutRef, portfolioRef }) => {
   const navScroll = (e) => {
     e.preventDefault();
     aboutRef.current.scrollIntoView({ behavior: "smooth" });
-  }
+  };
   const portScroll = (e) => {
     e.preventDefault();
     portfolioRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  //   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  // const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
   return (
     <div className="home">
       <ParticleBackground />
+      {/* Modal for Résumé
+      <div
+        className="modal fade"
+        id="bd-example-modal-lg"
+        tabIndex={-1}
+        role="dialog"
+        aria-labelledby="myLargeModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog ">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h2> Résumé (Updated August 2022)</h2>
+            </div>
+            <div className="modal-body">
+              <div className="ratio ratio-1x1">
+                <iframe
+                  src={resume}
+                  style={{ width: "100%", height: "110%" }}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+
 
       <div className="home__container">
         <div className="home__content">
@@ -53,46 +84,24 @@ const Home = ({ aboutRef, portfolioRef }) => {
                   </div>
                 </div>
 
-                <div className="button">
+                <div className="buttonHome">
                   {/* Buttons */}
                   <div className="d-flex text-center ms-0 justify-content-center mt-4">
-                    <button
+                    {/* <button
                       type="button"
                       className="name noselect"
                       id="resume-button"
-                      data-bs-toggle="modal"
-                      data-bs-target=".bd-example-modal-lg"
-                    />
+                     
+                      // data-bs-toggle="modal"
+                      // data-bs-target="#bd-example-modal-lg"
+                    /> */}
+                     <ResumeModal/>
                     <button
                       type="button"
                       className="name noselect"
                       id="portfolio-button"
                       onClick={portScroll}
                     />
-                    {/* Modal for Résumé */}
-                    <div
-                      className="modal fade bd-example-modal-lg"
-                      tabIndex={-1}
-                      role="dialog"
-                      aria-labelledby="myLargeModalLabel"
-                      aria-hidden="true"
-                    >
-                      <div className="modal-dialog ">
-                        <div className="modal-content">
-                          <div className="modal-header">
-                            <h2> Résumé (Updated August 2022)</h2>
-                          </div>
-                          <div className="modal-body">
-                            <div className="ratio ratio-1x1">
-                              <iframe
-                                src={resume}
-                                style={{ width: "100%", height: "110%" }}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
 
