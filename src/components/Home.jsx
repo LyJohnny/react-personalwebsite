@@ -12,6 +12,9 @@ import Col from "react-bootstrap/Col";
 import Typical from "react-typical";
 import "bootstrap/dist/js/bootstrap.min.js";
 import ResumeModal from "./modal";
+import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+
 
 const Home = ({ aboutRef, portfolioRef }) => {
   const navScroll = (e) => {
@@ -29,33 +32,6 @@ const Home = ({ aboutRef, portfolioRef }) => {
   return (
     <div className="home">
       <ParticleBackground />
-      {/* Modal for Résumé
-      <div
-        className="modal fade"
-        id="bd-example-modal-lg"
-        tabIndex={-1}
-        role="dialog"
-        aria-labelledby="myLargeModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog ">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h2> Résumé (Updated August 2022)</h2>
-            </div>
-            <div className="modal-body">
-              <div className="ratio ratio-1x1">
-                <iframe
-                  src={resume}
-                  style={{ width: "100%", height: "110%" }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-
       <div className="home__container">
         <div className="home__content">
           <Container>
@@ -109,12 +85,17 @@ const Home = ({ aboutRef, portfolioRef }) => {
                 <div className="icon-area">
                   <div className="d-flex text-center ms-0 justify-content-center mt-4">
                     <ul id="social-icons">
+
+                    <OverlayTrigger 
+                    placement="bottom"
+                     overlay={
+                       <Tooltip id='linkedInTooltip'>
+                         <strong>@johnny-ly</strong>
+                       </Tooltip>
+                     }>
                       <a
                         href="https://www.linkedin.com/in/johnny-ly-/"
                         target="_blank"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="bottom"
-                        title="@johnny-ly"
                       >
                         <li id="linkedin">
                           {" "}
@@ -124,23 +105,35 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           />{" "}
                         </li>
                       </a>
+                      </OverlayTrigger>
+
+                      <OverlayTrigger 
+                    placement="bottom"
+                     overlay={
+                       <Tooltip id='linkedInTooltip'>
+                         <strong>@LyJohnny</strong>
+                       </Tooltip>
+                     }>
                       <a
                         href="https://github.com/LyJohnny"
                         target="_blank"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="bottom"
-                        title="@LyJohnny"
                       >
                         <li id="github">
                           <GitHub fontSize="large" style={{ color: "white" }} />
                         </li>
                       </a>
+                      </OverlayTrigger>
+
+                      <OverlayTrigger 
+                    placement="bottom"
+                     overlay={
+                       <Tooltip id='linkedInTooltip'>
+                         <strong>@johnster.shoots</strong>
+                       </Tooltip>
+                     }>
                       <a
                         href="https://www.instagram.com/johnster.shoots/"
                         target="_blank"
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="bottom"
-                        title="@johnster.shoots"
                       >
                         <li id="instagram">
                           {" "}
@@ -150,7 +143,9 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           />{" "}
                         </li>
                       </a>
+                   </OverlayTrigger>
                     </ul>
+                    
                   </div>
                 </div>
               </Col>
