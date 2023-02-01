@@ -3,6 +3,11 @@ import "./styles/Skills.scss";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import sql from "../components/assets/sql.png";
+import agile from "../components/assets/agile.png";
+import typingSpeed from "../components/assets/typingSpeed.png";
+import photography from "../components/assets/photography.png";
+import lightroom from "../components/assets/lightroom.png";
 
 const Skills = () => {
   return (
@@ -26,33 +31,106 @@ const Skills = () => {
 
           <Row>
             <Col>
-              <ul className="pLanguages">
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>C/C++</li>
-                <li>SQL</li>
-              </ul>
+              <Col className="logo-container" lg="auto">
+                <img
+                  className="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                  alt="HTML/CSS"
+                />
+                HTML/CSS
+              </Col>
+              <Col className="logo-container" lg="auto">
+                <img
+                  className="jsIcon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                />
+                JavaScript
+              </Col>
+
+              <Col className="logo-container" lg="auto">
+                <img
+                  className="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                />
+                Python
+              </Col>
+              <Col className="logo-container" lg="auto">
+                <img
+                  className="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                  alt="C/C++"
+                />
+                C/C++
+              </Col>
+              <Col className="logo-container" lg="auto">
+                <img className="icon" src={sql} alt="SQL"/>
+                SQL
+              </Col>
             </Col>
 
-            <Col lg ={8}>
-              <ul className="toolsLibraries">
-                <li>React</li>
-                <li>Node</li>
-                <li>MySQL</li>
-                <li>Git</li>
-                <li>Scss</li>
-                <li>Bootstrap</li>
-              </ul>
+            <Col xs lg={4}>
+              <Col className="logo-container" lg="auto">
+                <img
+                  className="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                />
+                React
+              </Col>
+              <Col className="logo-container" lg="auto">
+                <img
+                  className="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node"
+                />
+                Node
+              </Col>
+              
+              <Col className="logo-container" lg="auto">
+                <img
+                  className="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                  alt="Scss"
+                />
+                Scss
+              </Col>
+              <Col className="logo-container" lg="auto">
+                <img
+                  className="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                  alt="Bootstrap"
+                />
+                Bootstrap
+              </Col>
+              <Col className="logo-container" lg="auto">
+                <img
+                  className="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                />
+                Git
+              </Col>
             </Col>
 
-            <Col lg ={4}>
-              <ul className="otherCol">
-                <li>AGILE Methodologies</li>
-                <li>Typing Speed: 100+ WPM</li>
-                <li>Photography</li>
-                <li>Adobe Lightroom</li>
-              </ul>
+            <Col lg={4}>
+              <Col className="logo-container" lg="auto">
+                <img className="icon" src={agile} alt="AGILE Methodologies"/>
+                AGILE Methodologies
+              </Col>
+              <Col className="logo-container" lg="auto">
+                <img className="icon" src={typingSpeed} alt="Typing Speed" />
+                Typing Speed: 110+ WPM
+              </Col>
+              <Col className="logo-container" lg="auto">
+                <img className="icon" src={photography} alt="Photography" />
+                Photography
+              </Col>
+              <Col className="logo-container" lg="auto">
+                <img className="icon" src={lightroom} alt="Adobe Lightroom" />
+                Adobe Lightroom
+              </Col>
             </Col>
           </Row>
         </Container>
