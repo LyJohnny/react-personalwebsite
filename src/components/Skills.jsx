@@ -1,5 +1,6 @@
-import React from "react";
-import "./styles/Skills.scss";
+import {useRef, useEffect, useState,React} from "react";
+import { useInView } from 'react-intersection-observer';
+import styles from "./styles/Skills.scss";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -10,34 +11,42 @@ import photography from "../components/assets/photography.png";
 import lightroom from "../components/assets/lightroom.png";
 
 const Skills = () => {
+  const { ref: myRef, inView: visibleElement  } = useInView();
+
+    // if(visibleElement){
+    //   myRef.target.className.add('show');
+    // }
+    // else{
+    //   myRef.target.className.remove('show');
+    // }
   return (
     <div className="skills">
       <div className="skills__container">
         <Container>
           <Row>
-            <Col id="languages">
+            <Col className={`${'hidden'} ${visibleElement ? 'show' : '' }`} id="languages">
               {" "}
               <h1> Languages </h1>
             </Col>
-            <Col id="tools">
+            <Col className={`${'hidden'} ${visibleElement ? 'show' : '' }`} id="tools">
               {" "}
               <h1> Tools/Libraries </h1>
             </Col>
-            <Col id="other">
+            <Col className={`${'hidden'} ${visibleElement ? 'show' : '' }`} id="other">
               {" "}
               <h1> Other </h1>
             </Col>
           </Row>
 
           <Row>
-            <Col>
+            <Col className={`${'hidden'} ${visibleElement ? 'show' : '' }`} id="languages" ref={myRef}>
               <Col className="logo-container" lg="auto">
                 <img
                   className="icon"
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
                   alt="HTML/CSS"
                 />
-                HTML/CSS
+                HTML/CSS 
               </Col>
               <Col className="logo-container" lg="auto">
                 <img
@@ -70,7 +79,7 @@ const Skills = () => {
               </Col>
             </Col>
 
-            <Col xs lg={4}>
+            <Col className={`${'hidden'} ${visibleElement ? 'show' : '' }`} id='tools' ref={myRef} xs lg={4}>
               <Col className="logo-container" lg="auto">
                 <img
                   className="icon"
@@ -114,7 +123,7 @@ const Skills = () => {
               </Col>
             </Col>
 
-            <Col lg={4}>
+            <Col className={`${'hidden'} ${visibleElement ? 'show' : '' }`} id='other' ref={myRef} lg={4}>
               <Col className="logo-container" lg="auto">
                 <img className="icon" src={agile} alt="AGILE Methodologies"/>
                 AGILE Methodologies
