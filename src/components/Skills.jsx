@@ -1,5 +1,5 @@
 import {useRef, useEffect, useState,React} from "react";
-import { useInView } from 'react-intersection-observer';
+import { useInView, triggerOnce } from 'react-intersection-observer';
 import styles from "./styles/Skills.scss";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -11,7 +11,7 @@ import photography from "../components/assets/photography.png";
 import lightroom from "../components/assets/lightroom.png";
 
 const Skills = () => {
-  const { ref: myRef, inView: visibleElement  } = useInView();
+  const { ref: myRef, inView: visibleElement} = useInView({triggerOnce: true});
 
     // if(visibleElement){
     //   myRef.target.className.add('show');
