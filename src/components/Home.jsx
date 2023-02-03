@@ -3,13 +3,12 @@ import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import React, { useRef } from "react";
 import "./styles/Home.scss";
-import portrait from "./assets/portrait.png";
+import portrait from "./assets/portrait1.png";
 import resume from "./assets/Johnny_Ly_Résumé_.pdf";
 import ParticleBackground from "./ParticleBackground";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Typical from "react-typical";
 import "bootstrap/dist/js/bootstrap.min.js";
 import ResumeModal from "./modal";
 import Tooltip from "react-bootstrap/Tooltip";
@@ -40,7 +39,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
         <div className="home__content">
           <Container>
             <Row>
-              <Col>
+              <Col className="infoCol">
                 <div className="text">
                   <div className="row d-flex text-center justify-content-center mt-5">
                     <h1>Johnny Ly </h1>
@@ -155,7 +154,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                 </div>
               </Col>
 
-              <Col>
+              <Col className="portraitCol">
                 {/* PORTRAIT  */}
                 <div className="home__img">
                   <img src={portrait} alt="" />

@@ -103,9 +103,9 @@ const About = forwardRef((props,ref) => {
         <b style={{fontSize: "20px"}}> Innovate to Grow </b>
         <p style={{fontSize: "15px"}}> Front End Developer </p>
         <p style={{fontSize: "12px"}}> September 2022 - December 2022 </p>
-        <p>Assessed the impact of the COVID-19 pandemic on Yosemite National Park in
-           collaboration with Dr. Jeffrey Jenkins, 2 graduate students, and 4 other cohort members 
-           from the Yosemite Leadership Program.</p>
+        <p>Partnered with Western Digital Corporation to develop a web application for their Internal Developer team to display Key Performance Indicators (KPI)
+         reports for the purpose of enhancing team performance and metrics. 
+        </p>
         </Col>
         <Col lg></Col>
         {/* Empty column to separate two columns */}
