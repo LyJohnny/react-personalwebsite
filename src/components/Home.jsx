@@ -12,11 +12,14 @@ import Col from "react-bootstrap/Col";
 import Typical from "react-typical";
 import "bootstrap/dist/js/bootstrap.min.js";
 import ResumeModal from "./modal";
-import Tooltip from 'react-bootstrap/Tooltip';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-
+import Tooltip from "react-bootstrap/Tooltip";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import { useInView } from "react-intersection-observer";
 
 const Home = ({ aboutRef, portfolioRef }) => {
+  const { ref: myRef, inView: visibleElement } = useInView({
+    triggerOnce: true,
+  });
   const navScroll = (e) => {
     e.preventDefault();
     aboutRef.current.scrollIntoView({ behavior: "smooth" });
@@ -26,13 +29,13 @@ const Home = ({ aboutRef, portfolioRef }) => {
     portfolioRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  //   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-  // const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
   return (
     <div className="home">
       <ParticleBackground />
-      <div className="home__container">
+      <div
+        className={`${"hiddenHome"} ${visibleElement ? "home__container" : ""}`}
+        ref={myRef}
+      >
         <div className="home__content">
           <Container>
             <Row>
@@ -49,9 +52,9 @@ const Home = ({ aboutRef, portfolioRef }) => {
                       loop={Infinity}
                       // wrapper="t"
                       steps={[
-                        "Developer",
+                        "Software Engineer",
                         3000,
-                        "Lifelong Student",
+                        "Front End Developer",
                         3000,
                         "Problem Solver",
                         3000,
@@ -71,7 +74,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                       // data-bs-toggle="modal"
                       // data-bs-target="#bd-example-modal-lg"
                     /> */}
-                     <ResumeModal/>
+                    <ResumeModal />
                     <button
                       type="button"
                       className="name noselect"
@@ -85,67 +88,68 @@ const Home = ({ aboutRef, portfolioRef }) => {
                 <div className="icon-area">
                   <div className="d-flex text-center ms-0 justify-content-center mt-4">
                     <ul id="social-icons">
-
-                    <OverlayTrigger 
-                    placement="bottom"
-                     overlay={
-                       <Tooltip id='linkedInTooltip'>
-                         <strong>@johnny-ly</strong>
-                       </Tooltip>
-                     }>
-                      <a
-                        href="https://www.linkedin.com/in/johnny-ly-/"
-                        target="_blank"
+                      <OverlayTrigger
+                        placement="bottom"
+                        overlay={
+                          <Tooltip id="linkedInTooltip">
+                            <strong>@johnny-ly</strong>
+                          </Tooltip>
+                        }
                       >
-                        <li id="linkedin">
-                          {" "}
-                          <LinkedIn
-                            fontSize="large"
-                            style={{ color: "white" }}
-                          />{" "}
-                        </li>
-                      </a>
+                        <a
+                          href="https://www.linkedin.com/in/johnny-ly-/"
+                          target="_blank"
+                        >
+                          <li id="linkedin">
+                            {" "}
+                            <LinkedIn
+                              fontSize="large"
+                              style={{ color: "white" }}
+                            />{" "}
+                          </li>
+                        </a>
                       </OverlayTrigger>
 
-                      <OverlayTrigger 
-                    placement="bottom"
-                     overlay={
-                       <Tooltip id='linkedInTooltip'>
-                         <strong>@LyJohnny</strong>
-                       </Tooltip>
-                     }>
-                      <a
-                        href="https://github.com/LyJohnny"
-                        target="_blank"
+                      <OverlayTrigger
+                        placement="bottom"
+                        overlay={
+                          <Tooltip id="linkedInTooltip">
+                            <strong>@LyJohnny</strong>
+                          </Tooltip>
+                        }
                       >
-                        <li id="github">
-                          <GitHub fontSize="large" style={{ color: "white" }} />
-                        </li>
-                      </a>
+                        <a href="https://github.com/LyJohnny" target="_blank">
+                          <li id="github">
+                            <GitHub
+                              fontSize="large"
+                              style={{ color: "white" }}
+                            />
+                          </li>
+                        </a>
                       </OverlayTrigger>
 
-                      <OverlayTrigger 
-                    placement="bottom"
-                     overlay={
-                       <Tooltip id='linkedInTooltip'>
-                         <strong>@johnster.shoots</strong>
-                       </Tooltip>
-                     }>
-                      <a
-                        href="https://www.instagram.com/johnster.shoots/"
-                        target="_blank"
+                      <OverlayTrigger
+                        placement="bottom"
+                        overlay={
+                          <Tooltip id="linkedInTooltip">
+                            <strong>@johnster.shoots</strong>
+                          </Tooltip>
+                        }
                       >
-                        <li id="instagram">
-                          {" "}
-                          <Instagram
-                            fontSize="large"
-                            style={{ color: "white" }}
-                          />{" "}
-                        </li>
-                      </a>
-                   </OverlayTrigger>
+                        <a
+                          href="https://www.instagram.com/johnster.shoots/"
+                          target="_blank"
+                        >
+                          <li id="instagram">
+                            {" "}
+                            <Instagram
+                              fontSize="large"
+                              style={{ color: "white" }}
+                            />{" "}
+                          </li>
+                        </a>
+                      </OverlayTrigger>
                     </ul>
-                    
                   </div>
                 </div>
               </Col>
@@ -160,7 +164,10 @@ const Home = ({ aboutRef, portfolioRef }) => {
           </Container>
         </div>
         {/* Nav Arrow  */}
-        <div className="arrowDown">
+        <div
+          className={`${"hiddenArrow"} ${visibleElement ? "arrowDown" : ""}`}
+          ref={myRef}
+        >
           <KeyboardArrowDownIcon
             fontSize="large"
             style={{ color: "white" }}
