@@ -15,6 +15,7 @@ import ResumeModal from "./modal";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { useInView } from "react-intersection-observer";
+import Typewriter from "typewriter-effect";
 
 const Home = ({ aboutRef, portfolioRef }) => {
   const { ref: myRef, inView: visibleElement } = useInView({
@@ -48,18 +49,18 @@ const Home = ({ aboutRef, portfolioRef }) => {
                   <div className="text-center ms-0 justify-content-center">
                     <p className="email-text"> johnbus.ly@gmail.com</p>
 
-                    <Typical
-                      loop={Infinity}
-                      // wrapper="t"
-                      steps={[
-                        "Software Engineer",
-                        3000,
-                        "Front End Developer",
-                        3000,
-                        "Problem Solver",
-                        3000,
-                      ]}
+                    <div className={`${"hiddenDescription"} ${visibleElement ? "Typewriter" : ""}`}
+        ref={myRef}> 
+                    <Typewriter 
+                      options={{
+                        pauseFor: 3000,
+                        strings: ["Software Engineer", "Front End Developer", "Problem Solver"],
+                        autoStart: true,
+                        loop: true,
+                        delay: "natural"
+                      }}
                     />
+                    </div>
                   </div>
                 </div>
 

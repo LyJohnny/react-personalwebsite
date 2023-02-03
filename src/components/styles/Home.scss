@@ -37,6 +37,21 @@
 		z-index: -1;
         
     }
+	
+	.hiddenDescription{
+		opacity: 0;
+		transition:	all 1.5s;
+		transition-delay: 2.5s;
+
+	}
+	.Typewriter{
+		color: white;
+		text-transform: uppercase;
+		font-size: 22px;
+		opacity: 1;
+	}
+	
+	
 
     .text{
         line-height: 35px;
