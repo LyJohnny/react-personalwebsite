@@ -80,15 +80,25 @@
 
 
 .home__img {
-	width: 350px;
+	width: 312px;
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	
 
-    clip-path: circle(45% at 50% 45%); // to make your portrait.png file cropped to circle
+    clip-path: circle(50% at 50% 50%); // to make your portrait.png file cropped to circle
 }
-  
+
+.infoCol{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.portraitCol{
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
 
 // Media Query for when decreasing screen size to tablet level (wider width)
 @media (max-width: 1200px) {
@@ -142,7 +152,7 @@
 .hiddenArrow{
 	opacity: 0;
 	transition: all 1s;
-	transition-delay: 3s;
+	transition-delay: 3.5s;
 }
 .arrowDown{
 
