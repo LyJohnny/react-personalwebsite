@@ -18,7 +18,7 @@ const Portfolio = forwardRef((props,ref) => {
 
     <Container>
       
-   <h1> My Portfolio</h1>
+   <h1 className='headingText'>Portfolio</h1>
     </Container>
 
   
