@@ -3,12 +3,15 @@
     width: 100%; 
     height: 50vh; //important, this makes it only take up the full viewport (not the entire webpage)
     z-index: 1;
+    justify-content: center;
     
 }
 
-ul{
-    list-style-type: none;
+.skillsHeading{
+    // margin-bottom: 20px;
+    text-align: center;
 }
+
 
 .icon{
     width: 50px;
@@ -22,9 +25,58 @@ ul{
     padding-bottom: 25px;
     height: auto;
     margin-right: 20px;
-    margin-left: 5px;
+    margin-left: 20px;
 
 }
+
+.cplusplusIcon{
+    width: 50px;
+    padding-bottom: 25px;
+    height: auto;
+    margin-right: 15px;
+    margin-left: 40px;
+}
+
+
+.nodeIcon{
+    width: 50px;
+    padding-bottom: 25px;
+    height: auto;
+    margin-right: 15px;
+    margin-left: 40px;
+}
+.bootstrapIcon{
+    width: 50px;
+    padding-bottom: 25px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+.typeIcon{
+    width: 50px;
+    padding-bottom: 25px;
+    height: auto;
+    margin-right: 15px;
+    margin-left: 70px;
+}
+.lightroomIcon{
+    width: 50px;
+    padding-bottom: 25px;
+    height: auto;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+
+// .logo-container1{
+//     padding: 10px;
+// }
+// .logo-container2{
+//     padding: 10px;
+// }
+// .logo-container3{
+//     padding: 10px;
+// }
 
 h1{
     // font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
@@ -37,25 +89,75 @@ h1{
 
 .hidden {
     opacity: 0;
-    filter: blur(3px);
+    filter: blur(7px);
     transform: translatex(-100%);
-    transition: all 2.5s;
+    transition: all 2s;
 }
 
-.show {
+.showH1{
     opacity: 1;
     filter: blur(0);
     transform: translate(0);
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.show2 {
-    transition-delay: 200ms;
+.showH2{
     opacity: 1;
     filter: blur(0);
     transform: translate(0);
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.show3 {
+.showH3{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.appear {
+    background-color: white;
+    border-radius: 25px;
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    padding: 30px;
+    margin: 20px;
+    // &:hover {
+	// 	transform: scale(0.9);
+    //     transition: 1000ms;
+	// }
+
+}
+.appear2 {
+    background-color: white;
+    border-radius: 25px;
     transition-delay: 400ms;
     opacity: 1;
     filter: blur(0);
     transform: translate(0);
+    padding: 30px;
+    margin: 20px;
+    // &:hover {
+	// 	transform: scale(0.9);
+    //     transition: 1000ms;
+	// }
+
+}
+.appear3 {
+    background-color: white;
+    border-radius: 25px;
+    transition-delay: 600ms;
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    padding: 30px;
+    margin: 20px;
+    // &:hover {
+	// 	transform: scale(0.9);
+    //     transition: 1000ms;
+
+	// }
+
 }
