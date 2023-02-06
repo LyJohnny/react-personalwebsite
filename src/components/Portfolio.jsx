@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import {Tab, Tabs } from 'react-bootstrap';
 import Photography from './photography';
+import Research from './research';
 
 
 
@@ -23,9 +24,11 @@ const Portfolio = forwardRef((props,ref) => {
    <h1 className='headingText'>Portfolio</h1>
    <Tabs justify>
      <Tab eventKey="projects" title="Projects" > </Tab>
-     <Tab eventKey="research" title="Research"> </Tab>
      <Tab eventKey="photography" title="Photography">
        <Photography/> </Tab>
+     <Tab eventKey="research" title="Research"> 
+     <Research/> </Tab>
+    
 
    </Tabs>
     </Container>
