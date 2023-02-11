@@ -55,7 +55,7 @@ const About = forwardRef((props,ref) => {
         </Col>
 
         <Col lg> 
-        <b style={{fontSize: "20px"}}> JPMorgan Chase and Co. </b>
+        <b style={{fontSize: "20px"}}> JPMorgan Chase &amp; Co. </b>
         <p style={{fontSize: "15px"}}> Software Engineer Intern</p>
         <p style={{fontSize: "12px"}}> June 2022 - August 2022 </p>
         <p>Modernized the Loan Editor App for the Markets Technology Team used for managing 
