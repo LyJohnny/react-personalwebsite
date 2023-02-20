@@ -157,6 +157,14 @@ const Skills = () => {
                 />
                 Lightroom
               </Col>
+              <Col className="logo-container2" lg="auto">
+                <img
+                  className="icon"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  alt="Figma"
+                />
+                Figma
+              </Col>
             </Col>
           </Row>
         </Container>
