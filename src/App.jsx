@@ -4,6 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Skills from './components/Skills';
+import Footer from './components/Footer';
 // import Header from './components/Header';
 
 
@@ -19,6 +20,7 @@ function App() {
       <About ref={aboutRef}/>
       <Skills />
       <Portfolio ref = {portfolioRef} />
+      <Footer />
 
     </div>
   );
