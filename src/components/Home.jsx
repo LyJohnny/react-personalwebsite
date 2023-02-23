@@ -1,10 +1,9 @@
 import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 // import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import React, { useRef } from "react";
+import React from "react";
 import "./styles/Home.scss";
 import portrait from "./assets/portrait1.png";
-import resume from "./assets/Johnny_Ly_Résumé_.pdf";
 import ParticleBackground from "./ParticleBackground";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -64,16 +63,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                 </div>
 
                 <div className="buttonHome">
-                  {/* Buttons */}
                   <div className="d-flex text-center ms-0 justify-content-center mt-4">
-                    {/* <button
-                      type="button"
-                      className="name noselect"
-                      id="resume-button"
-                     
-                      // data-bs-toggle="modal"
-                      // data-bs-target="#bd-example-modal-lg"
-                    /> */}
                     <ResumeModal />
                     <button
                       type="button"
@@ -99,6 +89,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                         <a
                           href="https://www.linkedin.com/in/johnny-ly-/"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           <li id="linkedin">
                             {" "}
@@ -118,7 +109,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           </Tooltip>
                         }
                       >
-                        <a href="https://github.com/LyJohnny" target="_blank">
+                        <a href="https://github.com/LyJohnny" target="_blank"  rel="noreferrer">
                           <li id="github">
                             <GitHub
                               fontSize="large"
@@ -139,6 +130,8 @@ const Home = ({ aboutRef, portfolioRef }) => {
                         <a
                           href="https://www.instagram.com/johnster.shoots/"
                           target="_blank"
+                          rel="noreferrer"
+
                         >
                           <li id="instagram">
                             {" "}
@@ -163,7 +156,9 @@ const Home = ({ aboutRef, portfolioRef }) => {
             </Row>
           </Container>
         </div>
-        {/* Nav Arrow  */}
+       
+      </div>
+       {/* Nav Arrow  */}
         <div
           className={`${"hiddenArrow"} ${visibleElement ? "arrowDown" : ""}`}
           ref={myRef}
@@ -174,7 +169,6 @@ const Home = ({ aboutRef, portfolioRef }) => {
             onClick={navScroll}
           />
         </div>
-      </div>
     </div>
   );
 };
