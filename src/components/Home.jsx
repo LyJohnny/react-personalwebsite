@@ -30,7 +30,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
 
   return (
     <div className="home">
-      <ParticleBackground />
+      <ParticleBackground id='particlejs'/>
       <div
         className={`${"hiddenHome"} ${visibleElement ? "home__container" : ""}`}
         ref={myRef}
@@ -94,6 +94,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           <li id="linkedin">
                             {" "}
                             <LinkedIn
+                              className="linkedinIcon"
                               fontSize="large"
                               style={{ color: "white" }}
                             />{" "}
@@ -112,6 +113,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                         <a href="https://github.com/LyJohnny" target="_blank"  rel="noreferrer">
                           <li id="github">
                             <GitHub
+                              className="githubIcon"
                               fontSize="large"
                               style={{ color: "white" }}
                             />
@@ -136,6 +138,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           <li id="instagram">
                             {" "}
                             <Instagram
+                              className="instagramIcon"
                               fontSize="large"
                               style={{ color: "white" }}
                             />{" "}
