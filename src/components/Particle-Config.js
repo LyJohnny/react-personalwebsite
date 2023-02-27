@@ -4,7 +4,7 @@ const particlesConfig = {
    
     background: {
         color: "#202329",     
-
+        
       },
 
       fullScreen: {
@@ -18,10 +18,11 @@ const particlesConfig = {
 
     particles: {
       number: {
-        value: 65,
+        value: 35,
         density: {
-          enable: true,
-          value_area: 2000
+          enable: false,
+          auto: true,
+          // value_area: 2000
         }
       },
       color: {
@@ -66,7 +67,7 @@ const particlesConfig = {
         enable: true,
         distance: 150,
         color: "#ffffff",
-        opacity: 0.4,
+        opacity: 0.5,
         width: 1
       },
       move: {
@@ -75,7 +76,7 @@ const particlesConfig = {
         direction: "none",
         random: true,
         straight: false,
-        out_mode: "out",
+        out_mode: "bounce",
         bounce: true,
         attract: {
           enable: false,
@@ -95,7 +96,7 @@ const particlesConfig = {
           enable: true,
           mode: "repulse"
         },
-        resize: true
+        resize: true,
       },
       modes: {
         grab: {
