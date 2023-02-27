@@ -30,7 +30,9 @@ const Home = ({ aboutRef, portfolioRef }) => {
 
   return (
     <div className="home">
-      <ParticleBackground id='particlejs'/>
+      <div className='particlejs'> 
+      <ParticleBackground />
+      </div>
       <div
         className={`${"hiddenHome"} ${visibleElement ? "home__container" : ""}`}
         ref={myRef}

@@ -1,3 +1,6 @@
+
+
+
 .home {
   max-width: 100%;
   min-height: 100vh;
@@ -13,6 +16,12 @@
     transition: all 1.5s;
   }
 
+  .particlejs{
+	max-width: auto;  
+	max-height: auto;
+	color: blue;
+
+}
   .home__container {
     display: flex;
     min-height: 100%;
@@ -71,15 +80,7 @@
       50% at 50% 50%
     ); // to make your portrait.png file cropped to circle
   }
-  // .home__img {
-  // 	// min-width: 312px;
-  // 	// min-height: 312px;
-  // 	display:flex;
-  // 	justify-content: center;
-  // 	align-items: center;
-  // 	position: relative;
-
-  // }
+ 
 
   .infoCol {
     padding: 2.75em;
