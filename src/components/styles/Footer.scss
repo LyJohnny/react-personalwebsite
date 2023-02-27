@@ -9,18 +9,19 @@
 .footerText{
     display: flex;
     justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 
-    
-    
 }
 
 p#trademark{
  font-family:'Courier New', Courier, monospace;
+//  width: 5%; use this for media queries later on 2/27/23
+
 }
 p#location{
  font-family:'Courier New', Courier, monospace;
+//  width: 55%; use this for media queries later on 2/27/23
 }
 
 

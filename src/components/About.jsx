@@ -32,8 +32,8 @@ const About = forwardRef((props,ref) => {
         </Col>
         <Col lg>
            <b style={{fontSize: "20px"}}> University of California, Merced </b>
-           <p style={{fontSize: "15px"}}> B.S. in Computer Science and Engineering</p>
-           <p style={{fontSize: "12px"}}> August 2019 - May 2023 </p>
+           <p id='title' style={{fontSize: "15px"}}> B.S. in Computer Science and Engineering</p>
+           <p id='date' style={{fontSize: "12px"}}> August 2019 - May 2023 </p>
            <b> Relevant Coursework:</b>
            <ul className='coursework'> 
             <li>Data Structures</li>
