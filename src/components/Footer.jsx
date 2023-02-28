@@ -31,7 +31,11 @@ function Footer() {
                 </Tooltip>
               }
             >
-              <a href="https://www.linkedin.com/in/johnny-ly-/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/in/johnny-ly-/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <li id="linkedin">
                   {" "}
                   <LinkedIn fontSize="small" style={{ color: "" }} />{" "}
@@ -47,7 +51,11 @@ function Footer() {
                 </Tooltip>
               }
             >
-              <a href="https://github.com/LyJohnny" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/LyJohnny"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <li id="github">
                   <GitHub fontSize="small" style={{ color: "" }} />
                 </li>
