@@ -30,8 +30,8 @@ const Home = ({ aboutRef, portfolioRef }) => {
 
   return (
     <div className="home">
-      <div className='particlejs'> 
-      <ParticleBackground />
+      <div className="particlejs">
+        <ParticleBackground />
       </div>
       <div
         className={`${"hiddenHome"} ${visibleElement ? "home__container" : ""}`}
@@ -49,17 +49,25 @@ const Home = ({ aboutRef, portfolioRef }) => {
                   <div className="text-center ms-0 justify-content-center">
                     <p className="email-text"> johnbus.ly@gmail.com</p>
 
-                    <div className={`${"hiddenDescription"} ${visibleElement ? "Typewriter" : ""}`}
-        ref={myRef}> 
-                    <Typewriter 
-                      options={{
-                        pauseFor: 3000,
-                        strings: ["Software Engineer", "Front End Developer", "Problem Solver"],
-                        autoStart: true,
-                        loop: true,
-                        delay: "natural"
-                      }}
-                    />
+                    <div
+                      className={`${"hiddenDescription"} ${
+                        visibleElement ? "Typewriter" : ""
+                      }`}
+                      ref={myRef}
+                    >
+                      <Typewriter
+                        options={{
+                          pauseFor: 3000,
+                          strings: [
+                            "Software Engineer",
+                            "Front End Developer",
+                            "Problem Solver",
+                          ],
+                          autoStart: true,
+                          loop: true,
+                          delay: "natural",
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -112,7 +120,11 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           </Tooltip>
                         }
                       >
-                        <a href="https://github.com/LyJohnny" target="_blank"  rel="noreferrer">
+                        <a
+                          href="https://github.com/LyJohnny"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <li id="github">
                             <GitHub
                               className="githubIcon"
@@ -135,7 +147,6 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           href="https://www.instagram.com/johnster.shoots/"
                           target="_blank"
                           rel="noreferrer"
-
                         >
                           <li id="instagram">
                             {" "}
@@ -161,19 +172,18 @@ const Home = ({ aboutRef, portfolioRef }) => {
             </Row>
           </Container>
         </div>
-       
       </div>
-       {/* Nav Arrow  */}
-        <div
-          className={`${"hiddenArrow"} ${visibleElement ? "arrowDown" : ""}`}
-          ref={myRef}
-        >
-          <KeyboardArrowDownIcon
-            fontSize="large"
-            style={{ color: "white" }}
-            onClick={navScroll}
-          />
-        </div>
+      {/* Nav Arrow  */}
+      <div
+        className={`${"hiddenArrow"} ${visibleElement ? "arrowDown" : ""}`}
+        ref={myRef}
+      >
+        <KeyboardArrowDownIcon
+          fontSize="large"
+          style={{ color: "white" }}
+          onClick={navScroll}
+        />
+      </div>
     </div>
   );
 };
