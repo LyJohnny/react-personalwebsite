@@ -1,13 +1,14 @@
 .portfolio {
     background-color:white;
     width: 100%; 
-    height: 100vh; //important, this makes it only take up the full viewport (not the entire webpage)
+    height: auto; //important, this makes it only take up the full viewport (not the entire webpage)
     z-index: 1;
-    margin-bottom: 5px;
+    margin-bottom: 4em;
     
 }
 
 .headingText{
+    padding: 1em;
     text-align: center;
 }
 

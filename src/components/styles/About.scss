@@ -4,14 +4,14 @@
     max-height: auto; //important, this makes it only take up the full viewport (not the entire webpage)
     padding-bottom: 5em;
     z-index: 1;
+   
   
     h1{
         text-align: center;
-        padding: 1em;
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:400;
     }
     
-   
 }
 
 .coursework{
@@ -22,8 +22,20 @@
 }
 
 .logo {
-    width: 90px;
-    padding-bottom: 25px;
+    width: 100px;
+    padding-top: 5%;
     height: auto;
 }
 
+.mainCol{
+    padding: 3em;
+}
+
+@media only screen and (max-width: 991px) {
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+}
