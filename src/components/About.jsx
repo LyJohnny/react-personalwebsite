@@ -19,7 +19,7 @@ const About = forwardRef((props,ref) => {
     <div className='about'>
 
 
-    <div className="about__container" ref = {ref}>
+    <div className="about-container" ref = {ref}>
 
     <Container>
       <Row id='row1'>
