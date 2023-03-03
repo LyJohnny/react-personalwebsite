@@ -31,7 +31,8 @@ const Skills = () => {
                 id="languages"
                 ref={myRef}
               >
-                <Col className="logo-container1" lg="auto">
+                <Row>
+                <Col className="logo-container1" lg="6">
                   <img
                     className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
@@ -39,33 +40,33 @@ const Skills = () => {
                   />
                   HTML/CSS
                   <img
-                    className="jsIcon"
+                    className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                     alt="JavaScript"
                   />
                   JavaScript
-                </Col>
 
-                <Col className="logo-container1" lg="auto">
                   <img
                     className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                     alt="Python"
                   />
                   Python
+                  </Col>
+                  <Col className="logo-container-half" lg="6">
+
                   <img
-                    className="cplusplusIcon"
+                    className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
                     alt="C/C++"
                   />
-                  C/C++
-                </Col>
+                 <p id='label'>C/C++</p>
 
-                <Col className="logo-container1" lg="auto">
                   <img className="icon" src={sql} alt="SQL" />
-                  SQL
+                  <p id='label'>SQL</p>
                 </Col>
-              </Col>
+                </Row>
+            </Col>
             </Col>
 
             {/* -------------------------------------------------Tools/Libraries Column---------------------------------------------------------------------------------- */}
@@ -81,7 +82,8 @@ const Skills = () => {
                 id="tools"
                 ref={myRef}
               >
-                <Col className="logo-container2" lg="auto">
+              <Row> 
+                <Col className="logo-container2" lg="6">
                   <img
                     className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -89,37 +91,36 @@ const Skills = () => {
                   />
                   React
                   <img
-                    className="nodeIcon"
+                    className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                     alt="Node"
                   />
                   Node
-                </Col>
-
-                <Col className="logo-container2" lg="auto">
                   <img
                     className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
                     alt="Scss"
                   />
                   Scss
+                  </Col>
+
+                  <Col className="logo-container-half" lg="6">
                   <img
-                    className="bootstrapIcon"
+                    className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
                     alt="Bootstrap"
                   />
-                  Bootstrap
-                </Col>
-
-                <Col className="logo-container2" lg="auto">
+                 <p id='label'>Bootstrap</p>
                   <img
                     className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                     alt="Git"
                   />
-                  Git
+                 <p id='label'>Git</p>
                 </Col>
-              </Col>
+
+                </Row>
+            </Col>
             </Col>
 
             {/* -------------------------------------------------Other Column---------------------------------------------------------------------------------- */}
@@ -134,37 +135,41 @@ const Skills = () => {
                 id="other"
                 ref={myRef}
               >
-                <Col className="logo-container3" lg="auto">
+            <Row> 
+                <Col className="logo-container3" lg="6">
                   <img className="icon" src={agile} alt="AGILE Methodologies" />
                   AGILE
                   <img
-                    className="typeIcon"
+                    className="icon"
                     src={typingSpeed}
                     alt="Typing Speed"
                   />
                   110+ WPM
-                </Col>
-
-                <Col className="logo-container3" lg="auto">
                   <img className="icon" src={photography} alt="Photography" />
                   Photography
+                  </Col>
+
+                  <Col className="logo-container-half" lg="6">
                   <img
-                    className="lightroomIcon"
+                    className="icon"
                     src={lightroom}
                     alt="Adobe Lightroom"
                   />
-                  Lightroom
-                </Col>
-                <Col className="logo-container2" lg="auto">
+                 <p id='label'>Lightroom</p>
                   <img
                     className="icon"
                     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                     alt="Figma"
                   />
-                  Figma
+                 <p id='label'>Figma</p>
                 </Col>
+                </Row>
               </Col>
             </Col>
+
+
+
+
           </Row>
         </Container>
       </div>
