@@ -18,12 +18,9 @@ const Skills = () => {
   return (
     <div className="skills">
       <div className="skills__container">
-        <Container>
+        <Container className="skill-container" xs="12">
           <Row>
-            <Col
-              className={`${"hidden"} ${visibleElement ? "showH1" : ""}`}
-              id="languages"
-            >
+            <Col className="showH1" id="languages">
               {" "}
               <h1> Languages </h1>
               <Col
@@ -32,144 +29,144 @@ const Skills = () => {
                 ref={myRef}
               >
                 <Row>
-                <Col className="logo-container1" lg="6">
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-                    alt="HTML/CSS"
-                  />
-                  HTML/CSS
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    alt="JavaScript"
-                  />
-                  JavaScript
-
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                    alt="Python"
-                  />
-                  Python
+                  <Col className="logo-container1" xs="6">
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                      alt="HTML/CSS"
+                    />
+                    HTML
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                      alt="CSS"
+                    />
+                    <p id="label">CSS</p>
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      alt="JavaScript"
+                    />
+                    JavaScript
                   </Col>
-                  <Col className="logo-container-half" lg="6">
-
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                    alt="C/C++"
-                  />
-                 <p id='label'>C/C++</p>
-
-                  <img className="icon" src={sql} alt="SQL" />
-                  <p id='label'>SQL</p>
-                </Col>
+                  <Col className="logo-container-half" xs="6">
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                      alt="Python"
+                    />
+                    Python
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                      alt="C/C++"
+                    />
+                    <p id="label">C/C++</p>
+                    <img className="icon" src={sql} alt="SQL" />
+                    <p id="label">SQL</p>
+                  </Col>
                 </Row>
-            </Col>
+              </Col>
             </Col>
 
             {/* -------------------------------------------------Tools/Libraries Column---------------------------------------------------------------------------------- */}
 
-            <Col
-              className={`${"hidden"} ${visibleElement ? "showH2" : ""}`}
-              id="tools"
-            >
+            <Col className="showH2" id="tools">
               {" "}
               <h1> Tools/Libraries </h1>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear2" : ""}`}
                 id="tools"
-                ref={myRef}
               >
-              <Row> 
-                <Col className="logo-container2" lg="6">
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                    alt="React"
-                  />
-                  React
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                    alt="Node"
-                  />
-                  Node
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-                    alt="Scss"
-                  />
-                  Scss
+                <Row>
+                  <Col className="logo-container2" xs="6">
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      alt="React"
+                    />
+                    React
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                      alt="Node"
+                    />
+                    Node
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                      alt="Flask"
+                    />
+                    <p id="label">Flask</p>
                   </Col>
 
-                  <Col className="logo-container-half" lg="6">
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                    alt="Bootstrap"
-                  />
-                 <p id='label'>Bootstrap</p>
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                    alt="Git"
-                  />
-                 <p id='label'>Git</p>
-                </Col>
-
-                </Row>
-            </Col>
-            </Col>
-
-            {/* -------------------------------------------------Other Column---------------------------------------------------------------------------------- */}
-            <Col
-              className={`${"hidden"} ${visibleElement ? "showH3" : ""}`}
-              id="other"
-            >
-              {" "}
-              <h1> Other </h1>
-              <Col
-                className={`${"hidden"} ${visibleElement ? "appear3" : ""}`}
-                id="other"
-                ref={myRef}
-              >
-            <Row> 
-                <Col className="logo-container3" lg="6">
-                  <img className="icon" src={agile} alt="AGILE Methodologies" />
-                  AGILE
-                  <img
-                    className="icon"
-                    src={typingSpeed}
-                    alt="Typing Speed"
-                  />
-                  110+ WPM
-                  <img className="icon" src={photography} alt="Photography" />
-                  Photography
+                  <Col className="logo-container-half" xs="6">
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                      alt="Bootstrap"
+                    />
+                    <p id="label">Bootstrap</p>
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                      alt="Scss"
+                    />
+                    Scss
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                      alt="Git"
+                    />
+                    <p id="label">Git</p>
                   </Col>
-
-                  <Col className="logo-container-half" lg="6">
-                  <img
-                    className="icon"
-                    src={lightroom}
-                    alt="Adobe Lightroom"
-                  />
-                 <p id='label'>Lightroom</p>
-                  <img
-                    className="icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                    alt="Figma"
-                  />
-                 <p id='label'>Figma</p>
-                </Col>
                 </Row>
               </Col>
             </Col>
 
+            {/* -------------------------------------------------Other Column---------------------------------------------------------------------------------- */}
+            <Col className="showH3" id="other" >
+              {" "}
+              <h1 id="other"> Other </h1>
+              <Col
+                className={`${"hidden"} ${visibleElement ? "appear3" : ""}`}
+                id="other"
+              >
+                <Row>
+                  <Col className="logo-container3" xs="6">
+                    <img
+                      className="other-icon"
+                      src={agile}
+                      alt="AGILE Methodologies"
+                    />
+                    AGILE Methodologies
+                    <img
+                      className="other-icon"
+                      src={typingSpeed}
+                      alt="Typing Speed"
+                    />
+                    Typing Speed: 110+ WPM
+                    <img className="other-icon" src={photography} alt="Photography" />
+                    Photography
+                  </Col>
 
-
-
+                  <Col className="logo-container-half" xs="6">
+                    <img
+                      className="icon"
+                      src={lightroom}
+                      alt="Adobe Lightroom"
+                    />
+                    <p id="label">Lightroom</p>
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                      alt="Figma"
+                    />
+                    <p id="label">Figma</p>
+                  </Col>
+                </Row>
+              </Col>
+            </Col>
           </Row>
         </Container>
       </div>
