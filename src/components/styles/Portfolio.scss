@@ -1,9 +1,10 @@
 .portfolio {
     background-color:white;
     width: 100%; 
-    height: auto; //important, this makes it only take up the full viewport (not the entire webpage)
+    min-height: 100%; //important, this makes it only take up the full viewport (not the entire webpage)
     z-index: 1;
     padding-bottom: 3em;
+    
     
 }
 
@@ -23,10 +24,12 @@
 .projectsTab{
     max-height: 85vh;
     overflow-y: scroll;
+    
 }
 .project-container{
     padding-top: 10px;
     padding-bottom: 70px;
+    
 }
 .tool-icon{
     width: 25px;
