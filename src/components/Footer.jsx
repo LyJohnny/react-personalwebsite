@@ -3,23 +3,33 @@ import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import Textra from "react-textra";
+import { Row, Col } from "react-bootstrap";
 
 function Footer() {
   return (
     <>
-      <div className="footer"> </div>
+      <div className="footer"> 
       <div className="footerText">
+        <Row> 
+          <Col className ='footer-container1' xs ='6'> 
+      <p id="trademark"> © 2023 Johnny Ly</p>
+      </Col>
+      <Col className ='footer-container2' xs ='6'> 
         <p id="location">
           {" "}
           Made with ❤️ from{" "}
+          <div> 
           <Textra
+          className="textra"
             effect="downTop"
             data={["New York, NY", "Long Beach, CA", "Merced, CA"]}
           />{" "}
+          </div>
         </p>
-        <p id="trademark"> © 2023 Johnny Ly</p>
+        </Col>
+        </Row>
       </div>
-
+</div>
       <div className="icon-area">
         <div className="d-flex text-center ms-0 justify-content-center ">
           <ul id="footer-icons">
