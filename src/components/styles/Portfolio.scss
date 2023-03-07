@@ -1,86 +1,123 @@
 .portfolio {
-    background-color:white;
-    width: 100%; 
-    min-height: 100%; //important, this makes it only take up the full viewport (not the entire webpage)
-    z-index: 1;
-    padding-bottom: 3em;
-    
-    
+  background-color: white;
+  min-width: 100%;
+  min-height: 100%; //important, this makes it only take up the full viewport (not the entire webpage)
+  z-index: 1;
+  padding-bottom: 3em;
 }
 
-.headingText{
-    padding: 1em;
-    text-align: center;
+.headingText {
+  padding: 1em;
+  text-align: center;
 }
 
+.photographyTab {
+  max-height: 85vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-y-scrolling: touch
 
-
-.photographyTab{
-    max-width: 85vw;
-    max-height: 85vh;
-    overflow-y: scroll;
 }
 
-.projectsTab{
-    max-height: 85vh;
-    overflow-y: scroll;
-    
+.projectsTab {
+  max-height: 85vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-y-scrolling: touch
+
+
 }
-.project-container{
-    padding-top: 10px;
-    padding-bottom: 70px;
-    
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
-.tool-icon{
-    width: 25px;
+
+.project-container {
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+
+.tool-container {
+  text-decoration: none;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  margin: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: black;
+  width: auto;
+  height: auto;
+
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+  img#tool-icon2 {
     height: auto;
-    margin-right: 10px;
-    padding-bottom: 5px;
+    width: 25px;
+    margin-right: 0.5em;
+  }
 }
 
-.tool-container{
-    background-color: #f5f5f5;
-    border-radius: 25px;
-    margin: 10px;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-bottom: 5px;
+#project-description {
+  margin-top: 10px;
 }
 
-.githubLink{
+.projectLink {
+  text-decoration: none;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  color: black;
+}
+.githubLink {
+  text-decoration: none;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  color: black;
+}
+.devpostLink {
+  text-decoration: none;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 397px) {
+  .project-links-container {
+    display: flex;
+  }
+  .githubLink {
     text-decoration: none;
     background-color: #f5f5f5;
     border-radius: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 10px;
+    padding-right: 5px;
     color: black;
-    
-}
-
-#project-description{
-    margin-top: 10px;
-}
-
-.projectLink{
-    text-decoration: none;
-    background-color: #f5f5f5;
-    border-radius: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    color: black;
-    
-}
-.devpostLink{
+    font-size: 0.9rem;
+  }
+  .devpostLink {
     text-decoration: none;
     background-color: #f5f5f5;
     border-radius: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 10px;
-    margin-left: 20px;
+    padding-right: 5px;
+    margin-left: 5px;
     color: black;
-    
+    font-size: 0.9rem;
+  }
 }
-

@@ -39,54 +39,52 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <Col className="tool-container" lg="auto">
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt=""
             />
             React
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-              alt=""
             />
             Java
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-              alt=""
             />
             Spring Boot
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-              alt=""
             />
-            MySQL
-          </Col>
-          <Col className="tool-container" lg="auto">
+            MYSQL
+          </a>
+
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt=""
             />
             Node
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt=""
             />
             Git
-          </Col>
+          </a>
         </Row>
       </Container>
       <Container className="project-container">
@@ -111,54 +109,51 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <Col className="tool-container" lg="auto">
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-              alt=""
             />
             HTML
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-              alt=""
             />
             CSS
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              alt=""
             />
             JavaScript
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt=""
             />
             Node
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-              alt=""
             />
             Bootstrap
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt=""
             />
             Git
-          </Col>
+          </a>
         </Row>
       </Container>
 
@@ -171,23 +166,27 @@ function Projects() {
             <b style={{ fontSize: "20px" }}> Project Fliar </b>
             <p style={{ fontSize: "15px" }}>HackMerced</p>
             <p style={{ fontSize: "12px" }}> February 2020 </p>
-            <a
-              className="githubLink"
-              href="https://github.com/LyJohnny/Project-Fliar-Hackmerced2020"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GitHub fontSize="large" style={{ color: "black" }} /> View on
-              GitHub
-            </a>
-            <a
-              className="devpostLink"
-              href="https://devpost.com/software/project-fliar"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={devpost} width="35px" alt="" /> View on Devpost
-            </a>
+            <Row>
+              <Col className="project-links-container">
+                <a
+                  className="githubLink"
+                  href="https://github.com/LyJohnny/Project-Fliar-Hackmerced2020"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GitHub fontSize="large" style={{ color: "black" }} /> View on
+                  GitHub
+                </a>
+                <a
+                  className="devpostLink"
+                  href="https://devpost.com/software/project-fliar"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={devpost} width="35px" alt="" /> View on Devpost
+                </a>
+              </Col>
+            </Row>
             <p id="project-description">
               Mobile Application that scans flyers(or any image captured from
               your camera) and retrieves the details of an event and is intended
@@ -196,34 +195,32 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <Col className="tool-container" lg="auto">
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
-              alt=""
             />
             Android Studio
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-              alt=""
             />
             Java
-          </Col>
-          <Col className="tool-container" lg="auto">
-            <img className="tool-icon" src={google} alt="" />
+          </a>
+          <a className="tool-container">
+            <img id="tool-icon2" src={google} />
             Google Mobile Vision API
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt=""
             />
             Git
-          </Col>
+          </a>
         </Row>
       </Container>
 
@@ -251,46 +248,42 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <Col className="tool-container" lg="auto">
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              alt=""
             />
             React
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-              alt=""
             />
             Node
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-              alt=""
             />
             Bootstrap
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-              alt=""
             />
             Scss
-          </Col>
-          <Col className="tool-container" lg="auto">
+          </a>
+
+          <a className="tool-container">
             <img
-              className="tool-icon"
+              id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-              alt=""
             />
             Git
-          </Col>
+          </a>
         </Row>
       </Container>
     </div>
