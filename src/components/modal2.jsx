@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal'
 import poster from './assets/DevTrackerPoster.png'
 import Button from 'react-bootstrap/Button';
+import { saveAs } from "file-saver";
 import "./styles/Portfolio.scss";
 
 
@@ -11,18 +12,8 @@ function PosterModal() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const download = () => {
-    fetch('./assets/DevTrackerPoster.png').then(response => {
-        response.blob().then(blob => {
-            // Creating new object of PDF file
-            const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
-            let link = document.createElement('a');
-            link.href = fileURL;
-            // alink.setAttribute('download', 'file.pdf');
-            link.setAttribute('download','DevTrackerPoster.png');
-            link.click();
-        })
-    })
+    saveAs(poster, "DevTrackerPoster.png");
+
 }
 
     return(
