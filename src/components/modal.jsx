@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal'
-import resume from './assets/Johnny_Ly_Résumé_.pdf'
+import resume from './assets/Johnny_Ly_Résumé_.png'
+import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import "./styles/Home.scss";
+import { display } from '@mui/system';
 
 
 
@@ -19,7 +21,7 @@ function ResumeModal() {
             let link = document.createElement('a');
             link.href = fileURL;
             // alink.setAttribute('download', 'file.pdf');
-            link.setAttribute('download','Johnny_Ly_Résumé_Aug_2022.pdf');
+            link.setAttribute('download','Johnny_Ly_Résumé_.pdf');
             link.click();
         })
     })
@@ -33,12 +35,18 @@ function ResumeModal() {
         onClick={handleShow}> 
         </Button>
 
-        <Modal show={show} onHide={handleClose} animation={true}>
+        <Modal  show={show} onHide={handleClose} animation={true} centered={true} scrollable={false} size='lg'
+>
         <Modal.Header bsPrefix='modal-header' closeButton>
-          <Modal.Title bsPrefix='modal-title'>Résumé (Updated August 2022)</Modal.Title>
+          <Modal.Title bsPrefix='modal-title'> <h4 id='modal-titles'> Résumé (Updated March 2023)</h4></Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <iframe src={resume} style={{ width: "100%", height: "100vh" }}> </iframe>
+         
+              <div id='wrap'> 
+              <img src = {resume} width='100%' height='50%'/> 
+              </div>
+            
+
         </Modal.Body>
           <Modal.Footer> 
             <Button variant = 'primary' onClick = {download}>
@@ -46,6 +54,7 @@ function ResumeModal() {
             </Button>
           </Modal.Footer>
       </Modal>
+
       </>
     )
 

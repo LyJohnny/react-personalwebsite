@@ -206,9 +206,14 @@ $background-color_3: transparent;
 }
 
 .modal-header {
+  text-align: center;
   align-items: center;
   justify-content: center;
   height: 6%;
+}
+
+h4#modal-titles{
+  text-align: center;
 }
 .modal-title {
   text-align: center;
@@ -217,11 +222,11 @@ $background-color_3: transparent;
 }
 
 .modal-content {
+
   margin: 2px auto;
   border: 5px solid rgb(0, 140, 255);
-  width: 40vw;
-  height: 110vh;
   z-index: 1100 !important;
+
 }
 
 /* =========================Social Media Icons================================================= */
