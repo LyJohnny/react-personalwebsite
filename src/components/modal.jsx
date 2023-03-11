@@ -43,7 +43,7 @@ function ResumeModal() {
         <Modal.Body>
          
               <div id='wrap'> 
-              <img src = {resume} width='100%' height='50%'/> 
+              <img src = {resume} width='100%' height='100%'/> 
               </div>
             
 

@@ -39,7 +39,7 @@ function PosterModal() {
           <Modal.Title bsPrefix='modal-title'>Devtracker</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={poster} width='100%' height='50%' /> 
+          <img src={poster} width='100%' height='100%' /> 
         </Modal.Body>
           <Modal.Footer> 
             <Button variant = 'primary' onClick = {download}>
