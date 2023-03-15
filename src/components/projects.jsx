@@ -103,8 +103,17 @@ function Projects() {
             </p>
             <p style={{ fontSize: "12px" }}> February 2022 </p>
             <p id="project-description">
-              Redesigned the Hispanic Unity of Florida’s website to be more
-              modern and accessible.
+            Redesigned the user interface of the Hispanic Unity of Florida's website to simplify navigation and improve user experience. Streamlined website 
+            architecture by integrating an integrated video player, iframes to display external websites on the same page, and UI elements to highlight the organization's 
+            initiatives. Utilized brand colors and incorporated call-to-action buttons to direct visitors to desired areas of the website.
+             
+             
+              {/* Website aimed to help the non-profit organization, Hispanic Unity of Florida, redesign
+              and simplify their user interface. Streamlined the website's architecture to maintain continuity for users by
+              implementing an integrated video player, iframes to display external websites on the same page, and 
+              other UI elements to highlight the organization's various initiatives. Ensured that the website was both user-friendly 
+              and visually appealing by utilizing the brand's colors throughout, and incorporating call-to-action buttons to direct visitors 
+              to desired areas of the website.  */}
             </p>
           </Col>
         </Row>
@@ -188,9 +197,8 @@ function Projects() {
               </Col>
             </Row>
             <p id="project-description">
-              Mobile Application that scans flyers(or any image captured from
-              your camera) and retrieves the details of an event and is intended
-              to import the event details into Google Calendar.
+              Mobile Application aimed at reducing the time and materials needed for event planning and distribution of flyers. Streamlined the process of inputting 
+              event details into a personal Calendar by using an image-scanning feature to extract data such as event name, date, start/end time, and location. 
             </p>
           </Col>
         </Row>

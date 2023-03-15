@@ -4,6 +4,7 @@ import Lightbox from "react-image-lightbox"
 import "react-image-lightbox/style.css"
 import { images } from "./images"
 import './styles/Portfolio.scss'
+import { Tab, Tabs } from "react-bootstrap";
 
 function Photography () {
     
@@ -25,6 +26,7 @@ function Photography () {
 return(
     <div className="photographyTab">
     <Gallery 
+      key={Tab}
       rowHeight={300}
       images={images}
       onClick={handleClick}

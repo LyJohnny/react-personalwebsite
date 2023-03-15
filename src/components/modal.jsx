@@ -4,7 +4,6 @@ import resume from "./assets/Johnny_Ly_Résumé_.png";
 import pdfFile from "./assets/Johnny_Ly_Résumé_.pdf";
 import Button from "react-bootstrap/Button";
 import "./styles/Home.scss";
-import { display } from "@mui/system";
 import { saveAs } from "file-saver";
 
 function ResumeModal() {
@@ -12,7 +11,7 @@ function ResumeModal() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const download = () => {
-    saveAs(pdfFile, "Johnny_Ly_Résumé_.pdf");
+    saveAs(pdfFile, "JohnnyLy_Résumé.pdf");
   };
 
   return (
@@ -39,7 +38,7 @@ function ResumeModal() {
         </Modal.Header>
         <Modal.Body>
           <div id="wrap">
-            <img src={resume} width="100%" height="100%" />
+            <img src={resume} alt='Johnny Ly Résumé' width="100%" height="100%" />
           </div>
         </Modal.Body>
         <Modal.Footer>

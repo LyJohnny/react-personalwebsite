@@ -15,12 +15,13 @@ const Portfolio = forwardRef((props, ref) => {
         <Container>
           <h1 className="headingText">Portfolio</h1>
           <Tabs justify>
+          <Tab eventKey="photography" title="Photography">
+              <Photography />{" "}
+            </Tab>
             <Tab eventKey="projects" title="Projects">
               <Projects />
             </Tab>
-            <Tab eventKey="photography" title="Photography">
-              <Photography />{" "}
-            </Tab>
+           
             {/* <Tab eventKey="research" title="Research"> 
      <Research/> </Tab> */}
           </Tabs>

@@ -9,6 +9,7 @@ import flsp from "./assets/flsp.png";
 import research from "./assets/ucresearch.png";
 import i2g from "./assets/i2g.jpg";
 import ylp from "./assets/ylp.png";
+import ucm2 from "./assets/ucm2.png"
 
 const About = forwardRef((props, ref) => {
   return (
@@ -66,10 +67,10 @@ const About = forwardRef((props, ref) => {
                       September 2020 - May 2021{" "}
                     </p>
                     <p>
-                      Assessed the impact of the COVID-19 pandemic on Yosemite
-                      National Park in collaboration with Dr. Jeffrey Jenkins, 2
-                      graduate students, and 4 other cohort members from the
-                      Yosemite Leadership Program.
+                    In collaboration with Dr. Jeffrey Jenkins, 2 graduate students, and 4 other Yosemite Leadership Program cohort members,
+                     conducted an assessment of COVID-19's impact on Yosemite National Park. Co-authored a Case Study Article examining the pandemic's 
+                     effects on the park and its implications for tourism and park management. Assisted in researching the quantitative and qualitative 
+                     changes in Yosemite National Park due to COVID-19 restrictions and lockdowns.
                     </p>
                   </Col>
                 </Row>
@@ -100,10 +101,10 @@ const About = forwardRef((props, ref) => {
                       June 2022 - August 2022{" "}
                     </p>
                     <p>
-                      Modernized the Loan Editor App for the Markets Technology
-                      Team used for managing loan deliveries, delivering traded
-                      pools to several agencies, and identifying and remediating
-                      data quality issues that may prevent loan sales.
+                    Modernized the Loan Editor App for the Markets Technology Team, used for managing loan deliveries, 
+                    delivering traded pools to several agencies, and identifying and remediating data quality issues that may prevent loan sales. 
+                    Worked in an AGILE environment with developers, senior tech leads, and managers to learn the Software Development Life Cycle
+                    and how the Corporate Investment Banking line of business operated.
                     </p>
                   </Col>
                 </Row>
@@ -116,12 +117,13 @@ const About = forwardRef((props, ref) => {
                       {" "}
                       UC Merced Fiat Lux Scholars Program{" "}
                     </b>
-                    <p style={{ fontSize: "15px" }}> Academic Scholar</p>
+                    <p style={{ fontSize: "15px" }}> Academic Scholar/Mentor</p>
                     <p style={{ fontSize: "12px" }}> August 2021 - May 2022 </p>
                     <p>
-                      Planned, coordinated, and implemented large scale social
-                      events to facilitate connections and contribute to
-                      building community among participants in the program.
+                    Responsibilities included maintaining accurate records and acting as a liaison between the program staff and scholars. 
+                    Conducted weekly 1:1 sessions with scholars to set academic goals and make referrals to academic support services on campus. Helped plan and implement 
+                    monthly social events both in-person and online to foster community among 100+ first-generation college students. Managed the program's Instagram account, sharing 
+                    relevant updates to 400+ followers.
                     </p>
                   </Col>
                 </Row>
@@ -162,20 +164,15 @@ const About = forwardRef((props, ref) => {
                       {" "}
                       Yosemite Leadership Program{" "}
                     </b>
-                    <p style={{ fontSize: "15px" }}> Cohort Member </p>
+                    <p style={{ fontSize: "15px" }}> Alumni </p>
                     <p style={{ fontSize: "12px" }}>
                       {" "}
                       September 2019 - May 2021{" "}
                     </p>
                     <p>
-                      The Yosemite Leadership Program is a hallmark, partnership
-                      program between UC Merced and Yosemite National Park. Core
-                      responsibilities and accomplishments: Built
-                      transformative, leadership lifestyle experiences through
-                      cohort curriculum design, coordination of team-building
-                      and wilderness experiences, and mentoring students to
-                      constantly pursue their personal and professional
-                      potential.
+                    Participated in a two-year leadership program that aimed to develop leadership skills through personal 
+                    and professional development opportunities, along with a one-year Capstone Project. Engaged in leadership seminars, 
+                    team-building activities, and volunteer projects focused on conservancy, social engagement, and environmental stewardship.
                     </p>
                   </Col>
                 </Row>
@@ -184,6 +181,45 @@ const About = forwardRef((props, ref) => {
             <Col className="mainCol" lg={6}>
               {" "}
               <h1>Achievements</h1>
+              <div className="leftCol">
+                <Row>
+                  <Col className="logo-container" lg="auto">
+                    <img className="logo" src={ucm2} alt="ucm" />
+                  </Col>
+                  <Col lg className="description-container">
+                    <b style={{ fontSize: "20px" }}> Chancellor's Honors List </b>
+                    <p style={{ fontSize: "15px" }}> UC Merced </p>
+                    <p style={{ fontSize: "12px" }}>
+                      {" "}
+                      Fall 2019 - Fall 2022{" "}
+                    </p>
+                    <p>
+                    Undergraduate students who are placed on the Dean’s Honor List for both semesters in a single academic year (fall and spring) will 
+                    be placed on the Chancellor’s Honor List for that academic year.
+                    </p>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col className="logo-container" lg="auto">
+                    <img className="logo" src={ucm2} alt="ucm" />
+                  </Col>
+                  <Col lg className="description-container">
+                    <b style={{ fontSize: "20px" }}>
+                      {" "}
+                      Frances M. Benton Scholarship{" "}
+                    </b>
+                    <p style={{ fontSize: "15px" }}> UC Merced </p>
+                    <p style={{ fontSize: "12px" }}>
+                      {" "}
+                      Fall 2021 - Spring 2023{" "}
+                    </p>
+                    <p>
+                    The Frances M. Benton Scholarship is designed to assist continuing undergraduate students who show strong academic 
+                    promise with a 3.0 GPA or higher and have demonstrated financial need.
+                    </p>
+                  </Col>
+                </Row>
+              </div>
             </Col>
           </Row>
         </Container>
