@@ -31,18 +31,25 @@ function ResumeModal() {
         size="lg"
       >
         <Modal.Header bsPrefix="modal-header" closeButton>
-          <Modal.Title bsPrefix="modal-title">
-            {" "}
-            <h4 id="modal-titles"> Résumé (Updated March 2023)</h4>
-          </Modal.Title>
+          <div className="modal-title">
+            <Modal.Title bsPrefix="modal-title">
+              {" "}
+              <h4 id="modal-titles"> Résumé (Updated March 2023)</h4>
+            </Modal.Title>
+          </div>
         </Modal.Header>
         <Modal.Body>
           <div id="wrap">
-            <img src={resume} alt='Johnny Ly Résumé' width="100%" height="100%" />
+            <img
+              src={resume}
+              alt="Johnny Ly Résumé"
+              width="100%"
+              height="100%"
+            />
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={download}>
+          <Button variant="primary" id="download" onClick={download}>
             Download Résumé
           </Button>
         </Modal.Footer>

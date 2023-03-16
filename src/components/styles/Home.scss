@@ -1,6 +1,3 @@
-
-
-
 .home {
   max-width: 100%;
   min-height: 100vh;
@@ -16,12 +13,11 @@
     transition: all 1.5s;
   }
 
-  .particlejs{
-	max-width: auto;  
-	max-height: auto;
-	color: blue;
-
-}
+  .particlejs {
+    max-width: auto;
+    max-height: auto;
+    color: blue;
+  }
   .home__container {
     display: flex;
     min-height: 100%;
@@ -52,6 +48,7 @@
     line-height: 2.188rem;
 
     p {
+      font-family: "Open Sans", sans-serif;
       color: rgb(255, 255, 255);
       text-transform: uppercase;
       font-size: 1.375rem;
@@ -80,7 +77,6 @@
       50% at 50% 50%
     ); // to make your portrait.png file cropped to circle
   }
- 
 
   .infoCol {
     padding: 2.75em;
@@ -205,31 +201,56 @@ $background-color_3: transparent;
   z-index: 1040 !important;
 }
 
-.modal-header {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  height: 6%;
+.modal-title {
+  margin: 0 auto;
+  padding-top: 0.25em;
+  font-family: "Roboto-Slab", sans-serif;
+  font-weight: 600;
 }
 
-h4#modal-titles{
-  text-align: center;
+.btn-close {
+  position: absolute;
+  right: 1rem;
 }
-.modal-title {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+
+.btn-primary#download {
+  transition: 500ms;
+  background-image: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(104, 9, 121, 1) 25%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
+  &:hover {
+    transform: scale(0.9);
+
+    background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(104, 9, 121, 1) 25%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
 }
 
 .modal-content {
-
   margin: 2px auto;
   border: 5px solid rgb(0, 140, 255);
   max-width: 100%;
   min-height: 20%;
 
   z-index: 1100 !important;
-
 }
 
 /* =========================Social Media Icons================================================= */
@@ -866,7 +887,7 @@ ul#social-icons {
       justify-content: center;
       position: relative;
       background-color: #191b1f;
-      opacity: 0.95;
+      opacity: 1;
       border-radius: 25px;
       z-index: -1;
       margin-bottom: 40%;

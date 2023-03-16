@@ -22,7 +22,7 @@ const Skills = () => {
           <Row>
             <Col className="showH1" id="languages">
               {" "}
-              <h1> Languages </h1>
+              <h1 id="skills-header"> Languages </h1>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear" : ""}`}
                 id="languages"
@@ -41,7 +41,7 @@ const Skills = () => {
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
                       alt="CSS"
                     />
-                    <p id="label">CSS</p>
+                    CSS
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -61,9 +61,9 @@ const Skills = () => {
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
                       alt="C/C++"
                     />
-                    <p id="label">C/C++</p>
+                    C/C++
                     <img className="icon" src={sql} alt="SQL" />
-                    <p id="label">SQL</p>
+                    SQL
                   </Col>
                 </Row>
               </Col>
@@ -73,7 +73,7 @@ const Skills = () => {
 
             <Col className="showH2" id="tools">
               {" "}
-              <h1> Tools/Libraries </h1>
+              <h1 id="skills-header"> Tools/Libraries </h1>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear2" : ""}`}
                 id="tools"
@@ -97,7 +97,7 @@ const Skills = () => {
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
                       alt="Flask"
                     />
-                    <p id="label">Flask</p>
+                    Flask
                   </Col>
 
                   <Col className="logo-container-half" xs="6">
@@ -106,7 +106,7 @@ const Skills = () => {
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
                       alt="Bootstrap"
                     />
-                    <p id="label">Bootstrap</p>
+                    Bootstrap
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
@@ -118,16 +118,16 @@ const Skills = () => {
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                       alt="Git"
                     />
-                    <p id="label">Git</p>
+                    Git
                   </Col>
                 </Row>
               </Col>
             </Col>
 
             {/* -------------------------------------------------Other Column---------------------------------------------------------------------------------- */}
-            <Col className="showH3" id="other" >
+            <Col className="showH3" id="other">
               {" "}
-              <h1 id="other"> Other </h1>
+              <h1 id="skills-header"> Other </h1>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear3" : ""}`}
                 id="other"
@@ -146,7 +146,11 @@ const Skills = () => {
                       alt="Typing Speed"
                     />
                     Typing Speed: 110+ WPM
-                    <img className="other-icon" src={photography} alt="Photography" />
+                    <img
+                      className="other-icon"
+                      src={photography}
+                      alt="Photography"
+                    />
                     Photography
                   </Col>
 
@@ -156,13 +160,13 @@ const Skills = () => {
                       src={lightroom}
                       alt="Adobe Lightroom"
                     />
-                    <p id="label">Lightroom</p>
+                    Lightroom
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                       alt="Figma"
                     />
-                    <p id="label">Figma</p>
+                    Figma
                   </Col>
                 </Row>
               </Col>

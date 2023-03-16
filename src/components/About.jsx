@@ -9,7 +9,7 @@ import flsp from "./assets/flsp.png";
 import research from "./assets/ucresearch.png";
 import i2g from "./assets/i2g.jpg";
 import ylp from "./assets/ylp.png";
-import ucm2 from "./assets/ucm2.png"
+import ucm2 from "./assets/ucm2.png";
 
 const About = forwardRef((props, ref) => {
   return (
@@ -67,10 +67,15 @@ const About = forwardRef((props, ref) => {
                       September 2020 - May 2021{" "}
                     </p>
                     <p>
-                    In collaboration with Dr. Jeffrey Jenkins, 2 graduate students, and 4 other Yosemite Leadership Program cohort members,
-                     conducted an assessment of COVID-19's impact on Yosemite National Park. Co-authored a Case Study Article examining the pandemic's 
-                     effects on the park and its implications for tourism and park management. Assisted in researching the quantitative and qualitative 
-                     changes in Yosemite National Park due to COVID-19 restrictions and lockdowns.
+                      In collaboration with Dr. Jeffrey Jenkins, 2 graduate
+                      students, and 4 other Yosemite Leadership Program cohort
+                      members, conducted an assessment of COVID-19's impact on
+                      Yosemite National Park. Co-authored a Case Study Article
+                      examining the pandemic's effects on the park and its
+                      implications for tourism and park management. Assisted in
+                      researching the quantitative and qualitative changes in
+                      Yosemite National Park due to COVID-19 restrictions and
+                      lockdowns.
                     </p>
                   </Col>
                 </Row>
@@ -101,10 +106,14 @@ const About = forwardRef((props, ref) => {
                       June 2022 - August 2022{" "}
                     </p>
                     <p>
-                    Modernized the Loan Editor App for the Markets Technology Team, used for managing loan deliveries, 
-                    delivering traded pools to several agencies, and identifying and remediating data quality issues that may prevent loan sales. 
-                    Worked in an AGILE environment with developers, senior tech leads, and managers to learn the Software Development Life Cycle
-                    and how the Corporate Investment Banking line of business operated.
+                      Modernized the Loan Editor App for the Markets Technology
+                      Team, used for managing loan deliveries, delivering traded
+                      pools to several agencies, and identifying and remediating
+                      data quality issues that may prevent loan sales. Worked in
+                      an AGILE environment with developers, senior tech leads,
+                      and managers to learn the Software Development Life Cycle
+                      and how the Corporate Investment Banking line of business
+                      operated.
                     </p>
                   </Col>
                 </Row>
@@ -120,10 +129,15 @@ const About = forwardRef((props, ref) => {
                     <p style={{ fontSize: "15px" }}> Academic Scholar/Mentor</p>
                     <p style={{ fontSize: "12px" }}> August 2021 - May 2022 </p>
                     <p>
-                    Responsibilities included maintaining accurate records and acting as a liaison between the program staff and scholars. 
-                    Conducted weekly 1:1 sessions with scholars to set academic goals and make referrals to academic support services on campus. Helped plan and implement 
-                    monthly social events both in-person and online to foster community among 100+ first-generation college students. Managed the program's Instagram account, sharing 
-                    relevant updates to 400+ followers.
+                      Responsibilities included maintaining accurate records and
+                      acting as a liaison between the program staff and
+                      scholars. Conducted weekly 1:1 sessions with scholars to
+                      set academic goals and make referrals to academic support
+                      services on campus. Helped plan and implement monthly
+                      social events both in-person and online to foster
+                      community among 100+ first-generation college students.
+                      Managed the program's Instagram account, sharing relevant
+                      updates to 400+ followers.
                     </p>
                   </Col>
                 </Row>
@@ -170,9 +184,12 @@ const About = forwardRef((props, ref) => {
                       September 2019 - May 2021{" "}
                     </p>
                     <p>
-                    Participated in a two-year leadership program that aimed to develop leadership skills through personal 
-                    and professional development opportunities, along with a one-year Capstone Project. Engaged in leadership seminars, 
-                    team-building activities, and volunteer projects focused on conservancy, social engagement, and environmental stewardship.
+                      Participated in a two-year leadership program to develop
+                      leadership skills through personal and professional
+                      development opportunities, along with a one-year Capstone
+                      Project. Engaged in leadership seminars, team-building
+                      activities, and volunteer projects focused on conservancy,
+                      social engagement, and environmental stewardship.
                     </p>
                   </Col>
                 </Row>
@@ -187,15 +204,17 @@ const About = forwardRef((props, ref) => {
                     <img className="logo" src={ucm2} alt="ucm" />
                   </Col>
                   <Col lg className="description-container">
-                    <b style={{ fontSize: "20px" }}> Chancellor's Honors List </b>
-                    <p style={{ fontSize: "15px" }}> UC Merced </p>
-                    <p style={{ fontSize: "12px" }}>
+                    <b style={{ fontSize: "20px" }}>
                       {" "}
-                      Fall 2019 - Fall 2022{" "}
-                    </p>
+                      Chancellor's Honors List{" "}
+                    </b>
+                    <p style={{ fontSize: "15px" }}> UC Merced </p>
+                    <p style={{ fontSize: "12px" }}> Fall 2019 - Fall 2022 </p>
                     <p>
-                    Undergraduate students who are placed on the Dean’s Honor List for both semesters in a single academic year (fall and spring) will 
-                    be placed on the Chancellor’s Honor List for that academic year.
+                      Undergraduate students who are placed on the Dean’s Honor
+                      List for both semesters in a single academic year (fall
+                      and spring) will be placed on the Chancellor’s Honor List
+                      for that academic year.
                     </p>
                   </Col>
                 </Row>
@@ -214,8 +233,10 @@ const About = forwardRef((props, ref) => {
                       Fall 2021 - Spring 2023{" "}
                     </p>
                     <p>
-                    The Frances M. Benton Scholarship is designed to assist continuing undergraduate students who show strong academic 
-                    promise with a 3.0 GPA or higher and have demonstrated financial need.
+                      The Frances M. Benton Scholarship is designed to assist
+                      continuing undergraduate students who show strong academic
+                      promise with a 3.0 GPA or higher and have demonstrated
+                      financial need.
                     </p>
                   </Col>
                 </Row>

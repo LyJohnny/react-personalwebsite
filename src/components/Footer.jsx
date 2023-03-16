@@ -8,28 +8,28 @@ import { Row, Col } from "react-bootstrap";
 function Footer() {
   return (
     <>
-      <div className="footer"> 
-      <div className="footerText">
-        <Row> 
-          <Col className ='footer-container1' xs ='6'> 
-      <p id="trademark"> © 2023 Johnny Ly</p>
-      </Col>
-      <Col className ='footer-container2' xs ='6'> 
-        <p id="location">
-          {" "}
-          Made with ❤️ from{" "}
-          <div> 
-          <Textra
-          className="textra"
-            effect="downTop"
-            data={["New York, NY", "Long Beach, CA", "Merced, CA"]}
-          />{" "}
-          </div>
-        </p>
-        </Col>
-        </Row>
+      <div className="footer">
+        <div className="footerText">
+          <Row>
+            <Col className="footer-container1" xs="6">
+              <p id="trademark"> © 2023 Johnny Ly</p>
+            </Col>
+            <Col className="footer-container2" xs="6">
+              <p id="location">
+                {" "}
+                Made with ❤️ from{" "}
+                <div>
+                  <Textra
+                    className="textra"
+                    effect="downTop"
+                    data={["New York, NY", "Long Beach, CA", "Merced, CA"]}
+                  />{" "}
+                </div>
+              </p>
+            </Col>
+          </Row>
+        </div>
       </div>
-</div>
       <div className="icon-area">
         <div className="d-flex text-center ms-0 justify-content-center ">
           <ul id="footer-icons">
