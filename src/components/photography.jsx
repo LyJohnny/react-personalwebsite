@@ -5,6 +5,7 @@ import "react-image-lightbox/style.css"
 import { images } from "./images"
 import './styles/Portfolio.scss'
 import { Tab, Tabs } from "react-bootstrap";
+import { Container } from "react-bootstrap"
 
 function Photography () {
     
@@ -25,6 +26,8 @@ function Photography () {
 
 return(
     <div className="photographyTab">
+   <Container className="project-container">
+
     <Gallery 
       key={Tab}
       rowHeight={300}
@@ -48,6 +51,7 @@ return(
         onMoveNextRequest={handleMoveNext}
       />
     )}
+    </Container>
   </div>
 )
     };

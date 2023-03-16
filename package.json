@@ -8,6 +8,7 @@
     "@material-ui/icons": "^4.11.2",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
+    "@mui/styles": "^5.11.13",
     "@popperjs/core": "^2.11.6",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",

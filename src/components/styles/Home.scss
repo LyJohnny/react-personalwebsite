@@ -152,7 +152,7 @@ $background-color_3: transparent;
   transition: 500ms;
   &:hover {
     &::after {
-      font-size: 1rem;
+      // font-size: 1rem;
       background-color: $background-color_3;
     }
     transform: scale(0.9);
