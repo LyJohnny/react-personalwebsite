@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "./static/css/main.16896868.css",
-    "main.js": "./static/js/main.50500cf7.js",
-    "static/media/DevTrackerPoster.png": "./static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
-    "static/media/portrait1.png": "./static/media/portrait1.f5e84febedb1244fa4f0.png",
-    "static/media/Johnny_Ly_Résumé_.png": "./static/media/Johnny_Ly_Résumé_.05e93467bcc03edbbccb.png",
-    "static/media/ylp.png": "./static/media/ylp.84f8875dd4a3284b4c24.png",
-    "static/media/flsp.png": "./static/media/flsp.614f4218bf0e586ec856.png",
-    "static/media/ucm2.png": "./static/media/ucm2.d934c2c8502de48ffcce.png",
-    "static/media/Johnny_Ly_Résumé_.pdf": "./static/media/Johnny_Ly_Résumé_.a4c186d8e11602cb38d0.pdf",
-    "static/media/ucm.png": "./static/media/ucm.0e974c6770bb7befe79a.png",
-    "static/media/i2g.jpg": "./static/media/i2g.e8517a1fa19168c977ec.jpg",
-    "static/media/personalWebsite.png": "./static/media/personalWebsite.83897a3d4c146efc577a.png",
-    "static/media/jpmc.png": "./static/media/jpmc.b7f5f445b5957b98dda4.png",
-    "static/media/huf.png": "./static/media/huf.faa3e3f437512cc3f0b3.png",
-    "static/media/agile.png": "./static/media/agile.71c4e1dda0d44bdff20d.png",
-    "static/media/typingSpeed.png": "./static/media/typingSpeed.dc6209262a22e61cdd9f.png",
-    "static/media/google.svg": "./static/media/google.0cdee2c7cf64d0940474a11c91d87d33.svg",
-    "index.html": "./index.html",
-    "static/media/devpost-icon.svg": "./static/media/devpost-icon.a1063e10aecca4d2ebf0a8918dbc9a33.svg",
-    "main.16896868.css.map": "./static/css/main.16896868.css.map",
-    "main.50500cf7.js.map": "./static/js/main.50500cf7.js.map"
+    "main.css": "/react-personalwebsite/static/css/main.16896868.css",
+    "main.js": "/react-personalwebsite/static/js/main.d9924088.js",
+    "static/media/DevTrackerPoster.png": "/react-personalwebsite/static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
+    "static/media/portrait1.png": "/react-personalwebsite/static/media/portrait1.f5e84febedb1244fa4f0.png",
+    "static/media/Johnny_Ly_Résumé_.png": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.05e93467bcc03edbbccb.png",
+    "static/media/ylp.png": "/react-personalwebsite/static/media/ylp.84f8875dd4a3284b4c24.png",
+    "static/media/flsp.png": "/react-personalwebsite/static/media/flsp.614f4218bf0e586ec856.png",
+    "static/media/ucm2.png": "/react-personalwebsite/static/media/ucm2.d934c2c8502de48ffcce.png",
+    "static/media/Johnny_Ly_Résumé_.pdf": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.a4c186d8e11602cb38d0.pdf",
+    "static/media/ucm.png": "/react-personalwebsite/static/media/ucm.0e974c6770bb7befe79a.png",
+    "static/media/i2g.jpg": "/react-personalwebsite/static/media/i2g.e8517a1fa19168c977ec.jpg",
+    "static/media/personalWebsite.png": "/react-personalwebsite/static/media/personalWebsite.83897a3d4c146efc577a.png",
+    "static/media/jpmc.png": "/react-personalwebsite/static/media/jpmc.b7f5f445b5957b98dda4.png",
+    "static/media/huf.png": "/react-personalwebsite/static/media/huf.faa3e3f437512cc3f0b3.png",
+    "static/media/agile.png": "/react-personalwebsite/static/media/agile.71c4e1dda0d44bdff20d.png",
+    "static/media/typingSpeed.png": "/react-personalwebsite/static/media/typingSpeed.dc6209262a22e61cdd9f.png",
+    "static/media/google.svg": "/react-personalwebsite/static/media/google.ee48dad8bd3385d3532e45978fbb41eb.svg",
+    "index.html": "/react-personalwebsite/index.html",
+    "static/media/devpost-icon.svg": "/react-personalwebsite/static/media/devpost-icon.050755888f0695ab7a66ad0945b2a7d9.svg",
+    "main.16896868.css.map": "/react-personalwebsite/static/css/main.16896868.css.map",
+    "main.d9924088.js.map": "/react-personalwebsite/static/js/main.d9924088.js.map"
   },
   "entrypoints": [
     "static/css/main.16896868.css",
-    "static/js/main.50500cf7.js"
+    "static/js/main.d9924088.js"
   ]
 }
