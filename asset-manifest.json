@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-personalwebsite/static/css/main.16896868.css",
-    "main.js": "/react-personalwebsite/static/js/main.188e31a1.js",
+    "main.js": "/react-personalwebsite/static/js/main.6cdef90b.js",
     "static/media/DevTrackerPoster.png": "/react-personalwebsite/static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
     "static/media/portrait1.png": "/react-personalwebsite/static/media/portrait1.f5e84febedb1244fa4f0.png",
     "static/media/Johnny_Ly_Résumé_.png": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.05e93467bcc03edbbccb.png",
@@ -20,10 +20,10 @@
     "index.html": "/react-personalwebsite/index.html",
     "static/media/devpost-icon.svg": "/react-personalwebsite/static/media/devpost-icon.050755888f0695ab7a66ad0945b2a7d9.svg",
     "main.16896868.css.map": "/react-personalwebsite/static/css/main.16896868.css.map",
-    "main.188e31a1.js.map": "/react-personalwebsite/static/js/main.188e31a1.js.map"
+    "main.6cdef90b.js.map": "/react-personalwebsite/static/js/main.6cdef90b.js.map"
   },
   "entrypoints": [
     "static/css/main.16896868.css",
-    "static/js/main.188e31a1.js"
+    "static/js/main.6cdef90b.js"
   ]
 }
