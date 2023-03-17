@@ -3,7 +3,7 @@ const particlesConfig = {
 
    
     background: {
-        color: "#202329",     
+        color: "#141920",     
         
       },
 
@@ -67,7 +67,7 @@ const particlesConfig = {
         enable: true,
         distance: 150,
         color: "#ffffff",
-        opacity: 0.5,
+        opacity: 1,
         width: 1
       },
       move: {
