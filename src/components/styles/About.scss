@@ -24,10 +24,12 @@ p {
   letter-spacing: .01em;
   line-height: 1.5em;
   font-size: 0.938rem;
+  margin-top: 1rem;
 }
 
 b {
   font-family: "Montserrat", sans-serif;
+  
 }
 
 li {
@@ -52,7 +54,7 @@ li {
 }
 
 .mainCol {
-  padding: 3em;
+  padding: 2em;
 }
 
 @media only screen and (max-width: 991px) and (min-width: 599px) {

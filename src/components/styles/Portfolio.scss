@@ -36,7 +36,7 @@
 
 .project-container {
   padding-top: 10px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .tool-container {
@@ -171,7 +171,19 @@ Button#poster-button {
   color: black;
 }
 
+
+
+@media screen and (max-width: 420px) {
+  .project-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
 @media screen and (max-width: 397px) {
+ 
+  
+
   .project-links-container {
     display: flex;
   }
@@ -197,6 +209,10 @@ Button#poster-button {
     font-size: 0.9rem;
   }
 }
+
+
+
+
 
 @media screen and (max-width: 300px) {
   .project-links-container {

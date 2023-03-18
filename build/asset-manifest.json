@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-personalwebsite/static/css/main.16896868.css",
-    "main.js": "/react-personalwebsite/static/js/main.2699f13e.js",
+    "main.css": "/react-personalwebsite/static/css/main.ccb1651c.css",
+    "main.js": "/react-personalwebsite/static/js/main.5a92d9e0.js",
     "static/media/DevTrackerPoster.png": "/react-personalwebsite/static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
     "static/media/portrait1.png": "/react-personalwebsite/static/media/portrait1.f5e84febedb1244fa4f0.png",
     "static/media/Johnny_Ly_Résumé_.png": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.05e93467bcc03edbbccb.png",
@@ -19,11 +19,11 @@
     "static/media/google.svg": "/react-personalwebsite/static/media/google.ee48dad8bd3385d3532e45978fbb41eb.svg",
     "index.html": "/react-personalwebsite/index.html",
     "static/media/devpost-icon.svg": "/react-personalwebsite/static/media/devpost-icon.050755888f0695ab7a66ad0945b2a7d9.svg",
-    "main.16896868.css.map": "/react-personalwebsite/static/css/main.16896868.css.map",
-    "main.2699f13e.js.map": "/react-personalwebsite/static/js/main.2699f13e.js.map"
+    "main.ccb1651c.css.map": "/react-personalwebsite/static/css/main.ccb1651c.css.map",
+    "main.5a92d9e0.js.map": "/react-personalwebsite/static/js/main.5a92d9e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.16896868.css",
-    "static/js/main.2699f13e.js"
+    "static/css/main.ccb1651c.css",
+    "static/js/main.5a92d9e0.js"
   ]
 }

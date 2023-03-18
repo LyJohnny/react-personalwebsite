@@ -21,18 +21,18 @@ const particlesConfig = {
         value: 35,
         density: {
           enable: false,
-          auto: true,
+          auto: false,
           // value_area: 2000
         }
       },
       color: {
-        value: "#000000"
+        value: "#FFFFFF"
       },
       shape: {
         type: "circle",
         stroke: {
           width: 0,
-          color: "#000000"
+          color: "#00000"
         },
         polygon: {
           nb_sides: 5
@@ -44,29 +44,29 @@ const particlesConfig = {
         }
       },
       opacity: {
-        value: 1,
+        value: 0.5,
         random: true,
         anim: {
-          enable: false,
+          enable: true,
           speed: 1,
           opacity_min: 0.5,
           sync: true
         }
       },
       size: {
-        value: 1,
+        value: 2,
         random: true,
         anim: {
           enable: false,
           speed: 40,
           size_min: 3,
-          sync: false
+          sync: true
         }
       },
       line_linked: {
         enable: true,
         distance: 150,
-        color: "#ffffff",
+        color: "#FFFFFF",
         opacity: 1,
         width: 1
       },
@@ -106,7 +106,7 @@ const particlesConfig = {
           }
         },
         bubble: {
-          distance: 400,
+          distance: 900,
           size: 40,
           duration: 2,
           opacity: 8,
