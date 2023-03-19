@@ -21,6 +21,29 @@
   // -webkit-overflow-y-scrolling: touch
 }
 
+.ril__caption,
+.ril__toolbar {
+  background-color: rgba(0, 0, 0, 0) !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ril__navButtons {
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  height: 34px;
+  padding: 1em 1em !important;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .projectsTab {
   width: 100%;
   max-height: 85vh;

@@ -37,18 +37,19 @@ return(
     />
     {!!currentImage && (
       <Lightbox
-        imagePadding={80}
+      
         enableZoom={false}
-        mainSrc={currentImage.original}
+        mainSrc={currentImage.src}
         imageTitle={currentImage.caption}
         mainSrcThumbnail={currentImage.src}
-        nextSrc={nextImage.original}
+        nextSrc={nextImage.src}
         nextSrcThumbnail={nextImage.src}
-        prevSrc={prevImage.original}
+        prevSrc={prevImage.src}
         prevSrcThumbnail={prevImage.src}
         onCloseRequest={handleClose}
         onMovePrevRequest={handleMovePrev}
         onMoveNextRequest={handleMoveNext}
+        animationDisabled={true}
       />
     )}
     </Container>

@@ -69,15 +69,11 @@
   }
 
   img {
-    max-width: 356px;
-    max-height: 356px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    clip-path: circle(
-      50% at 50% 50%
-    ); // to make your portrait.png file cropped to circle
+    max-width: 350px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
   }
 
   .infoCol {
