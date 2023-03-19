@@ -1,7 +1,5 @@
 import React, { forwardRef } from "react";
 import "./styles/Portfolio.scss";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import { Tab, Tabs } from "@mui/material";
 import Photography from "./photography";
@@ -24,7 +22,6 @@ function TabPanel(props) {
   });
   const classes = useStyles();
 
-  
   return (
     <div
       role="tabpanel"
@@ -35,7 +32,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box className={classes.root}>
-          <Typography>{children}</Typography>
+          <Typography component={"span"}>{children}</Typography>
         </Box>
       )}
     </div>
@@ -48,12 +45,12 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
-  };
-}
+// function a11yProps(index) {
+//   return {
+//     id: `simple-tab-${index}`,
+//     "aria-controls": `simple-tabpanel-${index}`,
+//   };
+// }
 
 const Portfolio = forwardRef((props, ref) => {
   const [value, setValue] = React.useState(0);
@@ -65,42 +62,38 @@ const Portfolio = forwardRef((props, ref) => {
   const theme = createTheme({
     palette: {
       primary: {
-        main: '#1976d2',
-       
+        main: "#1976d2",
       },
-     
     },
   });
 
   return (
     <div className="portfolio">
       <div className="portfolio" ref={ref}>
-        <Box sx={{}}>
+        <Box>
           <Container>
             <h1 className="headingText">Portfolio</h1>
             <ThemeProvider theme={theme}>
-
-            <Tabs
-              value={value}
-              onChange={handleChange}
-              centered
-              variant="fullWidth"
-              textColor="primary"
-              indicatorColor="primary"
-            >
-              <Tab
-                icon={<SourceIcon />}
-                iconPosition="start"
-                label="Projects"
-              />
-              <Tab
-                icon={<CameraAltIcon />}
-                iconPosition="start"
-                label="Photography"
-              />
-            </Tabs>
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                centered
+                variant="fullWidth"
+                textColor="primary"
+                indicatorColor="primary"
+              >
+                <Tab
+                  icon={<SourceIcon />}
+                  iconPosition="start"
+                  label="Projects"
+                />
+                <Tab
+                  icon={<CameraAltIcon />}
+                  iconPosition="start"
+                  label="Photography"
+                />
+              </Tabs>
             </ThemeProvider>
-
             <TabPanel value={value} index={0}>
               <Projects />
             </TabPanel>

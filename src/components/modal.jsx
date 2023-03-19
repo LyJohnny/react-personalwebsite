@@ -3,8 +3,8 @@ import Modal from "react-bootstrap/Modal";
 import resume from "./assets/Johnny_Ly_Résumé_.png";
 import pdfFile from "./assets/Johnny_Ly_Résumé_.pdf";
 import Button from "react-bootstrap/Button";
-import "./styles/Home.scss";
 import { saveAs } from "file-saver";
+import "./styles/Home.scss";
 
 function ResumeModal() {
   const [show, setShow] = useState(false);
@@ -20,7 +20,9 @@ function ResumeModal() {
         className="name noselect"
         id="resume-button"
         onClick={handleShow}
-      ></Button>
+      >
+        View Résumé 
+      </Button>
 
       <Modal
         show={show}

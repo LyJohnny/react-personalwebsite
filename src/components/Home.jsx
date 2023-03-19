@@ -3,7 +3,7 @@ import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import React from "react";
 import "./styles/Home.scss";
-import portrait from "./assets/portrait1.png";
+import portrait from "./assets/portrait1.webp";
 import ParticleBackground from "./ParticleBackground";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -80,6 +80,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                       className="name noselect"
                       id="portfolio-button"
                       onClick={portScroll}
+                      aria-label="My Portfolio"
                     />
                   </div>
                 </div>
@@ -100,6 +101,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           href="https://www.linkedin.com/in/johnny-ly-/"
                           target="_blank"
                           rel="noreferrer"
+                          aria-label="My LinkedIn Page"
                         >
                           <li id="linkedin">
                             {" "}
@@ -124,6 +126,8 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           href="https://github.com/LyJohnny"
                           target="_blank"
                           rel="noreferrer"
+                          aria-label="My GitHub Page"
+
                         >
                           <li id="github">
                             <GitHub
@@ -147,6 +151,8 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           href="https://www.instagram.com/johnster.shoots/"
                           target="_blank"
                           rel="noreferrer"
+                          aria-label="My Instagram Page"
+
                         >
                           <li id="instagram">
                             {" "}
@@ -166,7 +172,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
               <Col className="portraitCol">
                 {/* PORTRAIT  */}
                 <div className="home__img">
-                  <img src={portrait} loading='lazy' alt="" />
+                  <img src={portrait} loading="lazy" alt="" />
                 </div>
               </Col>
             </Row>

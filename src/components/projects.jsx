@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -40,49 +40,79 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="react-icon"
             />
             React
           </a>
 
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="java-icon"
             />
             Java
           </a>
 
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+              alt="springboot-icon"
             />
             Spring Boot
           </a>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="mysql-icon"
             />
             MYSQL
           </a>
 
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="node-icon"
             />
             Node
           </a>
 
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="git-icon"
             />
             Git
           </a>
@@ -121,48 +151,78 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+              alt="html-icon"
             />
             HTML
           </a>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+              alt="css-icon"
             />
             CSS
           </a>
 
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="javascript-icon"
             />
             JavaScript
           </a>
 
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="node-icon"
             />
             Node
           </a>
 
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="bootstrap-icon"
             />
             Bootstrap
           </a>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="git-icon"
             />
             Git
           </a>
@@ -209,29 +269,48 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
+              alt="androidstudio-icon"
             />
             Android Studio
           </a>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="java-icon"
             />
             Java
           </a>
-          <a className="tool-container">
-            <img id="tool-icon2" src={google} />
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
+            <img id="tool-icon2" src={google} alt="googlemobilevision-icon" />
             Google Mobile Vision API
           </a>
 
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="git-icon"
             />
             Git
           </a>
@@ -262,39 +341,64 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="react-icon"
             />
             React
           </a>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="node-icon"
             />
             Node
           </a>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="bootstrap-icon"
             />
             Bootstrap
           </a>
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+              alt="scss-icon"
             />
             Scss
           </a>
 
-          <a className="tool-container">
+          <a
+            className="tool-container"
+            href="/#"
+            onClick={(e) => e.preventDefault()}
+          >
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              alt="git-icon"
             />
             Git
           </a>

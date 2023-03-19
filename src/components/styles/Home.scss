@@ -97,7 +97,7 @@
   }
   .arrowDown {
     position: absolute;
-    top: 83%;
+    top: 90%;
     // align-items: center;
     justify-content: space-between;
     cursor: pointer;
@@ -150,7 +150,6 @@ $background-color_3: transparent;
   transition: 500ms;
   &:hover {
     &::after {
-      // font-size: 1rem;
       background-color: $background-color_3;
     }
     transform: scale(0.9);
@@ -195,7 +194,6 @@ $background-color_3: transparent;
 }
 
 .modal-backdrop {
-  // display: flex;
   z-index: 1040 !important;
 }
 
@@ -220,8 +218,6 @@ $background-color_3: transparent;
     rgba(0, 212, 255, 1) 100%
   );
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 
@@ -235,8 +231,6 @@ $background-color_3: transparent;
       rgba(0, 212, 255, 1) 100%
     );
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
@@ -403,6 +397,8 @@ ul#social-icons {
     img {
       max-width: 312px;
       max-height: 312px;
+      width: auto;
+      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1079,3 +1075,4 @@ ul#social-icons {
     transform: scale(0.75);
   }
 }
+

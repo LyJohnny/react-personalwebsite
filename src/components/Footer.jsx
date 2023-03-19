@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from "react";
 import "./styles/Footer.scss";
 import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
@@ -45,6 +45,7 @@ function Footer() {
                 href="https://www.linkedin.com/in/johnny-ly-/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="My LinkedIn Page"
               >
                 <li id="linkedin">
                   {" "}
@@ -65,6 +66,7 @@ function Footer() {
                 href="https://github.com/LyJohnny"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="My GitHub Page"
               >
                 <li id="github">
                   <GitHub fontSize="small" style={{ color: "" }} />
@@ -84,6 +86,8 @@ function Footer() {
                 href="https://www.instagram.com/johnster.shoots/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="My Instagram Page"
+
               >
                 <li id="instagram">
                   {" "}
