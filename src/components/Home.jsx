@@ -166,7 +166,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
               <Col className="portraitCol">
                 {/* PORTRAIT  */}
                 <div className="home__img">
-                  <img src={portrait} alt="" />
+                  <img src={portrait} loading='lazy' alt="" />
                 </div>
               </Col>
             </Row>
