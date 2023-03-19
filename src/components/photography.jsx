@@ -30,14 +30,13 @@ return(
 
     <Gallery 
       key={Tab}
-      rowHeight={300}
+      rowHeight={320}
       images={images}
       onClick={handleClick}
       enableImageSelection={false}
     />
     {!!currentImage && (
       <Lightbox
-      
         enableZoom={false}
         mainSrc={currentImage.src}
         imageTitle={currentImage.caption}
