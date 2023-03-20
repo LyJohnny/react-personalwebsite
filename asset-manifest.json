@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/react-personalwebsite/static/css/main.39b1e333.css",
-    "main.js": "/react-personalwebsite/static/js/main.16fe3cff.js",
+    "main.css": "/react-personalwebsite/static/css/main.3bf8a4e0.css",
+    "main.js": "/react-personalwebsite/static/js/main.c74b48fd.js",
     "static/media/DevTrackerPoster.png": "/react-personalwebsite/static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
     "static/media/Johnny_Ly_Résumé_.png": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.05e93467bcc03edbbccb.png",
     "static/media/Johnny_Ly_Résumé_.pdf": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.a4c186d8e11602cb38d0.pdf",
     "static/media/i2g.webp": "/react-personalwebsite/static/media/i2g.92a0eafdfb1e5f66f8eb.webp",
+    "service-worker.js": "/react-personalwebsite/service-worker.js",
     "static/media/flsp.webp": "/react-personalwebsite/static/media/flsp.2ab20e57d1a5ba822840.webp",
     "static/media/portrait1.webp": "/react-personalwebsite/static/media/portrait1.9ed152e2782faa90fbc1.webp",
     "static/media/ylp.webp": "/react-personalwebsite/static/media/ylp.918f4bfba4f5ee2a20a3.webp",
@@ -24,11 +25,11 @@
     "static/media/sql.webp": "/react-personalwebsite/static/media/sql.b3c14451b41672e9f35d.webp",
     "static/media/lightroom.webp": "/react-personalwebsite/static/media/lightroom.52ea80a141ad04183e93.webp",
     "static/media/photography.webp": "/react-personalwebsite/static/media/photography.0ffffdf68a179370289a.webp",
-    "main.39b1e333.css.map": "/react-personalwebsite/static/css/main.39b1e333.css.map",
-    "main.16fe3cff.js.map": "/react-personalwebsite/static/js/main.16fe3cff.js.map"
+    "main.3bf8a4e0.css.map": "/react-personalwebsite/static/css/main.3bf8a4e0.css.map",
+    "main.c74b48fd.js.map": "/react-personalwebsite/static/js/main.c74b48fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.39b1e333.css",
-    "static/js/main.16fe3cff.js"
+    "static/css/main.3bf8a4e0.css",
+    "static/js/main.c74b48fd.js"
   ]
 }
