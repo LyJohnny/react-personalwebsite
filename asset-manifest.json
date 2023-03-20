@@ -1,35 +1,35 @@
 {
   "files": {
     "main.css": "/react-personalwebsite/static/css/main.3bf8a4e0.css",
-    "main.js": "/react-personalwebsite/static/js/main.c74b48fd.js",
+    "main.js": "/react-personalwebsite/static/js/main.fd2b9609.js",
     "static/media/DevTrackerPoster.png": "/react-personalwebsite/static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
     "static/media/Johnny_Ly_Résumé_.png": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.05e93467bcc03edbbccb.png",
     "static/media/Johnny_Ly_Résumé_.pdf": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.a4c186d8e11602cb38d0.pdf",
+    "static/media/ucm2.webp": "/react-personalwebsite/static/media/ucm2.f0aef9cb04be24728e92.webp",
     "static/media/i2g.webp": "/react-personalwebsite/static/media/i2g.92a0eafdfb1e5f66f8eb.webp",
     "service-worker.js": "/react-personalwebsite/service-worker.js",
+    "static/media/jpmc.webp": "/react-personalwebsite/static/media/jpmc.e8aedb421b3223d773f9.webp",
+    "static/media/ucm.webp": "/react-personalwebsite/static/media/ucm.49c18b93fde280024ba7.webp",
     "static/media/flsp.webp": "/react-personalwebsite/static/media/flsp.2ab20e57d1a5ba822840.webp",
+    "static/media/personalWebsite.webp": "/react-personalwebsite/static/media/personalWebsite.a082983e89b3cc6bda54.webp",
     "static/media/portrait1.webp": "/react-personalwebsite/static/media/portrait1.9ed152e2782faa90fbc1.webp",
     "static/media/ylp.webp": "/react-personalwebsite/static/media/ylp.918f4bfba4f5ee2a20a3.webp",
     "static/media/ucresearch.webp": "/react-personalwebsite/static/media/ucresearch.9a009a7e69ea1b1bac32.webp",
-    "static/media/ucm2.webp": "/react-personalwebsite/static/media/ucm2.e13b72af971423b8a83c.webp",
-    "static/media/huf.webp": "/react-personalwebsite/static/media/huf.86e8d43b921bec111415.webp",
-    "static/media/ucm.webp": "/react-personalwebsite/static/media/ucm.51fd7fbd944f313c7121.webp",
+    "static/media/huf.webp": "/react-personalwebsite/static/media/huf.8720d641931727390f89.webp",
+    "static/media/agile.webp": "/react-personalwebsite/static/media/agile.bdbedfbcdc259e39f721.webp",
+    "static/media/typingSpeed.webp": "/react-personalwebsite/static/media/typingSpeed.a0ab96190dc8e4ca99c6.webp",
+    "static/media/hackmerced.webp": "/react-personalwebsite/static/media/hackmerced.b0d5cdef4bb4674bc31d.webp",
     "static/media/google.svg": "/react-personalwebsite/static/media/google.0cdee2c7cf64d0940474a11c91d87d33.svg",
-    "static/media/personalWebsite.webp": "/react-personalwebsite/static/media/personalWebsite.21277051f37b83eb7731.webp",
-    "static/media/typingSpeed.webp": "/react-personalwebsite/static/media/typingSpeed.aeb271cb76c7717b3da3.webp",
-    "static/media/jpmc.webp": "/react-personalwebsite/static/media/jpmc.82381773ba6060ed32e4.webp",
+    "static/media/lightroom.webp": "/react-personalwebsite/static/media/lightroom.c5dbee5a46b1446c1cf5.webp",
+    "static/media/photography.webp": "/react-personalwebsite/static/media/photography.ff80e4bfe510e801e939.webp",
     "index.html": "/react-personalwebsite/index.html",
-    "static/media/agile.webp": "/react-personalwebsite/static/media/agile.b3213bbfaa4594edde80.webp",
-    "static/media/hackmerced.webp": "/react-personalwebsite/static/media/hackmerced.767b8fce1569a778d8fa.webp",
     "static/media/devpost-icon.svg": "/react-personalwebsite/static/media/devpost-icon.a1063e10aecca4d2ebf0a8918dbc9a33.svg",
-    "static/media/sql.webp": "/react-personalwebsite/static/media/sql.b3c14451b41672e9f35d.webp",
-    "static/media/lightroom.webp": "/react-personalwebsite/static/media/lightroom.52ea80a141ad04183e93.webp",
-    "static/media/photography.webp": "/react-personalwebsite/static/media/photography.0ffffdf68a179370289a.webp",
+    "static/media/sql.webp": "/react-personalwebsite/static/media/sql.20c601ab989ba61a887c.webp",
     "main.3bf8a4e0.css.map": "/react-personalwebsite/static/css/main.3bf8a4e0.css.map",
-    "main.c74b48fd.js.map": "/react-personalwebsite/static/js/main.c74b48fd.js.map"
+    "main.fd2b9609.js.map": "/react-personalwebsite/static/js/main.fd2b9609.js.map"
   },
   "entrypoints": [
     "static/css/main.3bf8a4e0.css",
-    "static/js/main.c74b48fd.js"
+    "static/js/main.fd2b9609.js"
   ]
 }

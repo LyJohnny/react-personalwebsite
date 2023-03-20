@@ -7,6 +7,12 @@
       "sizes": "512x512 144x144 64x64 32x32 24x24 16x16" ,
       "type": "image/webp",
       "purpose": "maskable any"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512" ,
+      "type": "image/png",
+      "purpose": "maskable any"
 
     }
     
