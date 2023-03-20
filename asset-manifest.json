@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-personalwebsite/static/css/main.3bf8a4e0.css",
-    "main.js": "/react-personalwebsite/static/js/main.fd2b9609.js",
+    "main.js": "/react-personalwebsite/static/js/main.44daa641.js",
     "static/media/DevTrackerPoster.png": "/react-personalwebsite/static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
     "static/media/Johnny_Ly_Résumé_.png": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.05e93467bcc03edbbccb.png",
     "static/media/Johnny_Ly_Résumé_.pdf": "/react-personalwebsite/static/media/Johnny_Ly_Résumé_.a4c186d8e11602cb38d0.pdf",
@@ -26,10 +26,10 @@
     "static/media/devpost-icon.svg": "/react-personalwebsite/static/media/devpost-icon.a1063e10aecca4d2ebf0a8918dbc9a33.svg",
     "static/media/sql.webp": "/react-personalwebsite/static/media/sql.20c601ab989ba61a887c.webp",
     "main.3bf8a4e0.css.map": "/react-personalwebsite/static/css/main.3bf8a4e0.css.map",
-    "main.fd2b9609.js.map": "/react-personalwebsite/static/js/main.fd2b9609.js.map"
+    "main.44daa641.js.map": "/react-personalwebsite/static/js/main.44daa641.js.map"
   },
   "entrypoints": [
     "static/css/main.3bf8a4e0.css",
-    "static/js/main.fd2b9609.js"
+    "static/js/main.44daa641.js"
   ]
 }
