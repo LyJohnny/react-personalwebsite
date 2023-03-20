@@ -3,7 +3,7 @@ import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import React from "react";
 import "../styles/Home.scss";
-import portrait from "../assets/portrait1.webp"
+import portrait from "../assets/portrait1.webp";
 import ParticleBackground from "../utils/ParticleBackground";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -14,6 +14,8 @@ import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { useInView } from "react-intersection-observer";
 import Typewriter from "typewriter-effect";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Home = ({ aboutRef, portfolioRef }) => {
   const { ref: myRef, inView: visibleElement } = useInView({
@@ -58,11 +60,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                       <Typewriter
                         options={{
                           pauseFor: 3000,
-                          strings: [
-                            "Software Engineer",
-                            "Front End Developer",
-                            "Problem Solver",
-                          ],
+                          strings: ["Software Engineer", "Front End Developer"],
                           autoStart: true,
                           loop: true,
                           delay: "natural",
@@ -127,7 +125,6 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           target="_blank"
                           rel="noreferrer"
                           aria-label="My GitHub Page"
-
                         >
                           <li id="github">
                             <GitHub
@@ -152,7 +149,6 @@ const Home = ({ aboutRef, portfolioRef }) => {
                           target="_blank"
                           rel="noreferrer"
                           aria-label="My Instagram Page"
-
                         >
                           <li id="instagram">
                             {" "}
@@ -172,7 +168,14 @@ const Home = ({ aboutRef, portfolioRef }) => {
               <Col className="portraitCol">
                 {/* PORTRAIT  */}
                 <div className="home__img">
-                  <img src={portrait} loading="lazy" alt="" />
+                  <LazyLoadImage
+                    className="portrait-icon"
+                    src={portrait}
+                    width={350}
+                    height={350}
+                    alt="Portrait Icon"
+                    effect="blur"
+                  />
                 </div>
               </Col>
             </Row>

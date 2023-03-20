@@ -9,6 +9,16 @@
   justify-content: center;
 
   .hiddenHome {
+    display: flex;
+    min-height: 100%;
+    min-width: 50%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(18, 22, 28, 0.95);
+    border-radius: 25px;
+    z-index: -1;
+    margin-bottom: 5%;
     opacity: 0;
     transition: all 1.5s;
   }
@@ -61,20 +71,23 @@
     }
 
     h1 {
- 
       font-weight: 500;
       font-size: 4.5rem;
       color: rgb(255, 255, 255);
     }
   }
 
-  img {
+  .portrait-icon {
     max-width: 350px;
     max-height: 350px;
-    pointer-events: none; 
+    pointer-events: none;
     width: auto;
     height: auto;
     border-radius: 50%;
+  }
+
+  .lazy-load-image-background {
+    display: inline !important;
   }
 
   .infoCol {
@@ -344,6 +357,16 @@ ul#social-icons {
     justify-content: center;
 
     .hiddenHome {
+      display: flex;
+      max-height: 100%;
+      min-width: 80%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: rgba(18, 22, 28, 0.95);
+      border-radius: 25px;
+      z-index: -1;
+      margin-bottom: 20%;
       opacity: 0;
       transition: all 1.5s;
     }
@@ -355,8 +378,8 @@ ul#social-icons {
       align-items: center;
       justify-content: center;
       position: relative;
-      background-color: #12161c;
-      opacity: 0.95;
+      background-color: rgba(18, 22, 28, 0.95);
+      opacity: 1;
       border-radius: 25px;
       z-index: -1;
       margin-bottom: 20%;
@@ -395,14 +418,13 @@ ul#social-icons {
       }
     }
 
-    img {
+    .portrait-icon {
       max-width: 312px;
       max-height: 312px;
-      pointer-events: none; 
+      pointer-events: none;
       width: auto;
       height: auto;
       border-radius: 50%;
-  
     }
 
     .infoCol {
@@ -432,6 +454,16 @@ ul#social-icons {
     justify-content: center;
 
     .hiddenHome {
+      display: flex;
+      max-height: 100%;
+      min-width: 80%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: rgba(18, 22, 28, 0.95);
+      border-radius: 25px;
+      z-index: -1;
+      margin-bottom: 30%;
       opacity: 0;
       transition: all 1.5s;
     }
@@ -443,12 +475,11 @@ ul#social-icons {
       align-items: center;
       justify-content: center;
       position: relative;
-      background-color: #12161c;
-      opacity: 0.95;
+      background-color: rgba(18, 22, 28, 0.95);
+      opacity: 1;
       border-radius: 25px;
       z-index: -1;
       margin-bottom: 30%;
-
     }
 
     .hiddenDescription {
@@ -484,14 +515,18 @@ ul#social-icons {
       }
     }
 
-    img {
+    .portrait-icon {
       max-width: 258px;
       max-height: 258px;
-      pointer-events: none; 
+      pointer-events: none;
       width: auto;
       height: auto;
       border-radius: 50%;
     }
+
+    // .lazy-load-image-background {
+    //   display: inline !important;
+    // }
 
     .infoCol {
       max-width: 50%;
@@ -648,6 +683,16 @@ ul#social-icons {
     justify-content: center;
 
     .hiddenHome {
+      display: flex;
+      min-height: 50%;
+      max-width: 5%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: rgba(18, 22, 28, 0.95);
+      border-radius: 25px;
+      z-index: -1;
+      margin-bottom: 30%;
       opacity: 0;
       transition: all 1.5s;
     }
@@ -659,8 +704,8 @@ ul#social-icons {
       align-items: center;
       justify-content: center;
       position: relative;
-      background-color: #12161c;
-      opacity: 0.95;
+      background-color: rgba(18, 22, 28, 0.95);
+      opacity: 1;
       border-radius: 25px;
       z-index: -1;
       margin-bottom: 30%;
@@ -699,10 +744,10 @@ ul#social-icons {
       }
     }
 
-    img {
+    .portrait-icon {
       width: auto;
       max-height: 232px;
-      pointer-events: none; 
+      pointer-events: none;
       width: auto;
       height: auto;
       border-radius: 50%;
@@ -862,6 +907,15 @@ ul#social-icons {
     justify-content: center;
 
     .hiddenHome {
+      display: flex;
+      min-height: 50%;
+      max-width: 5%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: rgba(18, 22, 28, 0.95);
+      border-radius: 25px;
+      z-index: -1;
       opacity: 0;
       transition: all 1.5s;
     }
@@ -873,7 +927,7 @@ ul#social-icons {
       align-items: center;
       justify-content: center;
       position: relative;
-      background-color: #12161c;
+      background-color: rgba(18, 22, 28, 0.95);
       opacity: 1;
       border-radius: 25px;
       z-index: -1;
@@ -913,10 +967,10 @@ ul#social-icons {
       }
     }
 
-    img {
+    .portrait-icon {
       width: auto;
       max-height: 195px;
-      pointer-events: none; 
+      pointer-events: none;
       width: auto;
       height: auto;
       border-radius: 50%;
@@ -1063,4 +1117,3 @@ ul#social-icons {
     transform: scale(0.75);
   }
 }
-

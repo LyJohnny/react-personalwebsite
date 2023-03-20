@@ -3,6 +3,8 @@ import Modal from "react-bootstrap/Modal";
 import poster from "../assets/DevTrackerPoster.png";
 import Button from "react-bootstrap/Button";
 import { saveAs } from "file-saver";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "../styles/Portfolio.scss";
 
 function PosterModal() {
@@ -28,11 +30,12 @@ function PosterModal() {
           </div>
         </Modal.Header>
         <Modal.Body>
-          <img
+          <LazyLoadImage
             src={poster}
             width="100%"
             height="100%"
             alt="DevTracker Poster"
+            effect="blur"
           />
         </Modal.Body>
         <Modal.Footer>

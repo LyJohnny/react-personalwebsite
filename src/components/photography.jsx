@@ -7,6 +7,8 @@ import { images } from "../utils/images";
 import "../styles/Portfolio.scss";
 import { Tab } from "react-bootstrap";
 import { Container } from "react-bootstrap";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Photography() {
   const [index, setIndex] = useState(-1);
@@ -31,6 +33,7 @@ function Photography() {
           images={images}
           onClick={handleClick}
           enableImageSelection={false}
+          thumbnailImageComponent={LazyLoadImage.images}
         />
         {!!currentImage && (
           <Lightbox

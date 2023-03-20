@@ -4,6 +4,8 @@ import resume from "../assets/Johnny_Ly_Résumé_.png";
 import pdfFile from "../assets/Johnny_Ly_Résumé_.pdf";
 import Button from "react-bootstrap/Button";
 import { saveAs } from "file-saver";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "../styles/Home.scss";
 
 function ResumeModal() {
@@ -16,12 +18,8 @@ function ResumeModal() {
 
   return (
     <>
-      <Button
-        className="name noselect"
-        id="resume-button"
-        onClick={handleShow}
-      >
-        View Résumé 
+      <Button className="name noselect" id="resume-button" onClick={handleShow}>
+        View Résumé
       </Button>
 
       <Modal
@@ -42,11 +40,11 @@ function ResumeModal() {
         </Modal.Header>
         <Modal.Body>
           <div id="wrap">
-            <img
+            <LazyLoadImage
               src={resume}
-              alt="Johnny Ly Résumé"
               width="100%"
               height="100%"
+              alt="Johnny Ly Résumé"
             />
           </div>
         </Modal.Body>

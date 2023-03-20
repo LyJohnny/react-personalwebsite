@@ -87,7 +87,6 @@ function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="My Instagram Page"
-
               >
                 <li id="instagram">
                   {" "}

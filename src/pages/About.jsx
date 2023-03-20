@@ -10,6 +10,8 @@ import research from "../assets/ucresearch.webp";
 import i2g from "../assets/i2g.webp";
 import ylp from "../assets/ylp.webp";
 import ucm2 from "../assets/ucm2.webp";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const About = forwardRef((props, ref) => {
   return (
@@ -22,7 +24,12 @@ const About = forwardRef((props, ref) => {
               <div className="leftCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={ucm} alt="UCM" />
+                    <LazyLoadImage
+                      className="logo"
+                      src={ucm}
+                      alt="UCM"
+                      effect="blur"
+                    />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
@@ -54,7 +61,12 @@ const About = forwardRef((props, ref) => {
                 </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={research} alt="RESEARCH" />
+                    <LazyLoadImage
+                      className="logo"
+                      src={research}
+                      alt="RESEARCH"
+                      effect="blur"
+                    />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}> Undergraduate Research </b>
@@ -89,7 +101,12 @@ const About = forwardRef((props, ref) => {
               <div className="rightCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={jpmc} alt="JPMC" />
+                    <LazyLoadImage
+                      className="logo"
+                      src={jpmc}
+                      alt="JPMC"
+                      effect="blur"
+                    />
                   </Col>
 
                   <Col lg className="description-container">
@@ -119,7 +136,12 @@ const About = forwardRef((props, ref) => {
                 </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={flsp} alt="FLSP" />
+                    <LazyLoadImage
+                      className="logo"
+                      src={flsp}
+                      alt="FLSP"
+                      effect="blur"
+                    />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
@@ -152,7 +174,12 @@ const About = forwardRef((props, ref) => {
               <div className="leftCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={i2g} alt="I2G" />
+                    <LazyLoadImage
+                      className="logo"
+                      src={i2g}
+                      alt="I2G"
+                      effect="blur"
+                    />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}> Innovate to Grow </b>
@@ -171,7 +198,12 @@ const About = forwardRef((props, ref) => {
                 </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={ylp} alt="I2G" />
+                    <LazyLoadImage
+                      className="logo"
+                      src={ylp}
+                      alt="I2G"
+                      effect="blur"
+                    />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
@@ -201,7 +233,12 @@ const About = forwardRef((props, ref) => {
               <div className="leftCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={ucm2} alt="ucm" />
+                    <LazyLoadImage
+                      className="logo"
+                      src={ucm2}
+                      alt="ucm"
+                      effect="blur"
+                    />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
@@ -220,7 +257,12 @@ const About = forwardRef((props, ref) => {
                 </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={ucm2} alt="ucm" />
+                    <LazyLoadImage 
+                      className="logo"
+                      src={ucm2}
+                      alt="ucm"
+                      effect="blur"
+                    />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>

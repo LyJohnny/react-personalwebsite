@@ -10,6 +10,8 @@ import website from "../assets/personalWebsite.webp";
 import hackmerced from "../assets/hackmerced.webp";
 import devpost from "../assets/devpost-icon.svg";
 import google from "../assets/google.svg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Projects() {
   return (
@@ -17,7 +19,8 @@ function Projects() {
       <Container className="project-container">
         <Row>
           <Col className="logo-container" lg="auto">
-            <img
+            <LazyLoadImage
+              effect="blur"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg"
               width="100px"
               alt=""
@@ -45,7 +48,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="react-icon"
@@ -58,7 +62,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
               alt="java-icon"
@@ -71,7 +76,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
               alt="springboot-icon"
@@ -83,7 +89,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
               alt="mysql-icon"
@@ -96,7 +103,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
@@ -109,7 +117,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
@@ -121,7 +130,7 @@ function Projects() {
       <Container className="project-container">
         <Row>
           <Col className="logo-container" lg="auto">
-            <img src={huf} width="100px" alt="" />
+            <LazyLoadImage effect="blur" src={huf} width="100px" alt="" />
           </Col>
           <Col lg>
             <b style={{ fontSize: "20px" }}>
@@ -156,7 +165,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
               alt="html-icon"
@@ -168,7 +178,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
               alt="css-icon"
@@ -181,7 +192,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt="javascript-icon"
@@ -194,7 +206,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
@@ -207,7 +220,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
               alt="bootstrap-icon"
@@ -219,7 +233,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
@@ -232,7 +247,12 @@ function Projects() {
       <Container className="project-container">
         <Row>
           <Col className="logo-container" lg="auto">
-            <img src={hackmerced} width="100px" alt="" />
+            <LazyLoadImage
+              effect="blur"
+              src={hackmerced}
+              width="100px"
+              alt=""
+            />
           </Col>
           <Col lg>
             <b style={{ fontSize: "20px" }}> Project Fliar </b>
@@ -255,7 +275,13 @@ function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={devpost} width="35px" alt="" /> View on Devpost
+                  <LazyLoadImage
+                    effect="blur"
+                    src={devpost}
+                    width="35px"
+                    alt=""
+                  />{" "}
+                  View on Devpost
                 </a>
               </Col>
             </Row>
@@ -274,7 +300,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
               alt="androidstudio-icon"
@@ -286,7 +313,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
               alt="java-icon"
@@ -298,7 +326,12 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img id="tool-icon2" src={google} alt="googlemobilevision-icon" />
+            <LazyLoadImage
+              effect="blur"
+              id="tool-icon2"
+              src={google}
+              alt="googlemobilevision-icon"
+            />
             Google Mobile Vision API
           </a>
 
@@ -307,7 +340,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
@@ -320,7 +354,12 @@ function Projects() {
       <Container className="project-container">
         <Row>
           <Col className="logo-container" lg="auto">
-            <img src={website} width="100px" alt="PersonalWebsiteIcon" />
+            <LazyLoadImage
+              effect="blur"
+              src={website}
+              width="100px"
+              alt="PersonalWebsiteIcon"
+            />
           </Col>
           <Col lg>
             <b style={{ fontSize: "20px" }}> Personal Website </b>
@@ -346,7 +385,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="react-icon"
@@ -358,7 +398,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
@@ -370,7 +411,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
               alt="bootstrap-icon"
@@ -382,7 +424,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
               alt="scss-icon"
@@ -395,7 +438,8 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <img
+            <LazyLoadImage
+              effect="blur"
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
