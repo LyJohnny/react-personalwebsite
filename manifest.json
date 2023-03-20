@@ -3,8 +3,8 @@
   "name": "Johnny Ly's Personal Website",
   "icons": [
     {
-      "src": "icon.webp",
-      "sizes": "512x512 144x144 64x64 32x32 24x24 16x16" ,
+      "src": "icon-new.webp",
+      "sizes": "144x144 64x64 32x32 24x24 16x16" ,
       "type": "image/webp",
       "purpose": "maskable any"
     },
@@ -17,8 +17,8 @@
     }
     
   ],
-  "start_url": "https://lyjohnny.github.io/react-personalwebsite/",
-  "scope": "https://lyjohnny.github.io/react-personalwebsite/",
+  "start_url": "https://johnnyly.dev",
+  "scope": "https://johnnyly.dev",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
