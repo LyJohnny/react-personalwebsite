@@ -1,2 +1,2 @@
-# Personal website built from scratch - 
+# Personal website built from scratch 
 
