@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Footer.scss";
+import "../styles/Footer.scss";
 import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";

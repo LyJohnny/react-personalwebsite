@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import poster from "./assets/DevTrackerPoster.png";
+import poster from "../assets/DevTrackerPoster.png";
 import Button from "react-bootstrap/Button";
 import { saveAs } from "file-saver";
-import "./styles/Portfolio.scss";
+import "../styles/Portfolio.scss";
 
 function PosterModal() {
   const [show, setShow] = useState(false);

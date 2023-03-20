@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
-import { images } from "./images";
-import "./styles/Portfolio.scss";
+import { images } from "../utils/images";
+import "../styles/Portfolio.scss";
 import { Tab } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 

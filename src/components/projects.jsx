@@ -2,14 +2,14 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import styles from "./styles/Portfolio.scss";
-import huf from "./assets/huf.png";
+import styles from "../styles/Portfolio.scss";
 import { GitHub } from "@mui/icons-material";
 import PosterModal from "./modal2";
-import website from "./assets/personalWebsite.png";
-import hackmerced from "./assets/hackmerced.png";
-import devpost from "./assets/devpost-icon.svg";
-import google from "./assets/google.svg";
+import huf from "../assets/huf.webp";
+import website from "../assets/personalWebsite.webp";
+import hackmerced from "../assets/hackmerced.webp";
+import devpost from "../assets/devpost-icon.svg";
+import google from "../assets/google.svg";
 
 function Projects() {
   return (
@@ -320,7 +320,7 @@ function Projects() {
       <Container className="project-container">
         <Row>
           <Col className="logo-container" lg="auto">
-            <img src={website} width="100px" alt="" />
+            <img src={website} width="100px" alt="PersonalWebsiteIcon" />
           </Col>
           <Col lg>
             <b style={{ fontSize: "20px" }}> Personal Website </b>

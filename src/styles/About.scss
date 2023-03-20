@@ -1,0 +1,120 @@
+.about {
+  background-color: #f0f0f0;
+  max-width: 100%;
+  max-height: auto; //important, this makes it only take up the full viewport (not the entire webpage)
+  padding-bottom: 1em;
+  z-index: 1;
+
+  h1 {
+    text-align: center;
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 300;
+    font-display: swap;
+    margin-bottom: 0.5em;
+  
+
+    // background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,9,121,1) 25%, rgba(0,212,255,1) 100%);;
+    // background-size: 100%;
+    // -webkit-background-clip: text;
+    // -moz-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // -moz-text-fill-color: transparent;
+  }
+}
+p {
+  font-family: Arial;
+  font-weight: 500;
+  letter-spacing: .01em;
+  line-height: 1.5em;
+  font-size: 0.938rem;
+  margin-top: 1rem;
+}
+
+b {
+  font-family: "Montserrat", sans-serif;
+  
+}
+
+img.logo{
+  pointer-events: none;
+  width: 100;
+  height: 100;
+}
+
+li {
+  font-family: Arial;
+  font-weight: 500;
+  letter-spacing: .01em;
+  line-height: 1.5em;
+  font-size: 0.938rem;
+}
+
+.coursework {
+  padding-left: 0px;
+  margin-left: 20px;
+}
+
+.logo {
+  width: 100px;
+  padding-top: 5%;
+  height: auto;
+}
+
+.mainCol {
+  padding: 3em;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 599px) {
+  .mainCol {
+    max-width: 50%;
+    padding: 3em;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .description-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 599px) {
+  .mainCol {
+    max-width: 50%;
+    padding: 1.2em;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .description-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .description-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}

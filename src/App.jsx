@@ -1,8 +1,8 @@
 import React,{useRef} from 'react';
-import Home from './components/Home';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Skills from './components/Skills';
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Skills from './pages/Skills';
 import Footer from './components/Footer';
 
 

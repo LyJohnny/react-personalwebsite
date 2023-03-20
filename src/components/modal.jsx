@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import resume from "./assets/Johnny_Ly_Résumé_.png";
-import pdfFile from "./assets/Johnny_Ly_Résumé_.pdf";
+import resume from "../assets/Johnny_Ly_Résumé_.png";
+import pdfFile from "../assets/Johnny_Ly_Résumé_.pdf";
 import Button from "react-bootstrap/Button";
 import { saveAs } from "file-saver";
-import "./styles/Home.scss";
+import "../styles/Home.scss";
 
 function ResumeModal() {
   const [show, setShow] = useState(false);
