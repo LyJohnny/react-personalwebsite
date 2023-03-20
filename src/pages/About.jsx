@@ -10,8 +10,6 @@ import research from "../assets/ucresearch.webp";
 import i2g from "../assets/i2g.webp";
 import ylp from "../assets/ylp.webp";
 import ucm2 from "../assets/ucm2.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const About = forwardRef((props, ref) => {
   return (
@@ -24,12 +22,7 @@ const About = forwardRef((props, ref) => {
               <div className="leftCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <LazyLoadImage
-                      className="logo"
-                      src={ucm}
-                      alt="UCM"
-                      effect="blur"
-                    />
+                    <img className="logo" src={ucm} alt="UCM" />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
@@ -61,12 +54,7 @@ const About = forwardRef((props, ref) => {
                 </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <LazyLoadImage
-                      className="logo"
-                      src={research}
-                      alt="RESEARCH"
-                      effect="blur"
-                    />
+                    <img className="logo" src={research} alt="RESEARCH" />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}> Undergraduate Research </b>
@@ -74,7 +62,7 @@ const About = forwardRef((props, ref) => {
                       {" "}
                       UC Merced Yosemite Coronavirus Time Capsule Team{" "}
                     </p>
-                    <p style={{ fontSize: "12px" }}>
+                    <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
                       September 2020 - May 2021{" "}
                     </p>
@@ -101,12 +89,7 @@ const About = forwardRef((props, ref) => {
               <div className="rightCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <LazyLoadImage
-                      className="logo"
-                      src={jpmc}
-                      alt="JPMC"
-                      effect="blur"
-                    />
+                    <img className="logo" src={jpmc} alt="JPMC" />
                   </Col>
 
                   <Col lg className="description-container">
@@ -118,7 +101,7 @@ const About = forwardRef((props, ref) => {
                       {" "}
                       Software Engineer Intern{" "}
                     </p>
-                    <p style={{ fontSize: "12px" }}>
+                    <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
                       June 2022 - August 2022{" "}
                     </p>
@@ -136,12 +119,7 @@ const About = forwardRef((props, ref) => {
                 </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <LazyLoadImage
-                      className="logo"
-                      src={flsp}
-                      alt="FLSP"
-                      effect="blur"
-                    />
+                    <img className="logo" src={flsp} alt="FLSP" />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
@@ -149,7 +127,7 @@ const About = forwardRef((props, ref) => {
                       UC Merced Fiat Lux Scholars Program{" "}
                     </b>
                     <p style={{ fontSize: "15px" }}> Academic Scholar/Mentor</p>
-                    <p style={{ fontSize: "12px" }}> August 2021 - May 2022 </p>
+                    <p id="date" style={{ fontSize: "12px" }}> August 2021 - May 2022 </p>
                     <p>
                       Responsibilities included maintaining accurate records and
                       acting as a liaison between the program staff and
@@ -174,17 +152,12 @@ const About = forwardRef((props, ref) => {
               <div className="leftCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <LazyLoadImage
-                      className="logo"
-                      src={i2g}
-                      alt="I2G"
-                      effect="blur"
-                    />
+                    <img className="logo" src={i2g} alt="I2G" />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}> Innovate to Grow </b>
                     <p style={{ fontSize: "15px" }}> Front End Developer </p>
-                    <p style={{ fontSize: "12px" }}>
+                    <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
                       September 2022 - December 2022{" "}
                     </p>
@@ -198,12 +171,7 @@ const About = forwardRef((props, ref) => {
                 </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <LazyLoadImage
-                      className="logo"
-                      src={ylp}
-                      alt="I2G"
-                      effect="blur"
-                    />
+                    <img className="logo" src={ylp} alt="I2G" />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
@@ -211,7 +179,7 @@ const About = forwardRef((props, ref) => {
                       Yosemite Leadership Program{" "}
                     </b>
                     <p style={{ fontSize: "15px" }}> Alumni </p>
-                    <p style={{ fontSize: "12px" }}>
+                    <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
                       September 2019 - May 2021{" "}
                     </p>
@@ -233,12 +201,7 @@ const About = forwardRef((props, ref) => {
               <div className="leftCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <LazyLoadImage
-                      className="logo"
-                      src={ucm2}
-                      alt="ucm"
-                      effect="blur"
-                    />
+                    <img className="logo" src={ucm2} alt="ucm" />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
@@ -246,7 +209,7 @@ const About = forwardRef((props, ref) => {
                       Chancellor's Honors List{" "}
                     </b>
                     <p style={{ fontSize: "15px" }}> UC Merced </p>
-                    <p style={{ fontSize: "12px" }}> Fall 2019 - Fall 2022 </p>
+                    <p id="date" style={{ fontSize: "12px" }}> Fall 2019 - Fall 2022 </p>
                     <p>
                       Undergraduate students who are placed on the Dean’s Honor
                       List for both semesters in a single academic year (fall
@@ -257,12 +220,7 @@ const About = forwardRef((props, ref) => {
                 </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <LazyLoadImage 
-                      className="logo"
-                      src={ucm2}
-                      alt="ucm"
-                      effect="blur"
-                    />
+                    <img className="logo" src={ucm2} alt="ucm" />
                   </Col>
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
@@ -270,7 +228,7 @@ const About = forwardRef((props, ref) => {
                       Frances M. Benton Scholarship{" "}
                     </b>
                     <p style={{ fontSize: "15px" }}> UC Merced </p>
-                    <p style={{ fontSize: "12px" }}>
+                    <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
                       Fall 2021 - Spring 2023{" "}
                     </p>

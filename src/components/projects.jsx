@@ -10,8 +10,6 @@ import website from "../assets/personalWebsite.webp";
 import hackmerced from "../assets/hackmerced.webp";
 import devpost from "../assets/devpost-icon.svg";
 import google from "../assets/google.svg";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Projects() {
   return (
@@ -19,8 +17,7 @@ function Projects() {
       <Container className="project-container">
         <Row>
           <Col className="logo-container" lg="auto">
-            <LazyLoadImage
-              effect="blur"
+            <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg"
               width="100px"
               alt=""
@@ -29,7 +26,7 @@ function Projects() {
           <Col lg>
             <b style={{ fontSize: "20px" }}> DevTracker </b>
             <p style={{ fontSize: "15px" }}> Innovate To Grow </p>
-            <p style={{ fontSize: "12px" }}> September 2022 - December 2022 </p>
+            <p id="date" style={{ fontSize: "12px" }}> September 2022 - December 2022 </p>
 
             <PosterModal />
 
@@ -48,8 +45,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="react-icon"
@@ -62,8 +58,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
               alt="java-icon"
@@ -76,8 +71,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
               alt="springboot-icon"
@@ -89,8 +83,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
               alt="mysql-icon"
@@ -103,8 +96,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
@@ -117,8 +109,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
@@ -130,7 +121,7 @@ function Projects() {
       <Container className="project-container">
         <Row>
           <Col className="logo-container" lg="auto">
-            <LazyLoadImage effect="blur" src={huf} width="100px" alt="" />
+            <img src={huf} width="100px" alt="" />
           </Col>
           <Col lg>
             <b style={{ fontSize: "20px" }}>
@@ -141,7 +132,7 @@ function Projects() {
               {" "}
               JPMorgan Chase &amp; Co. Code For Good{" "}
             </p>
-            <p style={{ fontSize: "12px" }}> February 2022 </p>
+            <p id="date" style={{ fontSize: "12px" }}> February 2022 </p>
             <p id="project-description">
               Redesigned the user interface of the Hispanic Unity of Florida's
               website to simplify navigation and improve user experience.
@@ -165,8 +156,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
               alt="html-icon"
@@ -178,8 +168,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
               alt="css-icon"
@@ -192,8 +181,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt="javascript-icon"
@@ -206,8 +194,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
@@ -220,8 +207,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
               alt="bootstrap-icon"
@@ -233,8 +219,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
@@ -247,17 +232,12 @@ function Projects() {
       <Container className="project-container">
         <Row>
           <Col className="logo-container" lg="auto">
-            <LazyLoadImage
-              effect="blur"
-              src={hackmerced}
-              width="100px"
-              alt=""
-            />
+            <img src={hackmerced} width="100px" alt="" />
           </Col>
           <Col lg>
             <b style={{ fontSize: "20px" }}> Project Fliar </b>
             <p style={{ fontSize: "15px" }}>HackMerced</p>
-            <p style={{ fontSize: "12px" }}> February 2020 </p>
+            <p id="date" style={{ fontSize: "12px" }}> February 2020 </p>
             <Row>
               <Col className="project-links-container">
                 <a
@@ -275,13 +255,7 @@ function Projects() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <LazyLoadImage
-                    effect="blur"
-                    src={devpost}
-                    width="35px"
-                    alt=""
-                  />{" "}
-                  View on Devpost
+                  <img src={devpost} width="35px" alt="" /> View on Devpost
                 </a>
               </Col>
             </Row>
@@ -300,8 +274,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
               alt="androidstudio-icon"
@@ -313,8 +286,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
               alt="java-icon"
@@ -326,12 +298,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
-              id="tool-icon2"
-              src={google}
-              alt="googlemobilevision-icon"
-            />
+            <img id="tool-icon2" src={google} alt="googlemobilevision-icon" />
             Google Mobile Vision API
           </a>
 
@@ -340,8 +307,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
@@ -354,16 +320,11 @@ function Projects() {
       <Container className="project-container">
         <Row>
           <Col className="logo-container" lg="auto">
-            <LazyLoadImage
-              effect="blur"
-              src={website}
-              width="100px"
-              alt="PersonalWebsiteIcon"
-            />
+            <img src={website} width="100px" alt="PersonalWebsiteIcon" />
           </Col>
           <Col lg>
             <b style={{ fontSize: "20px" }}> Personal Website </b>
-            <p style={{ fontSize: "12px" }}> July 2022 - March 2023 </p>
+            <p id="date" style={{ fontSize: "12px" }}> July 2022 - March 2023 </p>
             <a
               className="githubLink"
               href="https://github.com/LyJohnny/react-personalwebsite"
@@ -385,8 +346,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="react-icon"
@@ -398,8 +358,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
@@ -411,8 +370,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
               alt="bootstrap-icon"
@@ -424,8 +382,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
               alt="scss-icon"
@@ -438,8 +395,7 @@ function Projects() {
             href="/#"
             onClick={(e) => e.preventDefault()}
           >
-            <LazyLoadImage
-              effect="blur"
+            <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"

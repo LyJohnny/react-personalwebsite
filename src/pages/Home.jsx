@@ -3,7 +3,7 @@ import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import React from "react";
 import "../styles/Home.scss";
-import portrait from "../assets/portrait1.webp";
+import portrait from "../assets/portrait.webp";
 import ParticleBackground from "../utils/ParticleBackground";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -44,7 +44,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
             <Row>
               <Col className="infoCol">
                 <div className="text">
-                  <div className="row d-flex text-center justify-content-center mt-5">
+                  <div className="row d-flex text-center justify-content-center mt-5" id="name">
                     <h1>Johnny Ly </h1>
                   </div>
 
