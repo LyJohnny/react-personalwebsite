@@ -11,8 +11,8 @@
     }
     
   ],
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "https://lyjohnny.github.io/react-personalwebsite/",
+  "scope": "https://lyjohnny.github.io/react-personalwebsite/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
