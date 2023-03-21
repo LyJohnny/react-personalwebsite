@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.99cc8bfa.css",
-    "main.js": "/static/js/main.32e57144.js",
+    "main.css": "/static/css/main.edf7ed1b.css",
+    "main.js": "/static/js/main.457b07c9.js",
     "static/media/DevTrackerPoster.png": "/static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
     "static/media/Johnny_Ly_Résumé_.png": "/static/media/Johnny_Ly_Résumé_.05e93467bcc03edbbccb.png",
     "static/media/Johnny_Ly_Résumé_.pdf": "/static/media/Johnny_Ly_Résumé_.a4c186d8e11602cb38d0.pdf",
@@ -25,11 +25,11 @@
     "index.html": "/index.html",
     "static/media/devpost-icon.svg": "/static/media/devpost-icon.a1063e10aecca4d2ebf0a8918dbc9a33.svg",
     "static/media/sql.webp": "/static/media/sql.20c601ab989ba61a887c.webp",
-    "main.99cc8bfa.css.map": "/static/css/main.99cc8bfa.css.map",
-    "main.32e57144.js.map": "/static/js/main.32e57144.js.map"
+    "main.edf7ed1b.css.map": "/static/css/main.edf7ed1b.css.map",
+    "main.457b07c9.js.map": "/static/js/main.457b07c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.99cc8bfa.css",
-    "static/js/main.32e57144.js"
+    "static/css/main.edf7ed1b.css",
+    "static/js/main.457b07c9.js"
   ]
 }
