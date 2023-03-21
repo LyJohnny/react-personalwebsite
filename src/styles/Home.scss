@@ -42,6 +42,27 @@
     margin-bottom: 5%;
   }
 
+  .name-header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .email-header{
+    text-align: center;
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .button-area{
+    display: flex;
+    text-align: center;
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
   .row#name{
     margin-bottom: 0;
   }

@@ -44,11 +44,11 @@ const Home = ({ aboutRef, portfolioRef }) => {
             <Row>
               <Col className="infoCol">
                 <div className="text">
-                  <div className="row d-flex text-center justify-content-center mt-5" id="name">
+                  <div className="name-header" id="name">
                     <h1>Johnny Ly </h1>
                   </div>
 
-                  <div className="text-center ms-0 justify-content-center">
+                  <div className="email-header">
                     <p className="email-text"> johnbus.ly@gmail.com</p>
 
                     <div
@@ -71,7 +71,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                 </div>
 
                 <div className="buttonHome">
-                  <div className="d-flex text-center ms-0 justify-content-center mt-4">
+                  <div className="button-area ">
                     <ResumeModal />
                     <button
                       type="button"
@@ -85,7 +85,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
 
                 {/* SOCIAL MEDIA ICONS */}
                 <div className="icon-area">
-                  <div className="d-flex text-center ms-0 justify-content-center mt-4">
+                  <div className="button-area">
                     <ul id="social-icons">
                       <OverlayTrigger
                         placement="bottom"

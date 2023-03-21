@@ -127,7 +127,10 @@ const About = forwardRef((props, ref) => {
                       UC Merced Fiat Lux Scholars Program{" "}
                     </b>
                     <p style={{ fontSize: "15px" }}> Academic Scholar/Mentor</p>
-                    <p id="date" style={{ fontSize: "12px" }}> August 2021 - May 2022 </p>
+                    <p id="date" style={{ fontSize: "12px" }}>
+                      {" "}
+                      August 2021 - May 2022{" "}
+                    </p>
                     <p>
                       Responsibilities included maintaining accurate records and
                       acting as a liaison between the program staff and
@@ -209,7 +212,10 @@ const About = forwardRef((props, ref) => {
                       Chancellor's Honors List{" "}
                     </b>
                     <p style={{ fontSize: "15px" }}> UC Merced </p>
-                    <p id="date" style={{ fontSize: "12px" }}> Fall 2019 - Fall 2022 </p>
+                    <p id="date" style={{ fontSize: "12px" }}>
+                      {" "}
+                      Fall 2019 - Fall 2022{" "}
+                    </p>
                     <p>
                       Undergraduate students who are placed on the Dean’s Honor
                       List for both semesters in a single academic year (fall
