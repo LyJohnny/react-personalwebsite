@@ -73,6 +73,7 @@
 
 .tool-container {
   text-decoration: none;
+  pointer-events: none;
   background-color: #f5f5f5;
   border-radius: 25px;
   margin: 0.5em;
@@ -205,6 +206,16 @@ Button#poster-button {
   margin-left: 20px;
   color: black;
 }
+.figmaLink {
+  text-decoration: none;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  margin-left: 20px;
+  color: black;
+}
 
 
 
@@ -243,6 +254,17 @@ Button#poster-button {
     color: black;
     font-size: 0.9rem;
   }
+  .figmaLink {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin-left: 5px;
+    color: black;
+    font-size: 0.9rem;
+  }
 }
 
 
@@ -264,6 +286,17 @@ Button#poster-button {
     font-size: 0.6rem;
   }
   .devpostLink {
+    text-decoration: none;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    color: black;
+    font-size: 0.6rem;
+  }
+  .figmaLink {
     text-decoration: none;
     background-color: #f5f5f5;
     border-radius: 25px;
