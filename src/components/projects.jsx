@@ -37,7 +37,7 @@ function Projects() {
             </a>
             <a
               className="figmaLink"
-              href="https://www.figma.com/file/sUUVQxGneejPU5kFZnObCc/FlyerScan?type=design&node-id=0%3A1&t=Cz0T2fDih9VlUvkJ-1"
+              href="https://www.figma.com/file/sUUVQxGneejPU5kFZnObCc/FlyerScan?type=design&node-id=2%3A3&t=hCf43QzO486JfDMb-1"
               target="_blank"
               rel="noreferrer"
             >

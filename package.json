@@ -2,7 +2,7 @@
   "homepage": "https://johnnyly.dev",
   "name": "port-new",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
