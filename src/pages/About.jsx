@@ -87,6 +87,29 @@ const About = forwardRef((props, ref) => {
             <Col className="mainCol" lg={6}>
               <h1>Work Experience</h1>
               <div className="rightCol">
+              <Row>
+                  <Col className="logo-container" lg="auto">
+                    <img className="logo" src={jpmc} alt="JPMC" />
+                  </Col>
+
+                  <Col lg className="description-container">
+                    <b style={{ fontSize: "20px" }}>
+                      {" "}
+                      JPMorgan Chase &amp; Co.{" "}
+                    </b>
+                    <p style={{ fontSize: "15px" }}>
+                      {" "}
+                      Software Engineer {" "}
+                    </p>
+                    <p id="date" style={{ fontSize: "12px" }}>
+                      {" "}
+                      New York Metropolitan Area, NY | Present {" "}
+                    </p>
+                    <p>
+                      Asset and Wealth Management Team.
+                    </p>
+                  </Col>
+                </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
                     <img className="logo" src={jpmc} alt="JPMC" />
@@ -103,7 +126,7 @@ const About = forwardRef((props, ref) => {
                     </p>
                     <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
-                      June 2022 - August 2022{" "}
+                      New York Metropolitan Area, NY | June 2022 - August 2022{" "}
                     </p>
                     <p>
                       Modernized the Loan Editor App for the Markets Technology
@@ -129,7 +152,7 @@ const About = forwardRef((props, ref) => {
                     <p style={{ fontSize: "15px" }}> Academic Scholar/Mentor</p>
                     <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
-                      August 2021 - May 2022{" "}
+                      Merced, CA | August 2021 - May 2022{" "}
                     </p>
                     <p>
                       Responsibilities included maintaining accurate records and
@@ -214,7 +237,7 @@ const About = forwardRef((props, ref) => {
                     <p style={{ fontSize: "15px" }}> UC Merced </p>
                     <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
-                      Fall 2019 - Fall 2022{" "}
+                      Fall 2019 - Spring 2023{" "}
                     </p>
                     <p>
                       Undergraduate students who are placed on the Dean’s Honor

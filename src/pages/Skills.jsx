@@ -48,6 +48,12 @@ const Skills = () => {
                       alt="JavaScript"
                     />
                     JavaScript
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                      alt="TypeScript"
+                    />
+                    TypeScript
                   </Col>
                   <Col className="logo-container-half" xs="6">
                     <img
@@ -98,6 +104,12 @@ const Skills = () => {
                       alt="Flask"
                     />
                     Flask
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" 
+                      alt="spring"
+                    />
+                    Spring
                   </Col>
 
                   <Col className="logo-container-half" xs="6">
