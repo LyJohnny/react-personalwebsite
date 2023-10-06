@@ -10,6 +10,7 @@ import research from "../assets/ucresearch.webp";
 import i2g from "../assets/i2g.webp";
 import ylp from "../assets/ylp.webp";
 import ucm2 from "../assets/ucm2.webp";
+import aws from "../assets/aws.webp";
 
 const About = forwardRef((props, ref) => {
   return (
@@ -87,7 +88,7 @@ const About = forwardRef((props, ref) => {
             <Col className="mainCol" lg={6}>
               <h1>Work Experience</h1>
               <div className="rightCol">
-              <Row>
+                <Row>
                   <Col className="logo-container" lg="auto">
                     <img className="logo" src={jpmc} alt="JPMC" />
                   </Col>
@@ -97,17 +98,12 @@ const About = forwardRef((props, ref) => {
                       {" "}
                       JPMorgan Chase &amp; Co.{" "}
                     </b>
-                    <p style={{ fontSize: "15px" }}>
-                      {" "}
-                      Software Engineer {" "}
-                    </p>
+                    <p style={{ fontSize: "15px" }}> Software Engineer </p>
                     <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
-                      New York Metropolitan Area, NY | Present {" "}
+                      New York Metropolitan Area, NY | Present{" "}
                     </p>
-                    <p>
-                      Asset and Wealth Management Team.
-                    </p>
+                    <p>Asset and Wealth Management Team.</p>
                   </Col>
                 </Row>
                 <Row>
@@ -225,6 +221,40 @@ const About = forwardRef((props, ref) => {
               {" "}
               <h1>Achievements</h1>
               <div className="leftCol">
+                <Row>
+                  <Col className="logo-container" lg="auto">
+                    <a
+                      href="https://www.credly.com/badges/2a7631e3-c5fc-4444-920a-9088d31e859b"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img className="logo" src={aws} alt="aws" />
+                    </a>
+                  </Col>
+                  <Col lg className="description-container">
+                    <b style={{ fontSize: "20px" }}>
+                      {" "}
+                      AWS Certified Cloud Practitioner{" "}
+                    </b>
+                    <p style={{ fontSize: "15px" }}>
+                      {" "}
+                      Amazon Web Services Training and Certification{" "}
+                    </p>
+                    <p id="date" style={{ fontSize: "12px" }}>
+                      {" "}
+                      Oct 2023 - Oct 2026{" "}
+                    </p>
+                    <p>
+                      Issued by Amazon Web Services Training and Certification.
+                      <br /> <br />
+                      Earners of this certification have a fundamental
+                      understanding of IT services and their uses in the AWS
+                      Cloud. They demonstrated cloud fluency and foundational
+                      AWS knowledge. Badge owners are able to identify essential
+                      AWS services necessary to set up AWS-focused projects.
+                    </p>
+                  </Col>
+                </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
                     <img className="logo" src={ucm2} alt="ucm" />

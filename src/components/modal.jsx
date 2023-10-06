@@ -34,7 +34,7 @@ function ResumeModal() {
           <div className="modal-title">
             <Modal.Title bsPrefix="modal-title">
               {" "}
-              <h4 id="modal-titles"> Résumé (Updated May 2023)</h4>
+              <h4 id="modal-titles"> Résumé (Updated July 2023)</h4>
             </Modal.Title>
           </div>
         </Modal.Header>
