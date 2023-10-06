@@ -56,18 +56,18 @@ const Skills = () => {
                     TypeScript
                   </Col>
                   <Col className="logo-container-half" xs="6">
+                  <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                      alt="Java"
+                    />
+                    Java
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                       alt="Python"
                     />
                     Python
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                      alt="C/C++"
-                    />
-                    C/C++
                     <img className="icon" src={sql} alt="SQL" />
                     SQL
                   </Col>
@@ -94,25 +94,34 @@ const Skills = () => {
                     React
                     <img
                       className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" 
+                      alt="spring"
+                    />
+                    Spring
+                    <img
+                      className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                       alt="Node"
                     />
                     Node
+                    
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
                       alt="Flask"
                     />
                     Flask
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" 
-                      alt="spring"
-                    />
-                    Spring
+                 
                   </Col>
 
                   <Col className="logo-container-half" xs="6">
+
+                   <img 
+                   className="icon"
+                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" 
+                   alt="Oracle"
+                   />
+                   SQL Developer
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"

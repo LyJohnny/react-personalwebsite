@@ -60,7 +60,7 @@ const Home = ({ aboutRef, portfolioRef }) => {
                       <Typewriter
                         options={{
                           pauseFor: 3000,
-                          strings: ["Software Engineer", "Front End Developer"],
+                          strings: ["Software Engineer", "Full Stack Developer"],
                           autoStart: true,
                           loop: true,
                           delay: "natural",
