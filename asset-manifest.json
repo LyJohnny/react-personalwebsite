@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.999b8c56.css",
-    "main.js": "/static/js/main.fc0d6576.js",
+    "main.js": "/static/js/main.11820abc.js",
     "static/media/DevTrackerPoster.png": "/static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
     "static/media/Johnny_Ly_Résumé_.png": "/static/media/Johnny_Ly_Résumé_.d71c03484d430d93a04a.png",
     "static/media/Johnny_Ly_Résumé_.pdf": "/static/media/Johnny_Ly_Résumé_.37ae270adeff21fa5257.pdf",
@@ -14,6 +14,7 @@
     "static/media/flsp.webp": "/static/media/flsp.2ab20e57d1a5ba822840.webp",
     "static/media/personalWebsite.webp": "/static/media/personalWebsite.a082983e89b3cc6bda54.webp",
     "static/media/ylp.webp": "/static/media/ylp.918f4bfba4f5ee2a20a3.webp",
+    "static/media/aws.webp": "/static/media/aws.85be82975ff7be2a9c22.webp",
     "static/media/ucresearch.webp": "/static/media/ucresearch.9a009a7e69ea1b1bac32.webp",
     "static/media/huf.webp": "/static/media/huf.8720d641931727390f89.webp",
     "static/media/agile.webp": "/static/media/agile.bdbedfbcdc259e39f721.webp",
@@ -27,10 +28,10 @@
     "static/media/devpost-icon.svg": "/static/media/devpost-icon.050755888f0695ab7a66ad0945b2a7d9.svg",
     "static/media/sql.webp": "/static/media/sql.20c601ab989ba61a887c.webp",
     "main.999b8c56.css.map": "/static/css/main.999b8c56.css.map",
-    "main.fc0d6576.js.map": "/static/js/main.fc0d6576.js.map"
+    "main.11820abc.js.map": "/static/js/main.11820abc.js.map"
   },
   "entrypoints": [
     "static/css/main.999b8c56.css",
-    "static/js/main.fc0d6576.js"
+    "static/js/main.11820abc.js"
   ]
 }
