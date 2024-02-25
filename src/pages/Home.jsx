@@ -3,7 +3,7 @@ import { GitHub, LinkedIn, Instagram } from "@mui/icons-material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import React from "react";
 import "../styles/Home.scss";
-import portrait from "../assets/portrait.webp";
+import portrait from "../assets/portrait-updated.webp";
 import ParticleBackground from "../utils/ParticleBackground";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
