@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.999b8c56.css",
-    "main.js": "/static/js/main.11820abc.js",
+    "main.css": "/static/css/main.c45ed723.css",
+    "main.js": "/static/js/main.b4bdcad1.js",
     "static/media/DevTrackerPoster.png": "/static/media/DevTrackerPoster.ab11870649ba1e3e12da.png",
-    "static/media/Johnny_Ly_Résumé_.png": "/static/media/Johnny_Ly_Résumé_.d71c03484d430d93a04a.png",
-    "static/media/Johnny_Ly_Résumé_.pdf": "/static/media/Johnny_Ly_Résumé_.37ae270adeff21fa5257.pdf",
-    "static/media/portrait.webp": "/static/media/portrait.c6494fcdf8f7f0802da5.webp",
+    "static/media/Johnny_Ly_Résumé_.png": "/static/media/Johnny_Ly_Résumé_.ed4bdb86074202abcea0.png",
+    "static/media/Johnny_Ly_Résumé_.pdf": "/static/media/Johnny_Ly_Résumé_.09b547409d96f8d7160b.pdf",
     "static/media/ucm2.webp": "/static/media/ucm2.f0aef9cb04be24728e92.webp",
     "static/media/i2g.webp": "/static/media/i2g.92a0eafdfb1e5f66f8eb.webp",
     "service-worker.js": "/service-worker.js",
     "static/media/jpmc.webp": "/static/media/jpmc.e8aedb421b3223d773f9.webp",
+    "static/media/portrait-updated.webp": "/static/media/portrait-updated.262e956e6c6a4b47bd86.webp",
     "static/media/ucm.webp": "/static/media/ucm.49c18b93fde280024ba7.webp",
     "static/media/flsp.webp": "/static/media/flsp.2ab20e57d1a5ba822840.webp",
     "static/media/personalWebsite.webp": "/static/media/personalWebsite.a082983e89b3cc6bda54.webp",
@@ -27,11 +27,11 @@
     "index.html": "/index.html",
     "static/media/devpost-icon.svg": "/static/media/devpost-icon.050755888f0695ab7a66ad0945b2a7d9.svg",
     "static/media/sql.webp": "/static/media/sql.20c601ab989ba61a887c.webp",
-    "main.999b8c56.css.map": "/static/css/main.999b8c56.css.map",
-    "main.11820abc.js.map": "/static/js/main.11820abc.js.map"
+    "main.c45ed723.css.map": "/static/css/main.c45ed723.css.map",
+    "main.b4bdcad1.js.map": "/static/js/main.b4bdcad1.js.map"
   },
   "entrypoints": [
-    "static/css/main.999b8c56.css",
-    "static/js/main.11820abc.js"
+    "static/css/main.c45ed723.css",
+    "static/js/main.b4bdcad1.js"
   ]
 }
