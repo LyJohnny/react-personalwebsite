@@ -11,6 +11,7 @@ import i2g from "../assets/i2g.webp";
 import ylp from "../assets/ylp.webp";
 import ucm2 from "../assets/ucm2.webp";
 import aws from "../assets/aws.webp";
+import ffg from "../assets/ffg.webp";
 
 const About = forwardRef((props, ref) => {
   return (
@@ -172,6 +173,25 @@ const About = forwardRef((props, ref) => {
             <Col className="mainCol" lg={6}>
               <h1>Activities + Leadership Experience</h1>
               <div className="leftCol">
+              <Row>
+                  <Col className="logo-container" lg="auto">
+                    <img className="logo" src={ffg} alt="I2G" />
+                  </Col>
+                  <Col lg className="description-container">
+                    <b style={{ fontSize: "20px" }}> JPMorgan Chase &amp; Co. Force For Good</b>
+                    <p style={{ fontSize: "15px" }}> Core Team Member </p>
+                    <p id="date" style={{ fontSize: "12px" }}>
+                      {" "}
+                      April 2024 - November 2024{" "}
+                    </p>
+                    <p>
+                    Collaborated with Project for Public Spaces through JPMorgan Chase's Force For Good program to tackle challenges in decentralized data management 
+                    by transitioning their data from various systems, including Monday.com and Airtable, into a unified Bloomerang CRM platform. This solution consolidated their data 
+                    into a single location capable of managing over 50,000 records, enabling the organization to efficiently track audience interactions, enhance donor engagement, and improve program 
+                    planning. 
+                    </p>
+                  </Col>
+                </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
                     <img className="logo" src={i2g} alt="I2G" />

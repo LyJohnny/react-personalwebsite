@@ -1,5 +1,15 @@
 export const images = [
   {
+    src: "./images/IMG_9817.jpg",
+    width: 234,
+    height: 313,
+  },
+  {
+    src: "./images/IMG_8750.jpg",
+    width: 234,
+    height: 313,
+  },
+  {
     src: "./images/IMG_4825.jpg",
     width: 234,
     height: 313,
