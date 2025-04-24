@@ -21,7 +21,6 @@ const Skills = () => {
         <Container className="skill-container" xs="12">
           <Row>
             <Col className="showH1" id="languages">
-              {" "}
               <h1 id="skills-header"> Languages </h1>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear" : ""}`}
@@ -35,41 +34,41 @@ const Skills = () => {
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
                       alt="HTML/CSS"
                     />
-                    HTML
+                    <div className="icon-text">HTML</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
                       alt="CSS"
                     />
-                    CSS
+                    <div className="icon-text">CSS</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                       alt="JavaScript"
                     />
-                    JavaScript
+                    <div className="icon-text">JavaScript</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                       alt="TypeScript"
                     />
-                    TypeScript
+                    <div className="icon-text">TypeScript</div>
                   </Col>
                   <Col className="logo-container-half" xs="6">
-                  <img
+                    <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
                       alt="Java"
                     />
-                    Java
+                    <div className="icon-text">Java</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                       alt="Python"
                     />
-                    Python
+                    <div className="icon-text">Python</div>
                     <img className="icon" src={sql} alt="SQL" />
-                    SQL
+                    <div className="icon-text">SQL</div>
                   </Col>
                 </Row>
               </Col>
@@ -78,7 +77,6 @@ const Skills = () => {
             {/* -------------------------------------------------Tools/Libraries Column---------------------------------------------------------------------------------- */}
 
             <Col className="showH2" id="tools">
-              {" "}
               <h1 id="skills-header"> Tools/Libraries </h1>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear2" : ""}`}
@@ -91,55 +89,52 @@ const Skills = () => {
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                       alt="React"
                     />
-                    React
+                    <div className="icon-text">React</div>
                     <img
                       className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" 
-                      alt="spring"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                      alt="Spring"
                     />
-                    Spring
+                    <div className="icon-text">Spring</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                       alt="Node"
                     />
-                    Node
-                    
+                    <div className="icon-text">Node</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
                       alt="Flask"
                     />
-                    Flask
-                 
+                    <div className="icon-text">Flask</div>
                   </Col>
 
                   <Col className="logo-container-half" xs="6">
-
-                   <img 
-                   className="icon"
-                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" 
-                   alt="Oracle"
-                   />
-                   SQL Developer
+                    <img
+                      className="icon"
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"
+                      alt="MSSQL"
+                    />
+                    <div className="icon-text">MS SQL</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
                       alt="Bootstrap"
                     />
-                    Bootstrap
+                    <div className="icon-text">Bootstrap</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
                       alt="Scss"
                     />
-                    Scss
+                    <div className="icon-text">Scss</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                       alt="Git"
                     />
-                    Git
+                    <div className="icon-text">Git</div>
                   </Col>
                 </Row>
               </Col>
@@ -147,7 +142,6 @@ const Skills = () => {
 
             {/* -------------------------------------------------Other Column---------------------------------------------------------------------------------- */}
             <Col className="showH3" id="other">
-              {" "}
               <h1 id="skills-header"> Other </h1>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear3" : ""}`}
@@ -160,19 +154,19 @@ const Skills = () => {
                       src={agile}
                       alt="AGILE Methodologies"
                     />
-                    AGILE Methodologies
+                    <div className="icon-text">AGILE Methodologies</div>
                     <img
                       className="other-icon"
                       src={typingSpeed}
                       alt="Typing Speed"
                     />
-                    Typing Speed: 110+ WPM
+                    <div className="icon-text">Typing Speed: 110+ WPM</div>
                     <img
                       className="other-icon"
                       src={photography}
                       alt="Photography"
                     />
-                    Photography
+                    <div className="icon-text">Photography</div>
                   </Col>
 
                   <Col className="logo-container-half" xs="6">
@@ -181,13 +175,13 @@ const Skills = () => {
                       src={lightroom}
                       alt="Adobe Lightroom"
                     />
-                    Lightroom
+                    <div className="icon-text">Lightroom</div>
                     <img
                       className="icon"
                       src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                       alt="Figma"
                     />
-                    Figma
+                    <div className="icon-text">Figma</div>
                   </Col>
                 </Row>
               </Col>
