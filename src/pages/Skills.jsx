@@ -1,6 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import styles from "../styles/Skills.scss";
+import "../styles/Skills.scss";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
@@ -21,7 +21,7 @@ const Skills = () => {
         <Container className="skill-container" xs="12">
           <Row>
             <Col className="showH1" id="languages">
-              <h1 id="skills-header"> Languages </h1>
+              <h2 className="skills-header"> Languages </h2>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear" : ""}`}
                 id="languages"
@@ -77,7 +77,7 @@ const Skills = () => {
             {/* -------------------------------------------------Tools/Libraries Column---------------------------------------------------------------------------------- */}
 
             <Col className="showH2" id="tools">
-              <h1 id="skills-header"> Tools/Libraries </h1>
+              <h2 className="skills-header"> Tools/Libraries </h2>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear2" : ""}`}
                 id="tools"
@@ -142,7 +142,7 @@ const Skills = () => {
 
             {/* -------------------------------------------------Other Column---------------------------------------------------------------------------------- */}
             <Col className="showH3" id="other">
-              <h1 id="skills-header"> Other </h1>
+              <h2 className="skills-header"> Other </h2>
               <Col
                 className={`${"hidden"} ${visibleElement ? "appear3" : ""}`}
                 id="other"

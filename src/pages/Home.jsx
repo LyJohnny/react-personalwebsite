@@ -197,4 +197,4 @@ const Home = ({ aboutRef, portfolioRef }) => {
   );
 };
 
-export default React.forwardRef(Home);
+export default Home;

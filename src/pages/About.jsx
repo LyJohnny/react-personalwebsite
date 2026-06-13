@@ -20,7 +20,7 @@ const About = forwardRef((props, ref) => {
         <Container>
           <Row id="row1">
             <Col className="mainCol" lg={6}>
-              <h1>Education</h1>
+              <h2>Education</h2>
               <div className="leftCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
@@ -87,7 +87,7 @@ const About = forwardRef((props, ref) => {
             {/* -------------------------------------------------End of First Column----------------------------------------------------------------- */}
 
             <Col className="mainCol" lg={6}>
-              <h1>Work Experience</h1>
+              <h2>Work Experience</h2>
               <div className="rightCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
@@ -171,7 +171,7 @@ const About = forwardRef((props, ref) => {
           {/* ---------------------------------------------------------------Second Half of About Page (2nd Row) ------------------------------------------------------------------- */}
           <Row id="row2">
             <Col className="mainCol" lg={6}>
-              <h1>Activities + Leadership Experience</h1>
+              <h2>Activities + Leadership Experience</h2>
               <div className="leftCol">
               <Row>
                   <Col className="logo-container" lg="auto">
@@ -239,7 +239,7 @@ const About = forwardRef((props, ref) => {
             </Col>
             <Col className="mainCol" lg={6}>
               {" "}
-              <h1>Achievements</h1>
+              <h2>Achievements</h2>
               <div className="leftCol">
                 <Row>
                   <Col className="logo-container" lg="auto">

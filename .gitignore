@@ -104,3 +104,9 @@ dist
 .tern-port
 
 .env
+
+# Private working doc (job-search handoff) — do not publish
+HANDOFF.md
+
+# Claude Code local config (preview launch config, etc.)
+.claude/

@@ -18,13 +18,13 @@ function Footer() {
               <p id="location">
                 {" "}
                 Made with ❤️ from{" "}
-                <div>
+                <span style={{ display: "inline-block" }}>
                   <Textra
                     className="textra"
                     effect="downTop"
                     data={["New York, NY", "Long Beach, CA", "Merced, CA"]}
                   />{" "}
-                </div>
+                </span>
               </p>
             </Col>
           </Row>

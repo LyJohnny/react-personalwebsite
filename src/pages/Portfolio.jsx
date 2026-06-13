@@ -3,7 +3,6 @@ import "../styles/Portfolio.scss";
 import Container from "react-bootstrap/Container";
 import { Tab, Tabs } from "@mui/material";
 import Photography from "../components/photography";
-import Research from "../components/research";
 import Projects from "../components/projects";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -72,7 +71,7 @@ const Portfolio = forwardRef((props, ref) => {
       <div className="portfolio" ref={ref}>
         <Box>
           <Container>
-            <h1 className="headingText">Portfolio</h1>
+            <h2 className="headingText">Portfolio</h2>
             <ThemeProvider theme={theme}>
               <Tabs
                 value={value}
