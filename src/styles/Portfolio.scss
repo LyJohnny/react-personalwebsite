@@ -308,3 +308,31 @@ Button#poster-button {
     font-size: 0.6rem;
   }
 }
+
+// App screenshot gallery (Stock & Drop Tracker modal)
+.app-screen-group {
+  margin-bottom: 1.75em;
+}
+.app-screen-caption {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.15em;
+}
+.app-screen-sub {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.6em;
+}
+.app-screen-row {
+  align-items: flex-start;
+}
+.app-screen-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+.app-screen-img--mobile {
+  border-radius: 14px;
+}

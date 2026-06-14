@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import "../styles/Portfolio.scss";
 import { GitHub, TrackChanges } from "@mui/icons-material";
 import PosterModal from "./modal2";
+import AppScreensModal from "./AppScreensModal";
 import huf from "../assets/huf.webp";
 import website from "../assets/personalWebsite.webp";
 import hackmerced from "../assets/hackmerced.webp";
@@ -26,6 +27,7 @@ function Projects() {
               {" "}
               April 2026 - Present{" "}
             </p>
+            <AppScreensModal />
             <p id="project-description">
               A Progressive Web App designed to track real-time stock levels,
               drops, and price changes for a clothing brand. By pulling from the
@@ -38,70 +40,70 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="react-icon"
             />
             React
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg"
               alt="vite-icon"
             />
             Vite
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
               alt="typescript-icon"
             />
             TypeScript
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
             />
             Node
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
               alt="postgresql-icon"
             />
             PostgreSQL
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"
               alt="supabase-icon"
             />
             Supabase
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg"
               alt="prisma-icon"
             />
             Prisma
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg"
               alt="vercel-icon"
             />
             Vercel
-          </a>
+          </span>
         </Row>
       </Container>
       <Container className="project-container">
@@ -151,71 +153,71 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
               alt="flask-icon"
             />
             Flask
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img id="tool-icon2" src={google} alt="googlebert-icon" />
             Google BERT Model
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
               alt="html-icon"
             />
             HTML
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
               alt="css-icon"
             />
             CSS
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt="javascript-icon"
             />
             JavaScript
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
               alt="bootstrap-icon"
             />
             Bootstrap
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
               alt="sqlite-icon"
             />
             SQLite
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
             />
             Git
-          </a>
+          </span>
         </Row>
       </Container>
       <Container className="project-container">
@@ -247,58 +249,58 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="react-icon"
             />
             React
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
               alt="java-icon"
             />
             Java
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
               alt="springboot-icon"
             />
             Spring Boot
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
               alt="mysql-icon"
             />
             MYSQL
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
             />
             Node
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
             />
             Git
-          </a>
+          </span>
         </Row>
       </Container>
       <Container className="project-container">
@@ -337,57 +339,57 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
               alt="html-icon"
             />
             HTML
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
               alt="css-icon"
             />
             CSS
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt="javascript-icon"
             />
             JavaScript
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
             />
             Node
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
               alt="bootstrap-icon"
             />
             Bootstrap
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
             />
             Git
-          </a>
+          </span>
         </Row>
       </Container>
 
@@ -434,35 +436,35 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
               alt="androidstudio-icon"
             />
             Android Studio
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
               alt="java-icon"
             />
             Java
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img id="tool-icon2" src={google} alt="googlemobilevision-icon" />
             Google Mobile Vision API
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
             />
             Git
-          </a>
+          </span>
         </Row>
       </Container>
 
@@ -493,47 +495,47 @@ function Projects() {
           </Col>
         </Row>
         <Row>
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt="react-icon"
             />
             React
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt="node-icon"
             />
             Node
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
               alt="bootstrap-icon"
             />
             Bootstrap
-          </a>
-          <a className="tool-container">
+          </span>
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
               alt="scss-icon"
             />
             Scss
-          </a>
+          </span>
 
-          <a className="tool-container">
+          <span className="tool-container">
             <img
               id="tool-icon2"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
               alt="git-icon"
             />
             Git
-          </a>
+          </span>
         </Row>
       </Container>
     </div>
