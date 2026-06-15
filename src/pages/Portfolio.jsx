@@ -9,17 +9,10 @@ import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import SourceIcon from "@mui/icons-material/Source";
-import { makeStyles } from "@mui/styles";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-  const useStyles = makeStyles({
-    root: {
-      padding: "0.5em",
-    },
-  });
-  const classes = useStyles();
 
   return (
     <div
@@ -30,7 +23,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box className={classes.root}>
+        <Box sx={{ p: "0.5em" }}>
           <Typography component={"span"}>{children}</Typography>
         </Box>
       )}
