@@ -5,6 +5,11 @@ import react from "@vitejs/plugin-react";
 // outDir is "build" to keep the existing `gh-pages -d build` deploy script.
 export default defineConfig({
   plugins: [react()],
+  // CRA/Webpack defined `global` for the browser; Vite does not. Some older
+  // deps (e.g. react-image-lightbox) reference it and crash without this.
+  define: {
+    global: "globalThis",
+  },
   server: {
     port: 3000,
   },
