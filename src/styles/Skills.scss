@@ -45,7 +45,8 @@
   justify-content: space-evenly;
   text-align: center;
 }
-.logo-container3 {
+.logo-container3,
+  .logo-container4 {
 
   margin-left: auto;
   margin-right: auto;
@@ -100,7 +101,8 @@
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
-.showH3 {
+.showH3,
+.showH4 {
   opacity: 1;
   //   filter: blur(0);
   //   transform: translate(0);
@@ -145,7 +147,8 @@
   //     transition: 1000ms;
   // }
 }
-.appear3 {
+.appear3,
+.appear4 {
   background-color: white;
   border-radius: 25px;
   transition-delay: 700ms;
@@ -191,7 +194,8 @@
     justify-content: space-evenly;
     text-align: center;
   }
-  .logo-container3 {
+  .logo-container3,
+  .logo-container4 {
 
     margin-left: auto;
     margin-right: auto;
@@ -231,7 +235,8 @@
     margin-left: 0.25em;
     margin-right: 0.25em;
   }
-  .showH3 {
+  .showH3,
+  .showH4 {
     opacity: 1;
     filter: blur(0);
     transform: translate(0);
@@ -272,7 +277,8 @@
     //     transition: 1000ms;
     // }
   }
-  .appear3 {
+  .appear3,
+  .appear4 {
     background-color: white;
     border-radius: 25px;
     transition-delay: 700ms;
@@ -317,7 +323,8 @@
     justify-content: space-evenly;
     text-align: center;
   }
-  .logo-container3 {
+  .logo-container3,
+  .logo-container4 {
 
     margin-left: auto;
     margin-right: auto;
@@ -356,7 +363,8 @@
     margin-left: 0.25em;
     margin-right: 0.25em;
   }
-  .showH3 {
+  .showH3,
+  .showH4 {
     opacity: 1;
     filter: blur(0);
     transform: translate(0);
@@ -397,7 +405,8 @@
     //     transition: 1000ms;
     // }
   }
-  .appear3 {
+  .appear3,
+  .appear4 {
     background-color: white;
     border-radius: 25px;
     transition-delay: 700ms;
@@ -451,7 +460,8 @@
     margin-left: 45px;
     margin-right: 45px;
   }
-  .showH3 {
+  .showH3,
+  .showH4 {
     // opacity: 1;
     // filter: blur(0);
     // transform: translatey(0);
@@ -497,7 +507,8 @@
     //     transition: 1000ms;
     // }
   }
-  .appear3 {
+  .appear3,
+  .appear4 {
     background-color: white;
     border-radius: 25px;
     opacity: 1;
@@ -553,7 +564,8 @@
       margin-left: 25px;
       margin-right: 25px;
     }
-    .showH3 {
+    .showH3,
+    .showH4 {
       // opacity: 1;
       // filter: blur(0);
       // transform: translatey(0);
@@ -597,7 +609,8 @@
       //     transition: 1000ms;
       // }
     }
-    .appear3 {
+    .appear3,
+    .appear4 {
       background-color: white;
       border-radius: 25px;
       opacity: 1;
@@ -619,4 +632,73 @@
       // }
     }
   }
+}
+
+/* ---------------------------------------------------------------------------
+   Grid math fix (4-card 2x2 layout).
+
+   Bootstrap sizes .col-md-6 to exactly 50% of the row and uses PADDING for
+   gutters. The .showH* rules above add `margin: 0 0.5em` to the column itself,
+   which makes each column 50% + 1em wide -- so two of them exceed 100% and the
+   second wraps onto its own line. That is why the cards stacked instead of
+   sitting 2x2, and why the row overflowed horizontally at small widths.
+
+   Spacing between cards lives on the inner card element (.hidden/.appear*)
+   instead, which is inside the column and so cannot break the grid.
+   These come last in the file deliberately: they must win over the same
+   declarations inside the max-width media queries above.
+--------------------------------------------------------------------------- */
+.skills .showH1,
+.skills .showH2,
+.skills .showH3,
+.skills .showH4 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* width:100% + horizontal margins on a border-box element overflows its parent
+   by exactly the margin total. The card should fill whatever the column leaves.
+
+   height is released for the same reason: the base rules pin the card to
+   `height: 85%` of its stretched column, and 85% + 2em of vertical margin
+   overflows the column by a few px -- which the denser icon grid made visible
+   as the next row's heading colliding with the card above it. Sizing to content
+   removes the overflow entirely. */
+.skills .hidden,
+.skills .appear,
+.skills .appear2,
+.skills .appear3,
+.skills .appear4 {
+  width: auto;
+}
+
+/* Wordmark icons (Splunk, Oracle).
+
+   Every devicon SVG is a 128x128 SQUARE canvas -- the wordmarks are just a thin
+   band of ink centred on it with transparent padding. So widening the element
+   (the previous fix here) grew the empty box, not just the artwork, making those
+   two cells ~30px taller than their neighbours and knocking the labels out of
+   alignment across the card.
+
+   transform: scale() enlarges the rendered artwork but does NOT affect layout,
+   so the box stays the same size as every other .icon at every breakpoint and
+   the rows stay aligned. No width override needed -- .icon already handles the
+   responsive sizing (50 / 45 / 40px). */
+.skills .icon--wordmark {
+  transform: scale(1.6);
+}
+
+/* Row alignment between a card's two icon columns.
+
+   Each column is a grid that stretches to the row's full height, and with
+   align-content defaulting to stretch the column holding FEWER icons spreads
+   its rows out -- so a 3-icon column never lined up with the 4-icon column
+   beside it. Packing rows to the start gives each its natural height so the
+   two columns stay in step. Column widths are left at the original 50/50. */
+.skills .logo-container1,
+.skills .logo-container2,
+.skills .logo-container3,
+.skills .logo-container4,
+.skills .logo-container-half {
+  align-content: start;
 }

@@ -10,6 +10,81 @@ import typingSpeed from "../assets/typingSpeed.webp";
 import photography from "../assets/photography.webp";
 import lightroom from "../assets/lightroom.webp";
 
+// Icons are served from the devicons set on jsDelivr. The site's CSP only
+// allows images from 'self' and https://cdn.jsdelivr.net, so any icon added
+// here must come from that CDN or be imported as a local asset instead.
+const DEVICON = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons";
+const devicon = (path) => `${DEVICON}/${path}.svg`;
+
+// Each card renders as two columns: `left` and `right`.
+const CARDS = [
+  {
+    title: "Languages",
+    left: [
+      { label: "HTML", src: devicon("html5/html5-original-wordmark") },
+      { label: "CSS", src: devicon("css3/css3-original-wordmark") },
+      { label: "JavaScript", src: devicon("javascript/javascript-original") },
+      { label: "TypeScript", src: devicon("typescript/typescript-original") },
+    ],
+    right: [
+      { label: "Java", src: devicon("java/java-original") },
+      { label: "Python", src: devicon("python/python-original") },
+      { label: "SQL", src: sql },
+    ],
+  },
+  {
+    title: "Frameworks & Libraries",
+    left: [
+      { label: "Spring", src: devicon("spring/spring-original") },
+      { label: "Angular", src: devicon("angular/angular-original") },
+      { label: "React", src: devicon("react/react-original") },
+      { label: "Node", src: devicon("nodejs/nodejs-original") },
+    ],
+    right: [
+      { label: "JUnit", src: devicon("junit/junit-original") },
+      { label: "Scss", src: devicon("sass/sass-original") },
+      { label: "Bootstrap", src: devicon("bootstrap/bootstrap-original") },
+    ],
+  },
+  {
+    title: "Tools & Platforms",
+    left: [
+      { label: "Git", src: devicon("git/git-original") },
+      { label: "Jenkins", src: devicon("jenkins/jenkins-original") },
+      { label: "PostgreSQL", src: devicon("postgresql/postgresql-original") },
+      // Oracle and Splunk ship only as wordmarks on a square canvas, so they
+      // use `icon--wordmark` to scale the artwork up without changing the box.
+      { label: "Oracle", src: devicon("oracle/oracle-original"), cls: "icon icon--wordmark" },
+    ],
+    right: [
+      { label: "Splunk", src: devicon("splunk/splunk-original-wordmark"), cls: "icon icon--wordmark" },
+      { label: "GraphQL", src: devicon("graphql/graphql-plain") },
+      { label: "Postman", src: devicon("postman/postman-original") },
+      { label: "Swagger", src: devicon("swagger/swagger-original") },
+    ],
+  },
+  {
+    title: "Other",
+    left: [
+      { label: "AGILE Methodologies", src: agile, cls: "other-icon" },
+      { label: "Typing Speed: 110+ WPM", src: typingSpeed, cls: "other-icon" },
+      { label: "Photography", src: photography, cls: "other-icon" },
+    ],
+    right: [
+      { label: "Lightroom", src: lightroom },
+      { label: "Figma", src: devicon("figma/figma-original") },
+    ],
+  },
+];
+
+const IconList = ({ items }) =>
+  items.map((item) => (
+    <React.Fragment key={item.label}>
+      <img className={item.cls || "icon"} src={item.src} alt={item.label} />
+      <div className="icon-text">{item.label}</div>
+    </React.Fragment>
+  ));
+
 const Skills = () => {
   const { ref: myRef, inView: visibleElement } = useInView({
     triggerOnce: true,
@@ -20,172 +95,27 @@ const Skills = () => {
       <div className="skills__container">
         <Container className="skill-container" xs="12">
           <Row>
-            <Col className="showH1" id="languages">
-              <h2 className="skills-header"> Languages </h2>
-              <Col
-                className={`${"hidden"} ${visibleElement ? "appear" : ""}`}
-                id="languages"
-                ref={myRef}
-              >
-                <Row>
-                  <Col className="logo-container1" xs="6">
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-                      alt="HTML/CSS"
-                    />
-                    <div className="icon-text">HTML</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-                      alt="CSS"
-                    />
-                    <div className="icon-text">CSS</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                      alt="JavaScript"
-                    />
-                    <div className="icon-text">JavaScript</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-                      alt="TypeScript"
-                    />
-                    <div className="icon-text">TypeScript</div>
-                  </Col>
-                  <Col className="logo-container-half" xs="6">
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                      alt="Java"
-                    />
-                    <div className="icon-text">Java</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                      alt="Python"
-                    />
-                    <div className="icon-text">Python</div>
-                    <img className="icon" src={sql} alt="SQL" />
-                    <div className="icon-text">SQL</div>
-                  </Col>
-                </Row>
+            {CARDS.map((card, i) => (
+              // Two cards per row from md up, stacked full-width below that.
+              <Col key={card.title} xs={12} md={6} className={`showH${i + 1}`}>
+                <h2 className="skills-header"> {card.title} </h2>
+                <Col
+                  className={`${"hidden"} ${
+                    visibleElement ? `appear${i === 0 ? "" : i + 1}` : ""
+                  }`}
+                  ref={i === 0 ? myRef : undefined}
+                >
+                  <Row>
+                    <Col className={`logo-container${i + 1}`} xs="6">
+                      <IconList items={card.left} />
+                    </Col>
+                    <Col className="logo-container-half" xs="6">
+                      <IconList items={card.right} />
+                    </Col>
+                  </Row>
+                </Col>
               </Col>
-            </Col>
-
-            {/* -------------------------------------------------Tools/Libraries Column---------------------------------------------------------------------------------- */}
-
-            <Col className="showH2" id="tools">
-              <h2 className="skills-header"> Tools/Libraries </h2>
-              <Col
-                className={`${"hidden"} ${visibleElement ? "appear2" : ""}`}
-                id="tools"
-              >
-                <Row>
-                  <Col className="logo-container2" xs="6">
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                      alt="React"
-                    />
-                    <div className="icon-text">React</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-                      alt="Spring"
-                    />
-                    <div className="icon-text">Spring</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                      alt="Node"
-                    />
-                    <div className="icon-text">Node</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
-                      alt="Flask"
-                    />
-                    <div className="icon-text">Flask</div>
-                  </Col>
-
-                  <Col className="logo-container-half" xs="6">
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"
-                      alt="MSSQL"
-                    />
-                    <div className="icon-text">MS SQL</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                      alt="Bootstrap"
-                    />
-                    <div className="icon-text">Bootstrap</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-                      alt="Scss"
-                    />
-                    <div className="icon-text">Scss</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                      alt="Git"
-                    />
-                    <div className="icon-text">Git</div>
-                  </Col>
-                </Row>
-              </Col>
-            </Col>
-
-            {/* -------------------------------------------------Other Column---------------------------------------------------------------------------------- */}
-            <Col className="showH3" id="other">
-              <h2 className="skills-header"> Other </h2>
-              <Col
-                className={`${"hidden"} ${visibleElement ? "appear3" : ""}`}
-                id="other"
-              >
-                <Row>
-                  <Col className="logo-container3" xs="6">
-                    <img
-                      className="other-icon"
-                      src={agile}
-                      alt="AGILE Methodologies"
-                    />
-                    <div className="icon-text">AGILE Methodologies</div>
-                    <img
-                      className="other-icon"
-                      src={typingSpeed}
-                      alt="Typing Speed"
-                    />
-                    <div className="icon-text">Typing Speed: 110+ WPM</div>
-                    <img
-                      className="other-icon"
-                      src={photography}
-                      alt="Photography"
-                    />
-                    <div className="icon-text">Photography</div>
-                  </Col>
-
-                  <Col className="logo-container-half" xs="6">
-                    <img
-                      className="icon"
-                      src={lightroom}
-                      alt="Adobe Lightroom"
-                    />
-                    <div className="icon-text">Lightroom</div>
-                    <img
-                      className="icon"
-                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                      alt="Figma"
-                    />
-                    <div className="icon-text">Figma</div>
-                  </Col>
-                </Row>
-              </Col>
-            </Col>
+            ))}
           </Row>
         </Container>
       </div>

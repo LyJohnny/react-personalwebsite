@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import ucm from "../assets/ucm.webp";
-import jpmc from "../assets/jpmc.webp";
+import jpmc from "../assets/jpmc-icon.png";
 import flsp from "../assets/flsp.webp";
 import research from "../assets/ucresearch.webp";
 import i2g from "../assets/i2g.webp";
@@ -91,31 +91,31 @@ const About = forwardRef((props, ref) => {
               <div className="rightCol">
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={jpmc} alt="JPMC" />
+                    <img className="logo logo--icon" src={jpmc} alt="JPMorganChase" />
                   </Col>
 
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
                       {" "}
-                      JPMorgan Chase &amp; Co.{" "}
+                      JPMorganChase{" "}
                     </b>
-                    <p style={{ fontSize: "15px" }}> Software Engineer </p>
+                    <p style={{ fontSize: "15px" }}> Software Engineer II </p>
                     <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
-                      New York Metropolitan Area, NY | Present{" "}
+                      New York Metropolitan Area, NY | August 2023 - Present{" "}
                     </p>
                     <p>Asset and Wealth Management Team.</p>
                   </Col>
                 </Row>
                 <Row>
                   <Col className="logo-container" lg="auto">
-                    <img className="logo" src={jpmc} alt="JPMC" />
+                    <img className="logo logo--icon" src={jpmc} alt="JPMorganChase" />
                   </Col>
 
                   <Col lg className="description-container">
                     <b style={{ fontSize: "20px" }}>
                       {" "}
-                      JPMorgan Chase &amp; Co.{" "}
+                      JPMorganChase{" "}
                     </b>
                     <p style={{ fontSize: "15px" }}>
                       {" "}
@@ -178,14 +178,14 @@ const About = forwardRef((props, ref) => {
                     <img className="logo" src={ffg} alt="I2G" />
                   </Col>
                   <Col lg className="description-container">
-                    <b style={{ fontSize: "20px" }}> JPMorgan Chase &amp; Co. Force For Good</b>
+                    <b style={{ fontSize: "20px" }}> JPMorganChase Force For Good</b>
                     <p style={{ fontSize: "15px" }}> Core Team Member </p>
                     <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
                       April 2024 - November 2024{" "}
                     </p>
                     <p>
-                    Collaborated with Project for Public Spaces through JPMorgan Chase's Force For Good program to tackle challenges in decentralized data management 
+                    Collaborated with Project for Public Spaces through JPMorganChase's Force For Good program to tackle challenges in decentralized data management
                     by transitioning their data from various systems, including Monday.com and Airtable, into a unified Bloomerang CRM platform. This solution consolidated their data 
                     into a single location capable of managing over 50,000 records, enabling the organization to efficiently track audience interactions, enhance donor engagement, and improve program 
                     planning. 

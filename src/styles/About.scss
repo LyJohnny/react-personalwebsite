@@ -51,6 +51,18 @@ img.logo {
   object-fit: contain;
 }
 
+/* Solid-fill square icons (e.g. the JPMC mark) read heavier than logos with
+   transparent surroundings, so they are scaled down slightly to match.
+
+   Use transform, NOT width: the .logo-container column is `lg="auto"`, so it
+   sizes to its content. Shrinking the image shrinks the column, which pushes
+   the adjacent text block left and knocks that row out of alignment with every
+   other entry in the same column. transform: scale() changes only what is
+   painted, so the 100px layout box -- and the text column -- stay put. */
+img.logo.logo--icon {
+  transform: scale(0.82);
+}
+
 li {
   font-family: Arial;
   font-weight: 500;

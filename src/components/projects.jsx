@@ -315,7 +315,7 @@ function Projects() {
             </b>
             <p style={{ fontSize: "15px" }}>
               {" "}
-              JPMorgan Chase &amp; Co. Code For Good{" "}
+              JPMorganChase Code For Good{" "}
             </p>
             <p id="date" style={{ fontSize: "12px" }}>
               {" "}
