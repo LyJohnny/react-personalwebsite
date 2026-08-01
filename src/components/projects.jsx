@@ -22,7 +22,7 @@ function Projects() {
             <TrackChanges style={{ fontSize: "100px", color: "black" }} />
           </Col>
           <Col lg>
-            <b style={{ fontSize: "20px" }}> Stock &amp; Drop Tracker </b>
+            <b style={{ fontSize: "20px" }}> OutlierTracker </b>
             <p id="date" style={{ fontSize: "12px" }}>
               {" "}
               April 2026 - Present{" "}

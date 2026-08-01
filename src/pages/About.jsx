@@ -99,10 +99,21 @@ const About = forwardRef((props, ref) => {
                       {" "}
                       JPMorganChase{" "}
                     </b>
-                    <p style={{ fontSize: "15px" }}> Software Engineer II </p>
+                    <p style={{ fontSize: "15px", marginBottom: "0.1rem" }}>
+                      Software Engineer II
+                      <span style={{ fontSize: "13px", color: "#6c6c6c" }}>
+                        {"  |  January 2026 - Present"}
+                      </span>
+                    </p>
+                    <p style={{ fontSize: "15px", marginTop: 0 }}>
+                      Software Engineer
+                      <span style={{ fontSize: "13px", color: "#6c6c6c" }}>
+                        {"  |  August 2023 - January 2026"}
+                      </span>
+                    </p>
                     <p id="date" style={{ fontSize: "12px" }}>
                       {" "}
-                      New York Metropolitan Area, NY | August 2023 - Present{" "}
+                      New York Metropolitan Area, NY{" "}
                     </p>
                     <p>Asset and Wealth Management Team.</p>
                   </Col>

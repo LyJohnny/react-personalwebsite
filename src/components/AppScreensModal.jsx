@@ -78,7 +78,7 @@ function AppScreensModal() {
         <Modal.Header bsPrefix="modal-header" closeButton>
           <div className="modal-title">
             <Modal.Title bsPrefix="modal-title">
-              <h4 id="modal-titles">Stock &amp; Drop Tracker — App UI</h4>
+              <h4 id="modal-titles">OutlierTracker — App UI</h4>
             </Modal.Title>
           </div>
         </Modal.Header>
